@@ -1,0 +1,39 @@
+threshold_variation:
+  experiment_name: "aggregation_refinement"
+  decomposition: ["AGEP", "COW", "WKHP", "OCCP"]
+  model: "openai/gpt-5.4"
+  num_of_samples: 100
+  llm_estimated_priors: false
+
+  experiments:
+    - income_threshold: 100
+      cluster: True
+      timestamp: "2026-04-20__23-57-30"
+
+    - income_threshold: 1000
+      cluster: True
+      timestamp: "2026-04-20__19-23-45"
+
+    - income_threshold: 10000
+      cluster: True
+      timestamp: "2026-04-20__19-33-54"
+
+    - income_threshold: 20000
+      cluster: True
+      timestamp: "2026-04-20__19-42-58"
+
+    - income_threshold: 40000
+      cluster: True
+      timestamp: "2026-04-21__00-08-54"
+
+    - income_threshold: 60000
+      cluster: True
+      timestamp: "2026-04-21__00-10-14"
+
+    - income_threshold: 80000
+      cluster: True
+      timestamp: "2026-04-21__00-12-57"
+
+    - income_threshold: 100000
+      cluster: True
+      timestamp: "2026-04-21__00-14-42"

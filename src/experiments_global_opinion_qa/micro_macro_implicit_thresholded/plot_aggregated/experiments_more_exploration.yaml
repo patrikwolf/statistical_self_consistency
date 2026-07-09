@@ -1,0 +1,8 @@
+log:
+  experiment_name: "goqa_micro_macro_thresholded"
+  model:
+  reasoning_effort: "none"
+  num_of_samples: 20
+
+  experiments:
+    "deepseek/deepseek-v3.2": "2026-06-17__14-25-49"

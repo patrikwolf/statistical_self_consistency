@@ -1,0 +1,14 @@
+shared_config:
+  model_name: "google/gemini-3-flash-preview"     # x-ai/grok-4.20
+  reasoning_effort: "none"
+  survey_name: "ACS"
+  survey_year: 2024
+  set_nan_to_zero: True
+  improved_age_desc: False
+  prompting_scheme: "sociodemographic"
+  prompt_reasoning: False
+  llm_aggregation_priors: True
+  num_of_samples: 20
+  max_number_attempts: 10
+  weighted: True
+  income_greater_than_threshold: True

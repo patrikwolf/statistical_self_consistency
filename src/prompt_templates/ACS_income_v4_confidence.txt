@@ -1,0 +1,24 @@
+You are given a brief sociodemographic profile of an individual.
+Based on the information provided and your general knowledge of income distributions in the United States, estimate the
+probability of the specified outcome.
+The data provided is sufficient to make an approximate probabilistic estimate.
+
+Individual attributes:
+{attributes}
+
+Question:
+What is the estimated probability that this person’s annual income exceeds {income_threshold} USD?
+
+In addition to the point estimate, quantify your uncertainty about the true subgroup probability by providing a
+{confidence}% confidence interval.
+
+Interpretation of the interval:
+- The interval should represent your uncertainty about the probability that a randomly sampled individual with these
+attributes has income above the threshold.
+- The interval must contain your best estimate.
+
+Output requirements (strict):
+- Return three real numbers between 0 and 1: the point estimate p, the lower bound l, and the upper bound u.
+- Ensure 0 <= l <= p <= u <= 1.
+- Do not include any explanation or additional text.
+- Format the answer exactly as: [[p, l, u]]

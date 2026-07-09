@@ -1,0 +1,26 @@
+log:
+  experiment_name: "goqa_micro_macro_thresholded"
+  model: "x-ai/grok-4.20"
+  reasoning_effort: "none"
+  num_of_samples: 20
+
+  experiments:
+    - timestamp: "2026-06-15__16-32-41"
+      cluster: True
+      question: "55"
+
+    - timestamp: "2026-06-15__16-35-46"
+      cluster: True
+      question: "136"
+
+    - timestamp: "2026-06-15__16-36-38"
+      cluster: True
+      question: "573"
+
+    - timestamp: "2026-06-15__16-50-11"
+      cluster: True
+      question: "839"
+
+    - timestamp: "2026-06-15__16-52-43"
+      cluster: True
+      question: "1108"

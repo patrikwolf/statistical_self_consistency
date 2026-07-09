@@ -1,0 +1,9 @@
+You are given a brief sociodemographic profile of an individual.
+Based on the information provided and your general knowledge of income distributions in the United States, estimate the
+probability of the specified outcome.
+The data provided is sufficient to make an approximate probabilistic estimate.
+
+{attributes}
+
+Question: Based on the respondent's attributes, how likely is the respondent to identify with the Democratic party?
+Please return a number between 0 and 1 at the end of your response.

@@ -1,0 +1,19 @@
+Based on your general knowledge of public opinion in {country}, estimate the probability of the specified
+survey response. Treat the target respondent as a randomly selected adult in {country}. The available
+information is sufficient for an approximate probabilistic estimate.
+
+Survey question:
+Thinking about the public as a whole, do you think this country is now more UNITED or more DIVIDED than before the coronavirus outbreak?
+
+Question:
+What is the estimated probability that a randomly selected adult in {country} would answer "More united" to the question above?
+
+Before giving your final answer, reason from micro to macro:
+1. Identify several relevant subpopulations within {country} that may differ in their views on this question.
+2. For each subpopulation, consider its approximate prevalence in the adult population and its likely probability of
+answering “More united”.
+3. Combine these subgroup-level estimates into a single aggregate probability estimate for the full adult population of {country}.
+
+Output requirements (strict):
+- Return a single real number between 0 and 1 (inclusive).
+- Format the answer exactly as: [[p]] where p is your probability estimate (for example: [[0.5]]).

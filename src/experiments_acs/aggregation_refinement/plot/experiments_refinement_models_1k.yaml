@@ -1,0 +1,46 @@
+model_variation:
+  experiment_name: "aggregation_refinement"
+  decomposition: ["AGEP", "COW", "WKHP", "OCCP"]
+  income_threshold: 1_000
+  num_of_samples: 20
+
+  experiments:
+    - model: "openai/gpt-5.4"
+      reasoning_effort: "none"
+      cluster: True
+      timestamp: "2026-06-08__11-46-05"
+
+    - model: "openai/gpt-4o-mini"
+      reasoning_effort: "none"
+      cluster: True
+      timestamp: "2026-06-08__11-47-32"
+
+    - model: "google/gemini-3.1-pro-preview"
+      reasoning_effort: "low"
+      cluster: True
+      timestamp: "2026-06-08__11-50-09"
+
+    - model: "google/gemini-3-flash-preview"
+      reasoning_effort: "none"
+      cluster: True
+      timestamp: "2026-06-08__13-16-21"
+
+    - model: "anthropic/claude-opus-4.7"
+      reasoning_effort: "none"
+      cluster: True
+      timestamp: "2026-06-08__13-17-56"
+
+    - model: "x-ai/grok-4.20"
+      reasoning_effort: "none"
+      cluster: True
+      timestamp: "2026-06-08__13-20-57"
+
+    - model: "qwen/qwen3.6-plus"
+      reasoning_effort: "none"
+      cluster: True
+      timestamp: "2026-06-08__13-21-51"
+
+    - model: "moonshotai/kimi-k2.6"
+      reasoning_effort: "none"
+      cluster: True
+      timestamp: "2026-06-08__13-23-49"

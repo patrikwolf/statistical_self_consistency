@@ -1,0 +1,27 @@
+shared_config:
+
+   # "x-ai/grok-4.1-fast", "deepseek/deepseek-v3.2", "openai/gpt-5.4", "qwen/qwen3.5-27b", "qwen/qwen3.5-35b-a3b"
+   # "qwen/qwen3.5-122b-a10b"
+  model: "qwen/qwen3.5-122b-a10b"
+  reasoning_effort: "none"
+
+  # "Canada", "Indonesia", ...
+  country: "Indonesia"
+
+
+
+
+
+
+
+  num_of_samples: 10
+  truncate_questions: 5
+  epsilon: 0.02
+
+  binary_splits:
+    age:
+      - "16 - 44 years old"
+      - "45 - 103 years old"
+    income:
+      - "low"
+      - "high"

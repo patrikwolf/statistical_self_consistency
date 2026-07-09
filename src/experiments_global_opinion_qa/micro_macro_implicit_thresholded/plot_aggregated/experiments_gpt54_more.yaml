@@ -1,0 +1,38 @@
+log:
+  experiment_name: "goqa_micro_macro_thresholded"
+  model: "openai/gpt-5.4"
+  reasoning_effort: "none"
+  num_of_samples: 20
+
+  experiments:
+    - timestamp: "2026-06-03__15-25-18"
+      cluster: True
+      question: "55"
+
+    - timestamp: "2026-06-03__17-03-32"
+      cluster: True
+      question: "136"
+
+    - timestamp: "2026-06-15__15-08-15"
+      cluster: True
+      question: "573"
+
+    - timestamp: "2026-06-03__17-15-42"
+      cluster: True
+      question: "839"
+
+    - timestamp: "2026-06-15__15-19-40"
+      cluster: True
+      question: "1108"
+
+    - timestamp: "2026-06-15__15-26-12"
+      cluster: True
+      question: "1445"
+
+    - timestamp: "2026-06-15__15-42-18"
+      cluster: True
+      question: "1512"
+
+    - timestamp: "2026-06-15__15-45-53"
+      cluster: True
+      question: "1531"

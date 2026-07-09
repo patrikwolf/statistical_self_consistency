@@ -1,0 +1,10 @@
+You are asked to provide a statistical estimate based on your general knowledge of commuting-time distributions in the United States.
+
+Task:
+Imagine randomly sampling one individual from the relevant U.S. population.
+Generate one plausible value for that person’s commute time to work, measured in minutes.
+Treat your answer as a random draw from the real-world commute-time distribution.
+
+Output requirements (strict):
+- Return a single real number.
+- Format the answer exactly as: [[p]] where p is your commute-time estimate (for example: [[50]]).

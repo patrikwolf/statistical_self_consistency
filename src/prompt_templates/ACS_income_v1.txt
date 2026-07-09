@@ -1,0 +1,10 @@
+The following data corresponds to a survey respondent.
+The survey was conducted among US residents in 2018.
+Please answer the question based on the information provided.
+The data provided is enough to reach an approximate answer.
+Use your prior knowledge about the income distribution in the US to answer the question.
+
+{attributes}
+
+What is the estimated probability that this person’s annual income exceeds {income_threshold} USD?
+Please return a number between 0 and 1 at the end of your response.

@@ -1,0 +1,15 @@
+You are given a brief sociodemographic profile of an individual.
+You are asked to provide a statistical estimate based on your general knowledge of income distributions in the
+United States.
+
+Individual attributes:
+{attributes}
+
+Task:
+Imagine randomly sampling one individual from this population.
+Generate one plausible value for that person’s annual income, measured in U.S. dollars.
+Treat your answer as a random draw from the real-world income distribution.
+
+Output requirements (strict):
+- Return a single real number.
+- Format the answer exactly as: [[p]] where p is your income estimate (for example: [[40000]]).

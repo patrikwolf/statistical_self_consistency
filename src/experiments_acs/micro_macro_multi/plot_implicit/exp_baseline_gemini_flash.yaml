@@ -1,0 +1,28 @@
+experiments_log:
+  experiment_name: "micro_macro_aggregation_baseline"
+  decomposition: ["AGEP", "COW", "WKHP", "OCCP"]
+  model: "google/gemini-3-flash-preview"
+  reasoning_effort: "none"
+  num_of_samples: 20
+  improved_age_desc: False
+
+  experiments:
+    - income_threshold: 100
+      timestamp: "2026-06-15__13-25-40"
+      cluster: True
+
+    - income_threshold: 20_000
+      timestamp: "2026-06-15__12-05-37"
+      cluster: True
+
+    - income_threshold: 40_000
+      timestamp: "2026-06-15__13-44-35"
+      cluster: True
+
+    - income_threshold: 60_000
+      timestamp: "xxxxxx"
+      cluster: True
+
+    - income_threshold: 80_000
+      timestamp: "xxxxxx"
+      cluster: True

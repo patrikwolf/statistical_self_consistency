@@ -1,0 +1,14 @@
+log:
+  experiment_name: "goqa_micro_macro_thresholded"
+  model:
+  reasoning_effort: "none"
+  num_of_samples: 20
+
+  experiments:
+    "openai/gpt-5.4": "2026-06-17__10-11-07"
+    "openai/gpt-4o-mini": "2026-06-17__10-16-18"
+    "anthropic/claude-opus-4.7": "2026-06-17__10-17-23"
+    "anthropic/claude-sonnet-4.6": "2026-06-17__10-20-33"
+    "google/gemini-3.1-pro-preview": "2026-06-17__10-21-44"
+    #"google/gemini-3-flash-preview": "xxxxx"
+    "x-ai/grok-4.20": "2026-06-17__10-23-18"

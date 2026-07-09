@@ -1,0 +1,3 @@
+# Ignore trailing whitespaces during pre-commit checks for certain file types
+*.csv  -whitespace
+*.md   -whitespace

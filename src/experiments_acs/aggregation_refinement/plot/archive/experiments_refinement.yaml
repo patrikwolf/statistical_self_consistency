@@ -1,0 +1,35 @@
+attribute_set_1:
+  attribute_set: ["AGEP", "COW", "WKHP", "OCCP"]
+  permutations:
+    - permutation_1:
+        decomposition: "AGEP; COW; WKHP; OCCP"
+        experiments:
+          - income_threshold: 100
+            model: "openai/gpt-5.4"
+            experiment_name: binary_income_threshold_split
+            cluster: True
+            timestamp: "xxx"
+
+          - income_threshold: 40000
+            model: "openai/gpt-5.4"
+            experiment_name: binary_income_threshold_split
+            cluster: True
+            timestamp: "2026-04-17__15-30-00"
+
+    - permutation_2:
+        decomposition: "COW; AGEP; WKHP; OCCP"
+        experiments:
+         - income_threshold: 100
+           model: "openai/gpt-5.4"
+           experiment_name: binary_income_threshold_split
+           cluster: True
+           timestamp: "xxx"
+
+
+
+attribute_set_2:
+  attribute_set: ["COW", "WKHP", "OCCP", "SEX"]
+  permutations:
+    - permutation_1:
+        decomposition: "COW; WKHP; OCCP; SEX"
+        experiments:

@@ -1,0 +1,23 @@
+Based on the provided attributes and your general knowledge of U.S. income distributions, estimate a
+probability distribution over the listed annual income bins.
+
+Income bins:
+{bins}
+
+Task:
+Estimate the probability that this person's annual income falls into each income bin.
+
+Requirements:
+- Assign probability mass across all income bins.
+- The probabilities must sum to 1.
+- Return one probability for each bin and no additional entries.
+
+Return only a valid JSON object in the following format:
+{example_output}
+
+Strict output rules:
+- Do not include any text outside the JSON object.
+- Do not include explanations, comments, or uncertainty intervals.
+- Each probability must be a single number in [0, 1].
+- The JSON object must contain exactly one entry per income bin.
+- The JSON keys must exactly match the following bin names: {bin_names}.

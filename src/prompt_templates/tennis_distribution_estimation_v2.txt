@@ -1,0 +1,22 @@
+You are estimating the outcome of a tennis match.
+
+Match:
+Roger Federer plays against Rafael Nadal.
+
+The match context is characterized by the following attributes:
+{attribute_list}
+
+Forecasting question:
+What is the probability that Roger Federer wins the match?
+
+Task:
+Estimate the probability that Roger Federer wins the match under the specified context.
+
+Strict output rules:
+- Return a single real number between 0 and 1, inclusive.
+- Use decimal probabilities, not percentages.
+- Format the answer exactly as: [[p]], where p is your probability estimate.
+- Do not include explanations, comments, uncertainty intervals, or any text outside the required format.
+
+Return only an answer of the following form. The number below is illustrative only and must be replaced
+by your estimated probability: [[0.5]]

@@ -1,0 +1,21 @@
+You are given an exhaustive and mutually exclusive partition of the U.S. population into groups defined by
+sociodemographic attributes.
+
+{groups}
+
+Task:
+Estimate the fraction of the U.S. population that belongs to each group. For each group, return your best
+estimate of the probability that a randomly sampled person belongs to the subpopulation described by that group.
+Use your background knowledge about the demographic composition of the United States. Since the groups form
+an exhaustive partition, the probabilities must sum to 1.
+
+Output requirements:
+- Return only a valid JSON object.
+- Include exactly one key-value pair for each group.
+- Use the group names exactly as given: {group_names}.
+- Each value must be a single real number between 0 and 1, inclusive.
+- The values should sum to 1.
+- Do not include explanations, comments, units, or any text outside the JSON object.
+
+Example output:
+{example_output}

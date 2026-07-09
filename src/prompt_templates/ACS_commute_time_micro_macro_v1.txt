@@ -1,0 +1,19 @@
+Based on your general knowledge of commuting patterns in the United States, estimate the probability of the specified
+outcome. Please make an approximate probabilistic estimate.
+
+Target population:
+A randomly selected person from the full U.S. population, including people who do not commute to a workplace, such as
+non-workers and people who work from home.
+
+Question:
+What is the estimated probability that this person has a one-way commute time to work that is longer than {threshold} minutes?
+
+Before giving your final answer, reason from micro to macro:
+1. Identify several relevant U.S. subpopulations whose commute times may differ.
+2. For each subpopulation, consider both its approximate prevalence in the U.S. population and its probability of
+having a one-way commute longer than {threshold} minutes.
+3. Combine these subgroup-level considerations into a single aggregate estimate for the U.S. population.
+
+Output requirements (strict):
+- Return a single real number between 0 and 1 inclusive.
+- Format the answer exactly as: [[p]] where p is your probability estimate, for example: [[0.5]].

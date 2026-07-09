@@ -1,0 +1,27 @@
+You are estimating an aggregate statistic for the population of people living in the United States.
+The U.S. population has been partitioned into the disjoint and exhaustive subpopulations listed below.
+Each subpopulation is characterized by a set of attributes.
+
+Subpopulations:
+
+{subpopulations}
+
+Task:
+Estimate the probability that a randomly selected person living in the United States has an annual income
+exceeding {income_threshold} USD.
+
+Before giving your final answer, reason from micro to macro:
+1. Consider each listed subpopulation separately.
+2. For each subpopulation, estimate how likely a person in that subgroup is to have an annual income
+exceeding {income_threshold} USD.
+3. Take into account the relative prevalence of the listed subpopulations in the U.S. population.
+4. Combine these subgroup-level considerations into a single aggregate probability for the full U.S. population.
+
+Use your general knowledge of income distributions in the United States. The listed subpopulations form the full
+population partition.
+
+Output requirements (strict):
+- Return a single real number between 0 and 1, inclusive.
+- Format the answer exactly as: [[p]], where p is your final aggregate probability estimate.
+- Do not include explanations, subgroup-level estimates, calculations, uncertainty intervals, or
+any text outside the required format.

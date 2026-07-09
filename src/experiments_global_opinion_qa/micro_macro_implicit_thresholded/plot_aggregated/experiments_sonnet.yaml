@@ -1,0 +1,26 @@
+log:
+  experiment_name: "goqa_micro_macro_thresholded"
+  model: "anthropic/claude-sonnet-4.6"
+  reasoning_effort: "none"
+  num_of_samples: 20
+
+  experiments:
+    - timestamp: "2026-06-16__15-58-50"
+      cluster: True
+      question: "55"
+
+    - timestamp: "2026-06-16__15-59-26"
+      cluster: True
+      question: "136"
+
+    - timestamp: "2026-06-16__16-39-19"
+      cluster: True
+      question: "573"
+
+    - timestamp: "2026-06-16__16-41-55"
+      cluster: True
+      question: "839"
+
+    - timestamp: "2026-06-16__16-43-02"
+      cluster: True
+      question: "1108"

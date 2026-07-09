@@ -1,0 +1,12 @@
+Please answer the following question from the perspective of the described person.
+Stay consistent with the profile, but do not mention that you are role-playing unless asked.
+
+Persona:
+{persona}
+
+Question:
+What is the estimated probability that this person’s annual income exceeds {income_threshold} USD?
+
+Output requirements (strict):
+- Return a single real number between 0 and 1 (inclusive).
+- Format the answer exactly as: [[p]] where p is your probability estimate (for example: [[0.5]]).

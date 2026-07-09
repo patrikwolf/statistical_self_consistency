@@ -1,0 +1,29 @@
+experiments_log:
+  decomposition: ["AGEP", "COW", "WKHP", "OCCP"]
+  num_of_samples: 20
+
+  experiments:
+    - model: "openai/gpt-5.4"
+      reasoning_effort: "none"
+      timestamp: "2026-04-21__00-08-54"
+      cluster: True
+
+    - model: "openai/gpt-4o-mini"
+      reasoning_effort: "none"
+      timestamp: "2026-04-21__02-22-49"
+      cluster: True
+
+    - model: "google/gemini-3.1-pro-preview"
+      reasoning_effort: "none"
+      timestamp: "2026-04-21__02-32-47"
+      cluster: True
+
+    - model: "google/gemini-3-flash-preview"
+      reasoning_effort: "none"
+      timestamp: "2026-04-27__20-26-26"
+      cluster: True
+
+    - model: "anthropic/claude-sonnet-4.6"
+      reasoning_effort: "none"
+      timestamp: "2026-04-21__02-34-08"
+      cluster: True

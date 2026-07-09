@@ -1,0 +1,66 @@
+model_variation:
+  experiment_name: "aggregation_refinement"
+  decomposition: ["AGEP", "COW", "WKHP", "OCCP"]
+  income_threshold: 40000
+  num_of_samples: 100
+
+  experiments:
+    - model: "openai/gpt-5.4"
+      reasoning_effort: "none"
+      cluster: True
+      timestamp: "2026-04-21__00-08-54"
+
+    - model: "openai/gpt-4o-mini"
+      reasoning_effort: "none"
+      cluster: True
+      timestamp: "2026-04-21__02-22-49"
+
+    - model: "google/gemini-3.1-pro-preview"
+      reasoning_effort: "low"
+      cluster: True
+      timestamp: "2026-04-21__02-32-47"
+
+    - model: "google/gemini-3-flash-preview"
+      reasoning_effort: "none"
+      cluster: True
+      timestamp: "2026-04-27__20-26-26"
+
+    - model: "anthropic/claude-sonnet-4.6"
+      reasoning_effort: "none"
+      cluster: True
+      timestamp: "2026-04-21__02-34-08"
+
+    - model: "anthropic/claude-opus-4.7"
+      reasoning_effort: "none"
+      cluster: True
+      timestamp: "2026-04-27__20-20-55"
+
+    - model: "x-ai/grok-4.20"
+      reasoning_effort: "none"
+      cluster: True
+      timestamp: "2026-04-27__20-12-08"
+
+    - model: "x-ai/grok-4.1-fast"
+      reasoning_effort: "none"
+      cluster: True
+      timestamp: "2026-04-27__20-08-56"
+
+    - model: "qwen/qwen3.6-plus"
+      reasoning_effort: "none"
+      cluster: True
+      timestamp: "2026-04-21__02-51-07"
+
+    - model: "moonshotai/kimi-k2.6"
+      reasoning_effort: "none"
+      cluster: True
+      timestamp: "2026-04-27__20-06-37"
+
+    #- model: "allenai/olmo-3.1-32b-instruct"
+    #  reasoning_effort: "none"
+    #  cluster: True
+    #  timestamp: "2026-04-21__03-04-43"
+
+    #- model: "meta-llama/llama-3.3-70b-instruct"
+    #  reasoning_effort: "none"
+    #  cluster: True
+    #  timestamp: "2026-04-21__14-12-18"

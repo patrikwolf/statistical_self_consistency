@@ -1,0 +1,2118 @@
+[
+    {
+        "identifier_wvs": "MENA_15",
+        "question_wvs": "How satisfied are you with the following? - The way the local authorities are solving the region's affairs",
+        "question_global_opinion_qa": "How satisfied are you with the following?\n\nThe way the local authorities are solving the region's affairs",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "H346",
+        "question_wvs": "Please tell me if you strongly agree, agree, disagree, or strongly disagree with the following statements: A man who cannot father children is not a real man",
+        "question_global_opinion_qa": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements:\n\nA man who cannot father children is not a real man",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "H326",
+        "question_wvs": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements: If a man has a girlfriend or wife, he should know where she is all the time",
+        "question_global_opinion_qa": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements:\n\nIf a man has a girlfriend or wife, he should know where she is all the time",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q225",
+        "question_wvs": "In your view, how often do the following things occur in this country's elections? Opposition candidates are prevented from running",
+        "question_global_opinion_qa": "In your view, how often do the following things occur in this country's elections?\n\nOpposition candidates are prevented from running",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q82_SCO",
+        "question_wvs": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all?: The Shanghai Cooperation Organization",
+        "question_global_opinion_qa": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all?:\n\nThe [Shanghai Cooperation Organization]",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q28",
+        "question_wvs": "For each of the following statements I read out, can you tell me how much you agree with each. Do you agree strongly, agree, disagree, or disagree strongly? - When a mother works for pay, the children suffer",
+        "question_global_opinion_qa": "For each of the following statements I read out, can you tell me how much you agree with each. Do you agree strongly, agree, disagree, or disagree strongly?\n\nWhen a mother works for pay, the children suffer",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "MY_AQ3",
+        "question_wvs": "Suppose you could choose between working for different kinds of companies, which one would you prefer?",
+        "question_global_opinion_qa": "Suppose you could choose between working for different kinds of companies, which one would you prefer?",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q22",
+        "question_wvs": "On this list are various groups of people. Could you please mention any that you would not like to have as neighbors? - Homosexuals",
+        "question_global_opinion_qa": "On this list are various groups of people. Could you please mention any that you would not like to have as neighbors?\n\nHomosexuals",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q70",
+        "question_wvs": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all? The courts",
+        "question_global_opinion_qa": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all?\n\nThe courts",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q137",
+        "question_wvs": "How frequently do the following things occur in your neighborhood? Street violence and fights",
+        "question_global_opinion_qa": "How frequently do the following things occur in your neighborhood?:\n\nStreet violence and fights",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "MENA_10",
+        "question_wvs": "How satisfied are you with the following? - The way democracy is developing in our country",
+        "question_global_opinion_qa": "How satisfied are you with the following?\n\nThe way democracy is developing in our country",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "PRI_QB7",
+        "question_wvs": "How have your perceptions of security changed from the experience of Hurricane Maria?",
+        "question_global_opinion_qa": "How have your perceptions of security changed from the experience of Hurricane Maria?",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "H321",
+        "question_wvs": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements: A woman should tolerate violence to keep the family together",
+        "question_global_opinion_qa": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements:\n\nA woman should tolerate violence to keep the family together",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q189",
+        "question_wvs": "Please tell me for each of the following statements whether you think it can always be justified, never be justified, or something in between, using this card. For a man to beat his wife",
+        "question_global_opinion_qa": "Please tell me for each of the following statements whether you think it can always be justified, never be justified, or something in between, using this card.\n\nFor a man to beat his wife",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q88",
+        "question_wvs": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all? The World Health Organization (WHO)",
+        "question_global_opinion_qa": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all?\n\nThe World Health Organization (WHO)",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q119",
+        "question_wvs": "Can you tell me how strongly you agree or disagree with the following statement: On the whole, women are less corrupt than men",
+        "question_global_opinion_qa": "Can you tell me how strongly you agree or disagree with the following statement:\n\nOn the whole, women are less corrupt than men",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q228",
+        "question_wvs": "In your view, how often do the following things occur in this country's elections? Journalists provide fair coverage of elections",
+        "question_global_opinion_qa": "In your view, how often do the following things occur in this country's elections?\n\nJournalists provide fair coverage of elections",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "CO_COQ78",
+        "question_wvs": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all? - Family Compensation Funds",
+        "question_global_opinion_qa": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all?:\n\nFamily Compensation Funds",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "PRI_QB1",
+        "question_wvs": "How have your perceptions about social values, norms, stereotypes changed from the experience of Hurricane Maria?",
+        "question_global_opinion_qa": "How have your perceptions about social values, norms, stereotypes changed from the experience of Hurricane Maria?",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q180",
+        "question_wvs": "Please tell me for each of the following statements whether you think it can always be justified, never be justified, or something in between, using this card. Cheating on taxes if you have a chance",
+        "question_global_opinion_qa": "Please tell me for each of the following statements whether you think it can always be justified, never be justified, or something in between, using this card.\n\nCheating on taxes if you have a chance",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q10",
+        "question_wvs": "Here is a list of qualities that children can be encouraged to learn at home. Which, if any, do you consider to be especially important? Please choose up to five. - Feeling of responsibility",
+        "question_global_opinion_qa": "Here is a list of qualities that children can be encouraged to learn at home. Which, if any, do you consider to be especially important? Please choose up to five.\n\nFeeling of responsibility",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q186",
+        "question_wvs": "Please tell me for each of the following statements whether you think it can always be justified, never be justified, or something in between, using this card. Sex before marriage",
+        "question_global_opinion_qa": "Please tell me for each of the following statements whether you think it can always be justified, never be justified, or something in between, using this card.\n\nSex before marriage",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q167",
+        "question_wvs": "In which of the following things do you believe, if you believe in any? - Hell",
+        "question_global_opinion_qa": "In which of the following things do you believe, if you believe in any?\n\nHell",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q259",
+        "question_wvs": "People have different views about themselves and how they relate to the world. Using this card, would you tell me how strongly you agree or disagree with each of the following statements about how you see yourself? World",
+        "question_global_opinion_qa": "People have different views about themselves and how they relate to the world. Using this card, would you tell me how strongly you agree or disagree with each of the following statements about how you see yourself?\n\nWorld",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q252",
+        "question_wvs": "How satisfied are you with how the political system is functioning in your country these days? On the scale from 1 to 10 below, 1 means not satisfied at all and 10 means completely satisfied.",
+        "question_global_opinion_qa": "How satisfied are you with how the political system is functioning in your country these days? On the scale from 1 to 10 below, 1 means not satisfied at all and 10 means completely satisfied.",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "MENA_37",
+        "question_wvs": "In the city or area where you live, are you satisfied or dissatisfied with the quality of the following? - The quality of housing",
+        "question_global_opinion_qa": "In the city or area where you live, are you satisfied or dissatisfied with the quality of the following?\n\nThe quality of housing",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q101",
+        "question_wvs": "Now I am going to read out a list of voluntary organizations; for each one, could you tell me whether you are a member, an active member, an inactive member or not a member of that type of organization? Humanitarian or charitable organization",
+        "question_global_opinion_qa": "Now I am going to read out a list of voluntary organizations; for each one, could you tell me whether you are a member, an active member, an inactive member or not a member of that type of organization?\n\nHumanitarian or charitable organization",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "MENA_34",
+        "question_wvs": "In the city or area where you live, are you satisfied or dissatisfied with the quality of the following? - The quality of air",
+        "question_global_opinion_qa": "In the city or area where you live, are you satisfied or dissatisfied with the quality of the following?\n\nThe quality of air",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "MENA_38",
+        "question_wvs": "In the city or area where you live, are you satisfied or dissatisfied with the quality of the following? - The beauty or physical setting of city",
+        "question_global_opinion_qa": "In the city or area where you live, are you satisfied or dissatisfied with the quality of the following?\n\nThe beauty or physical setting of city",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q36",
+        "question_wvs": "Do you agree, disagree or neither agree nor disagree with the following statements? - Homosexual couples are as good parents as other couples",
+        "question_global_opinion_qa": "Do you agree, disagree or neither agree nor disagree with the following statements?:\n\nHomosexual couples are as good parents as other couples",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q99",
+        "question_wvs": "Now I am going to read out a list of voluntary organizations; for each one, could you tell me whether you are a member, an active member, an inactive member or not a member of that type of organization? Environmental organization",
+        "question_global_opinion_qa": "Now I am going to read out a list of voluntary organizations; for each one, could you tell me whether you are a member, an active member, an inactive member or not a member of that type of organization?\n\nEnvironmental organization",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "MENA_01",
+        "question_wvs": "In your opinion, to what extent is the government working to crackdown on corruption and root out bribes?",
+        "question_global_opinion_qa": "In your opinion, to what extent is the government working to crackdown on corruption and root out bribes?",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q75",
+        "question_wvs": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all? Universities",
+        "question_global_opinion_qa": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all?\n\nUniversities",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q19",
+        "question_wvs": "On this list are various groups of people. Could you please mention any that you would not like to have as neighbors? - People of a different race",
+        "question_global_opinion_qa": "On this list are various groups of people. Could you please mention any that you would not like to have as neighbors?\n\nPeople of a different race",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q61",
+        "question_wvs": "I'd like to ask you how much you trust people from various groups. Could you tell me for each whether you trust people from this group completely, somewhat, not very much or not at all? People you meet for the first time",
+        "question_global_opinion_qa": "I 'd like to ask you how much you trust people from various groups. Could you tell me for each whether you trust people from this group completely, somewhat, not very much or not at all?\n\nPeople you meet for the first time",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q115",
+        "question_wvs": "Among the following groups of people, how many do you believe are involved in corruption? Tell me for each group if you believe it is none of them, few of them, most of them or all of them? Local authorities",
+        "question_global_opinion_qa": "Among the following groups of people, how many do you believe are involved in corruption? Tell me for each group if you believe it is none of them, few of them, most of them or all of them?:\n\nLocal authorities",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q79",
+        "question_wvs": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all? Environmental organizations",
+        "question_global_opinion_qa": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all?\n\nEnvironmental organizations",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q178",
+        "question_wvs": "Please tell me for each of the following statements whether you think it can always be justified, never be justified, or something in between, using this card. - Avoiding a fare on public transport",
+        "question_global_opinion_qa": "Please tell me for each of the following statements whether you think it can always be justified, never be justified, or something in between, using this card.\n\nAvoiding a fare on public transport",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q90",
+        "question_wvs": "Nowadays there's a lot of talk about international organizations. People sometimes say that international organizations should prioritize improving people's lives, even if this may imply that decisions are not made democratically. What do you think should international organizations prioritize, being effective or being democratic? If your views are somewhat mixed, choose the appropriate number in between.",
+        "question_global_opinion_qa": "Nowadays there's a lot of talk about international organizations. People sometimes say that international organizations should prioritize improving people's lives, even if this may imply that decisions are not made democratically. What do you think should international organizations prioritize, being effective or being democratic?. If your views are somewhat mixed, choose the appropriate number in between.",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q125",
+        "question_wvs": "From your point of view, what have been the effects of immigrants on the development of this country? - Give asylum to political refugees",
+        "question_global_opinion_qa": "From your point of view, what have been the effects of immigrants on the development of [your country]?:\n\nGive asylum to political refugees",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q184",
+        "question_wvs": "Please tell me for each of the following statements whether you think it can always be justified, never be justified, or something in between, using this card. Abortion",
+        "question_global_opinion_qa": "Please tell me for each of the following statements whether you think it can always be justified, never be justified, or something in between, using this card.\n\nAbortion",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "MENA_06",
+        "question_wvs": "I am going to ask a number of questions related to the current government's performance. How would you evaluate the performance of the current government in...? Narrowing the gap between rich and poor",
+        "question_global_opinion_qa": "I am going to ask a number of questions related to the current government's performance. How would you evaluate the performance of the current government in...?\n\nNarrowing the gap between rich and poor",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q191",
+        "question_wvs": "Please tell me for each of the following statements whether you think it can always be justified, never be justified, or something in between, using this card. Violence against other people",
+        "question_global_opinion_qa": "Please tell me for each of the following statements whether you think it can always be justified, never be justified, or something in between, using this card.\n\nViolence against other people",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "MENA_07",
+        "question_wvs": "I am going to ask a number of questions related to the current government's performance. How would you evaluate the performance of the current government in...? Controlling prices",
+        "question_global_opinion_qa": "I am going to ask a number of questions related to the current government's performance. How would you evaluate the performance of the current government in...?\n\nControlling prices",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "MENA_03",
+        "question_wvs": "To what extent do you agree or disagree with the following statement: \"Citizens must support the government's decisions even if they disagree with them\"?",
+        "question_global_opinion_qa": "To what extent do you agree or disagree with the following statement: \"Citizens must support the government's decisions even if they disagree with them\"?",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q86",
+        "question_wvs": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all? The North Atlantic Treaty Organization (NATO)",
+        "question_global_opinion_qa": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all?\n\nThe North Atlantic Treaty Organization (NATO)",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "MX_M303",
+        "question_wvs": "In politics, people talk about? Progressives? and conservatives ?. In general, how would you place your views on this scale?",
+        "question_global_opinion_qa": "In politics, people talk about? Progressives? and conservatives ?. In general, how would you place your views on this scale?",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q76",
+        "question_wvs": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all? Elections",
+        "question_global_opinion_qa": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all?\n\nElections",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q24",
+        "question_wvs": "On this list are various groups of people. Could you please mention any that you would not like to have as neighbors? Heavy drinkers",
+        "question_global_opinion_qa": "On this list are various groups of people. Could you please mention any that you would not like to have as neighbors?\n\nHeavy drinkers",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "PRI_QB8",
+        "question_wvs": "How have your perceptions of post materialism changed from the experience of Hurricane Maria?",
+        "question_global_opinion_qa": "How have your perceptions of post materialism changed from the experience of Hurricane Maria?",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "WEE18",
+        "question_wvs": "If a woman works outside the home for money, how likely is it that the following consequences might occur: She may have conflicts with her in-laws",
+        "question_global_opinion_qa": "If a woman works outside of the home for money, how likely is it that the following consequences might occur:\n\nShe may have conflicts with her in-laws",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "KR_B6",
+        "question_wvs": "Do you agree or disagree for each of the following statements? - The Gaesong Industrial Complex should be reopened",
+        "question_global_opinion_qa": "The Gaesong Industrial Complex should be reopened.",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q181",
+        "question_wvs": "Please tell me for each of the following statements whether you think it can always be justified, never be justified, or something in between, using this card. Someone accepting a bribe in the course of their duties",
+        "question_global_opinion_qa": "Please tell me for each of the following statements whether you think it can always be justified, never be justified, or something in between, using this card.\n\nSomeone accepting a bribe in the course of their duties",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q82_ARABLEAGUE",
+        "question_wvs": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all? The Arab League",
+        "question_global_opinion_qa": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all?\n\nThe Arab League",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q133",
+        "question_wvs": "How frequently do the following things occur in your neighborhood? Alcohol consumed in the streets",
+        "question_global_opinion_qa": "How frequently do the following things occur in your neighborhood?\n\nAlcohol consumed in the streets",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q105",
+        "question_wvs": "Now I am going to read out a list of voluntary organizations; for each one, could you tell me whether you are a member, an active member, an inactive member or not a member of that type of organization? Other organization",
+        "question_global_opinion_qa": "Now I am going to read out a list of voluntary organizations; for each one, could you tell me whether you are a member, an active member, an inactive member or not a member of that type of organization?\n\nOther organization",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q33",
+        "question_wvs": "Do you agree, disagree or neither agree nor disagree with the following statements? - When jobs are scarce, men should have more right to a job than women",
+        "question_global_opinion_qa": "Do you agree, disagree or neither agree nor disagree with the following statements?\n\nWhen jobs are scarce, men should have more right to a job than women",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "H339 (G326)",
+        "question_wvs": "Please tell me if you strongly agree, agree, disagree, or strongly disagree with the following statements: Only when a woman has a child is she a real woman",
+        "question_global_opinion_qa": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements:\n\nOnly when a woman has a child is she a real woman",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q4",
+        "question_wvs": "For each of the following aspects, indicate how important it is in your life. Would you say it is very important, rather important, not very important or not important at all? - Politics",
+        "question_global_opinion_qa": "For each of the following aspects, indicate how important it is in your life. Would you say it is very important, rather important, not very important or not important at all\n\nPolitics",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q104",
+        "question_wvs": "Now I am going to read out a list of voluntary organizations; for each one, could you tell me whether you are a member, an active member, an inactive member or not a member of that type of organization? Women's group",
+        "question_global_opinion_qa": "Now I am going to read out a list of voluntary organizations; for each one, could you tell me whether you are a member, an active member, an inactive member or not a member of that type of organization?\n\nWomen's group",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q107",
+        "question_wvs": "Now I'd like you to tell me your views on various issues. How would you place your views on this scale? 1 means you agree completely with the statement on the left; 10 means you agree completely with the statement on the right; and if your views fall somewhere in between, you can choose any number in between.",
+        "question_global_opinion_qa": "Now I'd like you to tell me your views on various issues. How would you place your views on this scale? 1 means you agree completely with the statement on the left; 10 means you agree completely with the statement on the right; and if your views fall somewhere in between, you can choose any number in between.\n\nPrivate vs state ownership of business",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "G338a",
+        "question_wvs": "How easy is modern contraceptives use to access for women in your community?",
+        "question_global_opinion_qa": "How easy is modern contraceptives use to access for women in your community?",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "KR_A23",
+        "question_wvs": "How much peaceful do you think of on-going diplomacy and security in South Korea?",
+        "question_global_opinion_qa": "How much peaceful do you think of on-going diplomacy and security in South Korea",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "MENA_13",
+        "question_wvs": "How satisfied are you with the following? - The healthcare system in our country",
+        "question_global_opinion_qa": "How satisfied are you with the following?\n\nThe healthcare system in our country",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q82_OAS",
+        "question_wvs": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all? The Organization of American States (OAS)",
+        "question_global_opinion_qa": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all?\n\nThe Organization of American States (OAE)",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "MENA_05",
+        "question_wvs": "I am going to ask a number of questions related to the current government's performance. How would you evaluate the performance of the current government in...? Creating employment opportunities",
+        "question_global_opinion_qa": "I am going to ask a number of questions related to the current government's performance. How would you evaluate the performance of the current government in...?\n\nCreating employment opportunities",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q98",
+        "question_wvs": "Now I am going to read out a list of voluntary organizations; for each one, could you tell me whether you are a member, an active member, an inactive member or not a member of that type of organization? Political party",
+        "question_global_opinion_qa": "Now I am going to read out a list of voluntary organizations; for each one, could you tell me whether you are a member, an active member, an inactive member or not a member of that type of organization?\n\nPolitical party",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q229",
+        "question_wvs": "In your view, how often do the following things occur in this country's elections? Election officials are fair",
+        "question_global_opinion_qa": "In your view, how often do the following things occur in this country's elections?\n\nElection officials are fair",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q199",
+        "question_wvs": "How interested would you say you are in politics?",
+        "question_global_opinion_qa": "How interested would you say you are in politics?",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q93",
+        "question_wvs": "Here are some questions about international organizations. Many people don't know the answers to these questions, but if you do please tell me. Which of the following problems does the organization Amnesty International deal with?",
+        "question_global_opinion_qa": "Here are some questions about international organizations. Many people don't know the answers to these questions, but if you do please tell me.\n\nWhich of the following problems does the organization Amnesty International deal with?",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "H338 (G325)",
+        "question_wvs": "Please tell me if you strongly agree, agree, disagree, or strongly disagree with the following statements: It is a woman's responsibility to avoid getting pregnant",
+        "question_global_opinion_qa": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements:\n\nIt is a woman's responsibility to avoid getting pregnant",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "H328",
+        "question_wvs": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements: Gainful employment is good but home and children is what most women really want",
+        "question_global_opinion_qa": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements:\n\nGainful employment is good but home and children is what most women really want",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "CO_COQ26",
+        "question_wvs": "On this list are various groups of people. Could you please mention any that you would not like to have as neighbors? - Demobilized from armed groups",
+        "question_global_opinion_qa": "On this list are various groups of people. Could you please mention any that you would not like to have as neighbors?:\n\nDemobilized from armed groups",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "H317",
+        "question_wvs": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements: A man should pay more attention to his mother's opinion than his wife's",
+        "question_global_opinion_qa": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements:\n\nA man should pay more attention to his mother's opinion than his wife's",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "MX_M89",
+        "question_wvs": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all?: The National Electoral Institute, INE",
+        "question_global_opinion_qa": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all?:\n\n\nThe National Electoral Institute, INE",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q163",
+        "question_wvs": "All things considered, would you say that the world is better off, or worse off, because of science and technology? Please tell me which comes closest to your view on this scale: 1 means that \"the world is a lot worse off,\" and 10 means that \"the world is a lot better off.\" The world is better off, or worse off, because of science and technology",
+        "question_global_opinion_qa": "All things considered, would you say that the world is better off, or worse off, because of science and technology? Please tell me which comes closest to your view on this scale: 1 means that \"the world is a lot worse off,\" and 10 means that \"the world is a lot better off.\"\n\nThe world is better off, or worse off, because of science and technology",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "H349",
+        "question_wvs": "Please tell me if you strongly agree, agree, disagree, or strongly disagree with the following statements: A homosexual man is not a \"real man\"",
+        "question_global_opinion_qa": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements:\n\nA homosexual man is not a \"real man\"",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q42",
+        "question_wvs": "On this card are three basic kinds of attitudes concerning the society we live in. Please choose the one which best describes your own opinion.",
+        "question_global_opinion_qa": "On this card are three basic kinds of attitudes concerning the society we live in. Please choose the one which best describes your own opinion.",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q12",
+        "question_wvs": "Here is a list of qualities that children can be encouraged to learn at home. Which, if any, do you consider to be especially important? Please choose up to five. - Tolerance and respect for other people",
+        "question_global_opinion_qa": "Here is a list of qualities that children can be encouraged to learn at home. Which, if any, do you consider to be especially important? Please choose up to five.\n\nTolerance and respect for other people",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "MENA_02",
+        "question_wvs": "Some people say that nowadays it is impossible to get a job without wasta whilst others are persuaded that posts are attributed according to qualifications. Through the examples that you personally encountered with recently, you see this as...",
+        "question_global_opinion_qa": "Some people say that nowadays it is impossible to get a job without wasta whilst others are persuaded that posts are attributed according to qualifications. Through the examples that you personally encountered with recently, you see this as...",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q59",
+        "question_wvs": "I'd like to ask you how much you trust people from various groups. Could you tell me for each whether you trust people from this group completely, somewhat, not very much or not at all? Your neighborhood",
+        "question_global_opinion_qa": "I 'd like to ask you how much you trust people from various groups. Could you tell me for each whether you trust people from this group completely, somewhat, not very much or not at all?\n\nYour neighborhood",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q92",
+        "question_wvs": "Here are some questions about international organizations. Many people don't know the answers to these questions, but if you do please tell me. Where are the headquarters of the International Monetary Fund (IMF) located?",
+        "question_global_opinion_qa": "Here are some questions about international organizations. Many people don't know the answers to these questions, but if you do please tell me.\n\nWhere are the headquarters of the International Monetary Fund (IMF) located?",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "H313",
+        "question_wvs": "How frequently do the following things occur in your neighborhood? Men and boys hurting women and girls",
+        "question_global_opinion_qa": "How frequently do the following things occur in your neighborhood?\n\nMen and boys hurting women and girls",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q114",
+        "question_wvs": "Among the following groups of people, how many do you believe are involved in corruption? Tell me for each group if you believe it is none of them, few of them, most of them or all of them? Business executives",
+        "question_global_opinion_qa": "Among the following groups of people, how many do you believe are involved in corruption? Tell me for each group if you believe it is none of them, few of them, most of them or all of them?:\n\nBusiness executives",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q211",
+        "question_wvs": "Now I'd like you to look at this card. I'm going to read out some different forms of political action that people can take, and I'd like you to tell me, for each one, whether you have actually done any of these things, whether you might do it or would never, under any circumstances, do it. Attending peaceful demonstrations",
+        "question_global_opinion_qa": "Now I'd like you to look at this card. I'm going to read out some different forms of political action that people can take, and I'd like you to tell me, for each one, whether you have actually done any of these things, whether you might do it or would never, under any circumstances, do it.\n\nAttending peaceful demonstrations",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q2",
+        "question_wvs": "For each of the following aspects, indicate how important it is in your life. Would you say it is very important, rather important, not very important or not important at all? - Friends",
+        "question_global_opinion_qa": "For each of the following aspects, indicate how important it is in your life. Would you say it is very important, rather important, not very important or not important at all\n\nFriends",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "H331",
+        "question_wvs": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements: It is important for girls to continue their schooling even if they become pregnant and have children",
+        "question_global_opinion_qa": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements:\n\nIt is important for girls to continue their schooling even if they become pregnant and have children",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q17",
+        "question_wvs": "Here is a list of qualities that children can be encouraged to learn at home. Which, if any, do you consider to be especially important? Please choose up to five. - Obedience",
+        "question_global_opinion_qa": "Here is a list of qualities that children can be encouraged to learn at home. Which, if any, do you consider to be especially important? Please choose up to five.\n\nObedience",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "H324",
+        "question_wvs": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements: Men, not women, should really be the ones to bring money, to provide for the family",
+        "question_global_opinion_qa": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements:\n\nMen, not women, should really be the ones to bring money, to provide for the family",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q82_ECO",
+        "question_wvs": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all? Economic Cooperation Organization",
+        "question_global_opinion_qa": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all?\n\nEconomic Cooperation Organization",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q121",
+        "question_wvs": "Now we would like to know your opinion about the people from other countries who come to live in this country - the immigrants. How would you evaluate the impact of these people on the development of this country?",
+        "question_global_opinion_qa": "Now we would like to know your opinion about the people from other countries who come to live in [your country] - the immigrants. How would you evaluate the impact of these people on the development of [your country]?",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q194",
+        "question_wvs": "Please tell me for each of the following statements whether you think it can always be justified, never be justified, or something in between, using this card. Political violence",
+        "question_global_opinion_qa": "Please tell me for each of the following statements whether you think it can always be justified, never be justified, or something in between, using this card.\n\nPolitical violence",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q213",
+        "question_wvs": "What about these forms of political action and social activism that people can take?. Please, tell me for each of them if you have done any of these things, whether you might do it or would never under any circumstances do it: Donating to a group or campaign",
+        "question_global_opinion_qa": "What about these forms of political action and social activism that people can take?. Please, tell me for each of them if you have done any of these things, whether you might do it or would never under any circumstances do it:\n\nDonating to a group or campaign",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q152",
+        "question_wvs": "People sometimes talk about what the aims of this country should be for the next ten years. On this card are listed some of the goals which different people would give top priority. Would you please say which one of these you consider the most important?",
+        "question_global_opinion_qa": "People sometimes talk about what the aims of this country should be for the next ten years. On this card are listed some of the goals which different people would give top priority. Would you please say which one of these you consider the most important?",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "H335",
+        "question_wvs": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements: A girl should wait to have children until she is at least 18 years old, even if she is married",
+        "question_global_opinion_qa": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements:\n\nA girl should wait to have children until she is at least 18 years old, even if she is married",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "H329",
+        "question_wvs": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements: On the whole, family life suffers when women works full time",
+        "question_global_opinion_qa": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements:\n\nOn the whole, family life suffers when women works full time",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "H318",
+        "question_wvs": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements: A woman who shows that she is interested in sex is considered vulgar",
+        "question_global_opinion_qa": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements:\n\nA woman who shows that she is interested in sex is considered indecent/rude/ill-mannered/vulgar (wording)",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "H312",
+        "question_wvs": "How frequently do the following things occur in your neighborhood? Women and girls trading sex for money",
+        "question_global_opinion_qa": "How frequently do the following things occur in your neighborhood?\n\nWomen and girls trading sex for money",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "MENA_35",
+        "question_wvs": "In the city or area where you live, are you satisfied or dissatisfied with the quality of the following? - The quality of water",
+        "question_global_opinion_qa": "In the city or area where you live, are you satisfied or dissatisfied with the quality of the following?\n\nThe quality of water",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "MENA_17",
+        "question_wvs": "If you had your preference, in which of the following would you prefer to work?",
+        "question_global_opinion_qa": "If you had your preference, in which of the following would you prefer to work?",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "KR_A13",
+        "question_wvs": "Do you think that all South Koreans are happy? Or is there large gap among each person?",
+        "question_global_opinion_qa": "All South Koreans are happy Or there is large gap among each person",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q67",
+        "question_wvs": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all? Television",
+        "question_global_opinion_qa": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all?\n\nTelevision",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q234",
+        "question_wvs": "Do you think that honest elections play an important role in deciding whether you and your family are able to make a good living?. How important would you say this is-very important, fairly important, not very important or not at all important?",
+        "question_global_opinion_qa": "Some people think that having honest elections makes a lot of difference in their lives; other people think that it doesn't matter much. How important would you say is having honest elections for you-very important,\nrather important, not very important or not at all important?",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q141",
+        "question_wvs": "Which of the following things have you done for reasons of security? Carried a knife, gun or other weapon",
+        "question_global_opinion_qa": "Which of the following things have you done for reasons of security?\n\nCarried a knife, gun or other weapon",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "H327",
+        "question_wvs": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements: It is a man's duty to exercise guardianship over his female relatives",
+        "question_global_opinion_qa": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements:\n\nIt is a man's duty to exercise guardianship over his female relatives",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q84",
+        "question_wvs": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all? The International Monetary Fund (IMF)",
+        "question_global_opinion_qa": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all?\n\nThe International Monetary Fund (IMF)",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "MX_150",
+        "question_wvs": "Between equality and security, what is more important?",
+        "question_global_opinion_qa": "Between equality and security, what is more important?",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q170",
+        "question_wvs": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements: The only acceptable religion is my religion",
+        "question_global_opinion_qa": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements:\n\nThe only acceptable religion is my religion",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "KR_A3",
+        "question_wvs": "How much are you satisfied with your current work?",
+        "question_global_opinion_qa": "How much are you satisfied with your current work",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q127",
+        "question_wvs": "From your point of view, what have been the effects of immigrants on the development of this country? Help poor people establish new lives",
+        "question_global_opinion_qa": "From your point of view, what have been the effects of immigrants on the development of [your country]?:\n\nHelp poor people establish new lives",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q224",
+        "question_wvs": "In your view, how often do the following things occur in this country's elections? Votes are counted fairly",
+        "question_global_opinion_qa": "In your view, how often do the following things occur in this country's elections?\n\nVotes are counted fairly",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q233",
+        "question_wvs": "In your view, how often do the following things occur in this country's elections?: Women have equal opportunities to run the office",
+        "question_global_opinion_qa": "In your view, how often do the following things occur in this country's elections?:\n\nWomen have equal opportunities to run the office",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q212",
+        "question_wvs": "Now I'd like you to look at this card. I'm going to read out some different forms of political action that people can take, and I'd like you to tell me, for each one, whether you have actually done any of these things, whether you might do it or would never, under any circumstances, do it. Joining strikes",
+        "question_global_opinion_qa": "Now I'd like you to look at this card. I'm going to read out some different forms of political action that people can take, and I'd like you to tell me, for each one, whether you have actually done any of these things, whether you might do it or would never, under any circumstances, do it.\n\nJoining strikes",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "MENA_36",
+        "question_wvs": "In the city or area where you live, are you satisfied or dissatisfied with the quality of the following? - The quality of health care",
+        "question_global_opinion_qa": "In the city or area where you live, are you satisfied or dissatisfied with the quality of the following?\n\nThe quality of health care",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q232",
+        "question_wvs": "In your view, how often do the following things occur in this country's elections? Voters are offered a genuine choice in the elections",
+        "question_global_opinion_qa": "In your view, how often do the following things occur in this country's elections?\n\nVoters are offered a genuine choice in the elections",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q182",
+        "question_wvs": "Please tell me for each of the following statements whether you think it can always be justified, never be justified, or something in between, using this card. Homosexuality",
+        "question_global_opinion_qa": "Please tell me for each of the following statements whether you think it can always be justified, never be justified, or something in between, using this card.\n\nHomosexuality",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "H311",
+        "question_wvs": "How frequently do the following things occur in your neighborhood? Sexual assault/rape",
+        "question_global_opinion_qa": "How frequently do the following things occur in your neighborhood?\n\nSexual assault/rape",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "IQ_Q65A",
+        "question_wvs": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all? - General Intelligence Service",
+        "question_global_opinion_qa": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all?:\n\nGeneral Intelligence Service",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "MX_M301",
+        "question_wvs": "Generally, do you consider yourself PRI, PAN, Green PRD or Morenoist? (INSIST): Is it considered very or something?",
+        "question_global_opinion_qa": "Generally, do you consider yourself PRI, PAN, Green PRD or Morenoist? (INSIST): Is it considered very or something?",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": null,
+        "question_wvs": null,
+        "question_global_opinion_qa": "Too much trust, too much confidence, or too little trust, or you never trust it, to what extent do you trust the following institutions? Do you trust \"religious institutions\"? To the researcher: You ask the listed items in the same way.",
+        "match": "manual",
+        "comment": "could not find the question in WVS"
+    },
+    {
+        "identifier_wvs": "KR_B4",
+        "question_wvs": "Do you agree or disagree for each of the following statements? - The National Security Law should be abolished",
+        "question_global_opinion_qa": "The National Security Law should be abolished.",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": null,
+        "question_wvs": null,
+        "question_global_opinion_qa": "I am now going to read out a few statements, and I would like you to think about the role of men and women in the community where you live. In general, who usually decides about the following things. 1 means that men usually decide and 9 means women that women usually decide - 5 means that men and women decide equally. (",
+        "match": "manual",
+        "comment": "assignment is not unique"
+    },
+    {
+        "identifier_wvs": "H333",
+        "question_wvs": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements: A girl should honor the decisions/wishes of her family even if she does not want to marry",
+        "question_global_opinion_qa": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements:\n\nA girl should honor the decisions/wishes of her family even if she does not want to marry",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "MENA_12",
+        "question_wvs": "How satisfied are you with the following? - The educational system in our country",
+        "question_global_opinion_qa": "How satisfied are you with the following?\n\nThe educational system in our country",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q85",
+        "question_wvs": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all? International Criminal Court (ICC)",
+        "question_global_opinion_qa": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all?\n\nInternational Criminal Court (ICC)",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "MENA_32",
+        "question_wvs": "In the city or area where you live, are you satisfied or dissatisfied with the quality of the following? - The roads and highways",
+        "question_global_opinion_qa": "In the city or area where you live, are you satisfied or dissatisfied with the quality of the following?\n\nThe roads and highways",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q198",
+        "question_wvs": "Do you think that this country's government should or should not have the right to do the following: Collect information about anyone living in this country without their knowledge",
+        "question_global_opinion_qa": "Do you think that this country's government should or should not have the right to do the following: Collect information about anyone living in this country without their knowledge",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q31",
+        "question_wvs": "For each of the following statements I read out, can you tell me how strongly you agree or disagree with each. Do you strongly agree, agree, disagree, or strongly disagree? - On the whole, men make better business executives than women do",
+        "question_global_opinion_qa": "For each of the following statements I read out, can you tell me how strongly you agree or disagree with each. Do you strongly agree, agree, disagree, or strongly disagree?\n\nOn the whole, men make better business executives than women do",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q218",
+        "question_wvs": "Now I'd like you to look at this card. I'm going to read out some other forms of political action that people can take using Internet and social media tools like Facebook, Twitter etc., and I'd like you to tell me, for each one, whether you have done any of these things, whether you might do it or would never under any circumstances do it: Signing an electronic petition",
+        "question_global_opinion_qa": "Now I'd like you to look at this card. I'm going to read out some other forms of political action that people can take using Internet and social media tools like Facebook, Twitter etc., and I'd like you to tell me, for each one, whether you have done any of these things, whether you might do it or would never under any circumstances do it:\n\nSigning an electronic petition",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q165",
+        "question_wvs": "In which of the following things do you believe, if you believe in any? - God",
+        "question_global_opinion_qa": "In which of the following things do you believe, if you believe in any?\n\nGod",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q57",
+        "question_wvs": "Generally speaking, would you say that most people can be trusted or that you need to be very careful in dealing with people?",
+        "question_global_opinion_qa": "Generally speaking, would you say that most people can be trusted or that you need to be very careful in dealing with people?",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "H351",
+        "question_wvs": "Please tell me if you strongly agree, agree, disagree, or strongly disagree with the following statements: A man should use violence, to get respect, if necessary",
+        "question_global_opinion_qa": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements:\n\nA man should use violence, to get respect, if necessary",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q6",
+        "question_wvs": "For each of the following aspects, indicate how important it is in your life. Would you say it is very important, rather important, not very important or not important at all? - Religion",
+        "question_global_opinion_qa": "For each of the following aspects, indicate how important it is in your life. Would you say it is very important, rather important, not very important or not important at all\n\nReligion",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "H325",
+        "question_wvs": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements: A man should always have the final say about decisions in his relationship or marriage",
+        "question_global_opinion_qa": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements:\n\nA man should always have the final say about decisions in his relationship or marriage",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q1",
+        "question_wvs": "For each of the following aspects, indicate how important it is in your life. Would you say it is very important, rather important, not very important or not important at all? - Family",
+        "question_global_opinion_qa": "For each of the following aspects, indicate how important it is in your life. Would you say it is very important, rather important, not very important or not important at all\n\nFamily",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q210",
+        "question_wvs": "Now I'd like you to look at this card. I'm going to read out some different forms of political action that people can take, and I'd like you to tell me, for each one, whether you have actually done any of these things, whether you might do it or would never, under any circumstances, do it. Joining in boycotts",
+        "question_global_opinion_qa": "Now I'd like you to look at this card. I'm going to read out some different forms of political action that people can take, and I'd like you to tell me, for each one, whether you have actually done any of these things, whether you might do it or would never, under any circumstances, do it.\n\nJoining in boycotts",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": null,
+        "question_wvs": null,
+        "question_global_opinion_qa": "I am now going to read out a few statements, and I would like you to think about the role of men and women in the community where you live. In general, who usually decides about the following things. 1 means that men usually decide and 9 means women that women usually decide - 5 means that men and women decide equally.",
+        "match": "manual",
+        "comment": "assignment is not unique"
+    },
+    {
+        "identifier_wvs": "Q138",
+        "question_wvs": "How frequently do the following things occur in your neighborhood? Sexual harassment",
+        "question_global_opinion_qa": "How frequently do the following things occur in your neighborhood?:\n\nSexual harassment",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q41",
+        "question_wvs": "Do you agree or disagree with the following statements? - Work should always come first, even if it means less spare time",
+        "question_global_opinion_qa": "Do you agree or disagree with the following statements?\n\nWork should always come first, even if it means less spare time",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "MENA_33",
+        "question_wvs": "In the city or area where you live, are you satisfied or dissatisfied with the quality of the following? - The schools",
+        "question_global_opinion_qa": "In the city or area where you live, are you satisfied or dissatisfied with the quality of the following?\n\nThe schools",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q176",
+        "question_wvs": "How much do you agree or disagree with the statement that nowadays one often has trouble deciding which moral rules are the right ones to follow?",
+        "question_global_opinion_qa": "How much do you agree or disagree with the statement that nowadays one often has trouble deciding which moral rules are the right ones to follow?",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q235",
+        "question_wvs": "I'm going to describe various types of political systems and ask what you think about each as a way of governing this country. For each one, would you say it is a very good, fairly good, fairly bad or very bad way of governing this country? Having a strong leader who does not have to bother with parliament and elections",
+        "question_global_opinion_qa": "I'm going to describe various types of political systems and ask what you think about each as a way of governing this country. For each one, would you say it is a very good, fairly good, fairly bad or very bad way of governing this country?\n\nHaving a strong leader who does not have to bother with parliament and elections",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "MENA_37B",
+        "question_wvs": "In the city or area where you live, are you satisfied or dissatisfied with the quality of the following?  - Beauty of construction",
+        "question_global_opinion_qa": "In the city or area where you live, are you satisfied or dissatisfied with the quality of the following?\n\nBeauty construction",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q187",
+        "question_wvs": "Please tell me for each of the following statements whether you think it can always be justified, never be justified, or something in between, using this card. Suicide",
+        "question_global_opinion_qa": "Please tell me for each of the following statements whether you think it can always be justified, never be justified, or something in between, using this card.\n\nSuicide",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q253",
+        "question_wvs": "How much respect is there for individual human rights nowadays in this country?",
+        "question_global_opinion_qa": "How much respect is there for individual human rights nowadays in this country?",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q209",
+        "question_wvs": "Now I'd like you to look at this card. I'm going to read out some different forms of political action that people can take, and I'd like you to tell me, for each one, whether you have actually done any of these things, whether you might do it or would never, under any circumstances, do it. Signing a petition",
+        "question_global_opinion_qa": "Now I'd like you to look at this card. I'm going to read out some different forms of political action that people can take, and I'd like you to tell me, for each one, whether you have actually done any of these things, whether you might do it or would never, under any circumstances, do it.\n\nSigning a petition",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q216",
+        "question_wvs": "What about these forms of political action and social activism that people can take?. Please, tell me for each of them if you have done any of these things, whether you might do it or would never under any circumstances do it: Encouraging others to vote",
+        "question_global_opinion_qa": "What about these forms of political action and social activism that people can take?. Please, tell me for each of them if you have done any of these things, whether you might do it or would never under any circumstances do it:\n\nEncouraging others to vote",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q139",
+        "question_wvs": "Which of the following things have you done for reasons of security? Didn't carry much money",
+        "question_global_opinion_qa": "Which of the following things have you done for reasons of security?\n\nDidn't carry much money",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q192",
+        "question_wvs": "Please tell me for each of the following statements whether you think it can always be justified, never be justified, or something in between, using this card. Terrorism as a political, ideological or religious mean",
+        "question_global_opinion_qa": "Please tell me for each of the following statements whether you think it can always be justified, never be justified, or something in between, using this card.\n\nTerrorism as a political, ideological or religious mean",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q82_SAARC",
+        "question_wvs": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all? The SAARC",
+        "question_global_opinion_qa": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all?\n\nThe SAARC",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q230",
+        "question_wvs": "In your view, how often do the following things occur in this country's elections? Rich people buy elections",
+        "question_global_opinion_qa": "In your view, how often do the following things occur in this country's elections?\n\nRich people buy elections",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q117",
+        "question_wvs": "Among the following groups of people, how many do you believe are involved in corruption? Tell me for each group if you believe it is none of them, few of them, most of them or all of them? Journalists and media",
+        "question_global_opinion_qa": "Among the following groups of people, how many do you believe are involved in corruption? Tell me for each group if you believe it is none of them, few of them, most of them or all of them?:\n\nJournalists and media",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q64",
+        "question_wvs": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all? The Churches (mosque, temple etc.)",
+        "question_global_opinion_qa": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all?\n\nThe Churches (mosque, temple etc.)",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q120",
+        "question_wvs": "How high is the risk in this country to be held accountable for giving or receiving a bribe, gift or favour in return for public service? To indicate your opinion, use a 10 - point scale where \"1\" means \"no risk at all\" and \"10\" means \"very high risk\".",
+        "question_global_opinion_qa": "How high is the risk in this country to be held accountable for giving or receiving a bribe, gift or favour in return for public service? To indicate your opinion, use a 10-point scale where \"1\" means \"no risk at all\" and \"10\" means \"very high risk\".",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q113",
+        "question_wvs": "Among the following groups of people, how many do you believe are involved in corruption? Tell me for each group if you believe it is none of them, few of them, most of them or all of them? State authorities",
+        "question_global_opinion_qa": "Among the following groups of people, how many do you believe are involved in corruption?. Tell me for each group if you believe it is none of them, few of them, most of them or all of them?:\n\nState authorities",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q177",
+        "question_wvs": "Please tell me for each of the following statements whether you think it can always be justified, never be justified, or something in between, using this card. - Claiming government benefits to which you are not entitled",
+        "question_global_opinion_qa": "Please tell me for each of the following statements whether you think it can always be justified, never be justified, or something in between, using this card.\n\nClaiming government benefits to which you are not entitled",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "MY_AQ10",
+        "question_wvs": "At school of university, have you ever taken part in any course or activity about entrepreneurship - that is turning ideas into action, developing your own projects?",
+        "question_global_opinion_qa": "At school of university, have you ever taken part in any course or activity about entrepreneurship - that is turning ideas into action, developing your own projects?",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q74",
+        "question_wvs": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all? The Civil Services",
+        "question_global_opinion_qa": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all?\n\nThe Civil Services",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q62",
+        "question_wvs": "I'd like to ask you how much you trust people from various groups. Could you tell me for each whether you trust people from this group completely, somewhat, not very much or not at all? People of another religion",
+        "question_global_opinion_qa": "I 'd like to ask you how much you trust people from various groups. Could you tell me for each whether you trust people from this group completely, somewhat, not very much or not at all?\n\nPeople of another religion",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q7",
+        "question_wvs": "Here is a list of qualities that children can be encouraged to learn at home. Which, if any, do you consider to be especially important? Please choose up to five. - Good manners",
+        "question_global_opinion_qa": "Here is a list of qualities that children can be encouraged to learn at home. Which, if any, do you consider to be especially important? Please choose up to five.\n\nGood manners",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q134",
+        "question_wvs": "How frequently do the following things occur in your neighborhood? Police or military interfere with people's private life",
+        "question_global_opinion_qa": "How frequently do the following things occur in your neighborhood?\n\nPolice or military interfere with people's private life",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q244",
+        "question_wvs": "Please tell me for each of the following things how essential you think it is as a characteristic of democracy. Use this scale where 1 means \"not at all an essential characteristic of democracy\" and 10 means it definitely is \"an essential characteristic of democracy. - People receive state aid for unemployment",
+        "question_global_opinion_qa": "Please tell me for each of the following things how essential you think it is as a characteristic of democracy. Use this scale where 1 means \"not at all an essential characteristic of democracy\" and 10 means it definitely is \"an essential characteristic of democracy\n\nPeople receive state aid for unemployment",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q45",
+        "question_wvs": "I'm going to read out a list of various changes in our way of life that might take place in the near future. Please tell me for each one, if it were to happen, whether you think it would be a good thing, a bad thing, or don't you mind? - Greater respect for authority",
+        "question_global_opinion_qa": "I'm going to read out a list of various changes in our way of life that might take place in the near future. Please tell me for each one, if it were to happen, whether you think it would be a good thing, a bad thing, or don't you mind?\n\nGreater respect for authority",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q23",
+        "question_wvs": "On this list are various groups of people. Could you please mention any that you would not like to have as neighbors? - People of a different religion",
+        "question_global_opinion_qa": "On this list are various groups of people. Could you please mention any that you would not like to have as neighbors?\n\nPeople of a different religion",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q214",
+        "question_wvs": "What about these forms of political action and social activism that people can take?. Please, tell me for each of them if you have done any of these things, whether you might do it or would never under any circumstances do it: Contacting a government official",
+        "question_global_opinion_qa": "What about these forms of political action and social activism that people can take?. Please, tell me for each of them if you have done any of these things, whether you might do it or would never under any circumstances do it:\n\nContacting a government official",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q82_EU",
+        "question_wvs": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all? The European Union",
+        "question_global_opinion_qa": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all?\n\nThe European Union",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q82_GULFCOOP",
+        "question_wvs": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all? Cooperation Council for the Arab states of Gulf (GCC)",
+        "question_global_opinion_qa": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all?\n\nCooperation Council for the Arab states of Gulf (GCC)",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q140",
+        "question_wvs": "Which of the following things have you done for reasons of security? Preferred not to go out at night",
+        "question_global_opinion_qa": "Which of the following things have you done for reasons of security?\n\nPreferred not to go out at night",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q237",
+        "question_wvs": "I'm going to describe various types of political systems and ask what you think about each as a way of governing this country. For each one, would you say it is a very good, fairly good, fairly bad or very bad way of governing this country? Having the army rule",
+        "question_global_opinion_qa": "I'm going to describe various types of political systems and ask what you think about each as a way of governing this country. For each one, would you say it is a very good, fairly good, fairly bad or very bad way of governing this country?\n\nHaving the army rule",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q39",
+        "question_wvs": "Do you agree or disagree with the following statements? - People who don't work turn lazy",
+        "question_global_opinion_qa": "Do you agree or disagree with the following statements?\n\nPeople who don't work turn lazy",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q82_NAFTA",
+        "question_wvs": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all? The NAFTA",
+        "question_global_opinion_qa": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all?\n\nThe NAFTA",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "H314",
+        "question_wvs": "How frequently do the following things occur in your neighborhood? Men and boys making unwanted sexual comments or gestures towards girls or women",
+        "question_global_opinion_qa": "How frequently do the following things occur in your neighborhood?\n\nMen and boys making unwanted sexual comments or gestures towards girls or women",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "KR_A18",
+        "question_wvs": "Do you think that job opportunities of all people are fair regardless of social and financial abilities of their parents or acquaintances?",
+        "question_global_opinion_qa": "Job opportunities of all people are fair regardless of social and financial abilities of their parents or acquaintances",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q20",
+        "question_wvs": "On this list are various groups of people. Could you please mention any that you would not like to have as neighbors? - People who have AIDS",
+        "question_global_opinion_qa": "On this list are various groups of people. Could you please mention any that you would not like to have as neighbors?\n\nPeople who have AIDS",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q248",
+        "question_wvs": "Please tell me for each of the following things how essential you think it is as a characteristic of democracy. Use this scale where 1 means \"not at all an essential characteristic of democracy\" and 10 means it definitely is \"an essential characteristic of democracy. - People obey their rulers",
+        "question_global_opinion_qa": "Please tell me for each of the following things how essential you think it is as a characteristic of democracy. Use this scale where 1 means \"not at all an essential characteristic of democracy\" and 10 means it definitely is \"an essential characteristic of democracy\n\nPeople obey their rulers",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q249",
+        "question_wvs": "Please tell me for each of the following things how essential you think it is as a characteristic of democracy. Use this scale where 1 means \"not at all an essential characteristic of democracy\" and 10 means it definitely is \"an essential characteristic of democracy. - Women have the same rights as men",
+        "question_global_opinion_qa": "Please tell me for each of the following things how essential you think it is as a characteristic of democracy. Use this scale where 1 means \"not at all an essential characteristic of democracy\" and 10 means it definitely is \"an essential characteristic of democracy\n\nWomen have the same rights as men",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q40",
+        "question_wvs": "Do you agree or disagree with the following statements? - Work is a duty towards society",
+        "question_global_opinion_qa": "Do you agree or disagree with the following statements?\n\nWork is a duty towards society",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q135",
+        "question_wvs": "How frequently do the following things occur in your neighborhood? Racist behavior",
+        "question_global_opinion_qa": "How frequently do the following things occur in your neighborhood?\n\nRacist behavior",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "H350",
+        "question_wvs": "Please tell me if you strongly agree, agree, disagree, or strongly disagree with the following statements: A \"real man\" should have as many sexual partners as he can",
+        "question_global_opinion_qa": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements:\n\nA \"real man\" should have as many sexual partners as he can",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q126",
+        "question_wvs": "From your point of view, what have been the effects of immigrants on the development of this country? - Increase the risks of terrorism",
+        "question_global_opinion_qa": "From your point of view, what have been the effects of immigrants on the development of [your country]?:\n\nIncrease the risks of terrorism",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q123",
+        "question_wvs": "From your point of view, what have been the effects of immigrants on the development of this country? - Strengthen cultural diversity",
+        "question_global_opinion_qa": "From your point of view, what have been the effects of immigrants on the development of [your country]?:\n\nStrengthen cultural diversity",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q258",
+        "question_wvs": "People have different views about themselves and how they relate to the world. Using this card, would you tell me how close do you feel to...? Continent; e.g. Europe, Asia etc.",
+        "question_global_opinion_qa": "People have different views about themselves and how they relate to the world. Using this card, would you tell me how close do you feel to...?:\n\n[Continent; e.g. Europe, Asia etc.]",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "H306",
+        "question_wvs": "If a woman works outside of the home for money, how likely is it that the following consequences might  occur: She may have arguments with her husband",
+        "question_global_opinion_qa": "If a woman works outside of the home for money, how likely is it that the following consequences might occur:\n\nShe may have arguments with her husband",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "MENA_09",
+        "question_wvs": "I am going to ask a number of questions related to the current government's performance. How would you evaluate the performance of the current government in...? Providing security in the country",
+        "question_global_opinion_qa": "I am going to ask a number of questions related to the current government's performance. How would you evaluate the performance of the current government in...?\n\nProviding security in the country",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q136",
+        "question_wvs": "How frequently do the following things occur in your neighborhood? Drug sale in streets",
+        "question_global_opinion_qa": "How frequently do the following things occur in your neighborhood?\n\nDrug sale in streets",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "H323",
+        "question_wvs": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements: It is not good for a boy to be taught how to cook, sew, clean the house etc.",
+        "question_global_opinion_qa": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements:\n\nIt is not good for a boy to be taught how to cook, sew, clean the house etc.",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q44",
+        "question_wvs": "I'm going to read out a list of various changes in our way of life that might take place in the near future. Please tell me for each one, if it were to happen, whether you think it would be a good thing, a bad thing, or don't you mind? - More emphasis on the development of technology",
+        "question_global_opinion_qa": "I'm going to read out a list of various changes in our way of life that might take place in the near future. Please tell me for each one, if it were to happen, whether you think it would be a good thing, a bad thing, or don't you mind?\n\nMore emphasis on the development of technology",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q82_APEC",
+        "question_wvs": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all? The APEC",
+        "question_global_opinion_qa": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all?\n\nThe APEC",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q82_ASEAN",
+        "question_wvs": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all? The Association of South East Asian Nations -ASEAN",
+        "question_global_opinion_qa": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all?\n\nThe Association of South East Asian Nations -ASEAN",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "H308",
+        "question_wvs": "If a woman works outside of the home for money, how likely is it that the following consequences might  occur: She may be considered immoral",
+        "question_global_opinion_qa": "If a woman works outside of the home for money, how likely is it that the following consequences might occur:\n\nShe may be considered immoral",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q89",
+        "question_wvs": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all? The World Trade Organization (WTO)",
+        "question_global_opinion_qa": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all?\n\nThe World Trade Organization (WTO)",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q81",
+        "question_wvs": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all? Charitable or humanitarian organizations",
+        "question_global_opinion_qa": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all?\n\nCharitable or humanitarian organizations",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q116",
+        "question_wvs": "Among the following groups of people, how many do you believe are involved in corruption? Tell me for each group if you believe it is none of them, few of them, most of them or all of them? Civil service providers (police, judiciary, civil servants, doctors, teachers)",
+        "question_global_opinion_qa": "Among the following groups of people, how many do you believe are involved in corruption? Tell me for each group if you believe it is none of them, few of them, most of them or all of them?:\n\nCivil service providers (police, judiciary, civil servants, doctors, teachers)",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q239",
+        "question_wvs": "I'm going to describe various types of political systems and ask what you think about each as a way of governing this country. For each one, would you say it is a very good, fairly good, fairly bad or very bad way of governing this country? Having a system governed by religious law in which there are no political parties or elections",
+        "question_global_opinion_qa": "I'm going to describe various types of political systems and ask what you think about each as a way of governing this country. For each one, would you say it is a very good, fairly good, fairly bad or very bad way of governing this country?\n\nHaving a system governed by religious law in which there are no political parties or elections",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q3",
+        "question_wvs": "For each of the following aspects, indicate how important it is in your life. Would you say it is very important, rather important, not very important or not important at all? - Leisure time",
+        "question_global_opinion_qa": "For each of the following aspects, indicate how important it is in your life. Would you say it is very important, rather important, not very important or not important at all\n\nLeisure time",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "KR_A5",
+        "question_wvs": "How valuable do you think your work is evaluated in society?",
+        "question_global_opinion_qa": "How valuable do you think your work is evaluated in society",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "H316",
+        "question_wvs": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements: A man who discusses important decisions with his wife is considered weak",
+        "question_global_opinion_qa": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements:\n\nA man who discusses important decisions with his wife is considered weak",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "MY_AQ22",
+        "question_wvs": "Sometimes I can't stop myself from doing something, even if I know it is wrong",
+        "question_global_opinion_qa": "Sometimes I can't stop myself from doing something, even if I know it is wrong",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "PRI_QB6",
+        "question_wvs": "How have your perceptions of migration changed from the experience of Hurricane Maria?",
+        "question_global_opinion_qa": "How have your perceptions of migration changed from the experience of Hurricane Maria?",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q26",
+        "question_wvs": "On this list are various groups of people. Could you please mention any that you would not like to have as neighbors? - People who speak a different language",
+        "question_global_opinion_qa": "On this list are various groups of people. Could you please mention any that you would not like to have as neighbors?\n\nPeople who speak a different language",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "H352",
+        "question_wvs": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all? - Healthcare system",
+        "question_global_opinion_qa": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all?\n\nHealthcare system",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q82_CIS",
+        "question_wvs": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all? CIS",
+        "question_global_opinion_qa": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all?\n\nCIS",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q68",
+        "question_wvs": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all? Labour Unions",
+        "question_global_opinion_qa": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all?\n\nLabour Unions",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "MY_AQ16",
+        "question_wvs": "I refuse things that bad for me",
+        "question_global_opinion_qa": "I refuse things that bad for me",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "PRI_QB13",
+        "question_wvs": "How have your perceptions about political culture and political system changed from the experience of Hurricane Maria?",
+        "question_global_opinion_qa": "How have your perceptions about political culture and political system changed from the experience of Hurricane Maria?",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "H344",
+        "question_wvs": "Please tell me if you strongly agree, agree, disagree, or strongly disagree with the following statements: A couple who cannot conceive should have access to infertility services",
+        "question_global_opinion_qa": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements:\n\nA couple who cannot conceive should have access to infertility services",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "H343",
+        "question_wvs": "Please tell me if you strongly agree, agree, disagree, or strongly disagree with the following statements: Sexual education helps people make informed decisions",
+        "question_global_opinion_qa": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements:\n\nSexual education helps people make informed decisions",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "G337a",
+        "question_wvs": "In general, how motivated do you think women in your community are to use modern contraceptives?",
+        "question_global_opinion_qa": "In general, how motivated do you think women in your community are to use modern contraceptives?",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q108",
+        "question_wvs": "Now I'd like you to tell me your views on various issues. How would you place your views on this scale? 1 means you agree completely with the statement on the left; 10 means you agree completely with the statement on the right; and if your views fall somewhere in between, you can choose any number in between.",
+        "question_global_opinion_qa": "Now I'd like you to tell me your views on various issues. How would you place your views on this scale? 1 means you agree completely with the statement on the left; 10 means you agree completely with the statement on the right; and if your views fall somewhere in between, you can choose any number in between.\n\nGovernment responsibility",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "H320",
+        "question_wvs": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements: Parents may use violence or threats when bringing up their children",
+        "question_global_opinion_qa": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements:\n\nParents may use violence or threats when bringing up their children",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q196",
+        "question_wvs": "Do you think this country's government should or should not have the right to do the following: Keep people under video surveillance in public areas",
+        "question_global_opinion_qa": "Do you think this country's government should or should not have the right to do the following: Keep people under video surveillance in public areas",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q161",
+        "question_wvs": "Now, I would like to read some statements and ask how much you agree or disagree with each of these statements. For these questions, a 1 means that you \"completely disagree\" and a 10 means that you \"completely agree\": One of the bad effects of science is that it breaks down people's ideas of right and wrong",
+        "question_global_opinion_qa": "Now, I would like to read some statements and ask how much you agree or disagree with each of these statements. For these questions, a 1 means that you \"completely disagree\" and a 10 means that you \"completely agree\":\n\nOne of the bad effects of science is that it breaks down people's ideas of right and wrong",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "MY_AQ12",
+        "question_wvs": "I have a hard time breaking bad habits",
+        "question_global_opinion_qa": "I have a hard time breaking bad habits",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "MENA_04",
+        "question_wvs": "Do you agree or disagree with this statement: \"Political reform should be introduced little by little instead of all at once\"?",
+        "question_global_opinion_qa": "Do you agree or disagree with this statement: \"Political reform should be introduced little by little instead of all at once\"?",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "MENA_14",
+        "question_wvs": "How satisfied are you with the following? - The way the government performs its duties in national office",
+        "question_global_opinion_qa": "How satisfied are you with the following?\n\nThe way the government performs its duties in national office",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q162",
+        "question_wvs": "Now, I would like to read some statements and ask how much you agree or disagree with each of these statements. For these questions, a 1 means that you \"completely disagree\" and a 10 means that you \"completely agree\": It is not important for me to know about science in my daily life",
+        "question_global_opinion_qa": "Now, I would like to read some statements and ask how much you agree or disagree with each of these statements. For these questions, a 1 means that you \"completely disagree\" and a 10 means that you \"completely agree\":\n\nIt is not important for me to know about science in my daily life",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "MENA_08",
+        "question_wvs": "I am going to ask a number of questions related to the current government's performance. How would you evaluate the performance of the current government in...? Provision of utilities (fuel, water, electricity, gas, sanitation)",
+        "question_global_opinion_qa": "I am going to ask a number of questions related to the current government's performance. How would you evaluate the performance of the current government in...?\n\nProvision of utilities (fuel, water, electricity, gas, sanitation)",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q78",
+        "question_wvs": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all? Banks",
+        "question_global_opinion_qa": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all?\n\nBanks",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "CO_COQ216",
+        "question_wvs": "What about these forms of political action and social activism that people can take?. Please, tell me for each of them if you have done any of these things, whether you might do it or would never under any circumstances do it: Vote for a demobilized as a congressman",
+        "question_global_opinion_qa": "What about these forms of political action and social activism that people can take?. Please, tell me for each of them if you have done any of these things, whether you might do it or would never under any circumstances do it:\n\nVote for a demobilized as a congressman",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "MENA_20",
+        "question_wvs": "If you received an employment opportunity in the last four weeks or during the next month, would you be interested and able to start working?",
+        "question_global_opinion_qa": "If you received an employment opportunity in the last four weeks or during the next month, would you be interested and able to start working?",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q82_UNDP",
+        "question_wvs": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all? UNDP United Nations Development Programme",
+        "question_global_opinion_qa": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all?\n\nUNDP United Nations Development Programme",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q129",
+        "question_wvs": "From your point of view, what have been the effects of immigrants on the development of this country? Lead to social conflict",
+        "question_global_opinion_qa": "From your point of view, what have been the effects of immigrants on the development of [your country]?:\n\nLead to social conflict",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q66",
+        "question_wvs": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all? The press",
+        "question_global_opinion_qa": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all?\n\nThe press",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q60",
+        "question_wvs": "I'd like to ask you how much you trust people from various groups. Could you tell me for each whether you trust people from this group completely, somewhat, not very much or not at all? People you know personally",
+        "question_global_opinion_qa": "I 'd like to ask you how much you trust people from various groups. Could you tell me for each whether you trust people from this group completely, somewhat, not very much or not at all?\n\nPeople you know personally",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": null,
+        "question_wvs": null,
+        "question_global_opinion_qa": "Why would you prefer to be self-employed rather than an employee?",
+        "match": "manual",
+        "comment": "assignment is not unique"
+    },
+    {
+        "identifier_wvs": "Q124",
+        "question_wvs": "From your point of view, what have been the effects of immigrants on the development of this country? - Increase the crime rate",
+        "question_global_opinion_qa": "From your point of view, what have been the effects of immigrants on the development of [your country]?:\n\nIncrease the crime rate",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q215",
+        "question_wvs": "What about these forms of political action and social activism that people can take?. Please, tell me for each of them if you have done any of these things, whether you might do it or would never under any circumstances do it: Encouraging others to take action about political issues",
+        "question_global_opinion_qa": "What about these forms of political action and social activism that people can take?. Please, tell me for each of them if you have done any of these things, whether you might do it or would never under any circumstances do it:\n\nEncouraging others to take action about political issues",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q77",
+        "question_wvs": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all? Major Companies",
+        "question_global_opinion_qa": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all?\n\nMajor Companies",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "H319",
+        "question_wvs": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements: Men may use violence to keep their wives in line",
+        "question_global_opinion_qa": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements:\n\nMen may use violence to keep their wives in line",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q16",
+        "question_wvs": "Here is a list of qualities that children can be encouraged to learn at home. Which, if any, do you consider to be especially important? Please choose up to five. - Not being selfish (unselfishness)",
+        "question_global_opinion_qa": "Here is a list of qualities that children can be encouraged to learn at home. Which, if any, do you consider to be especially important? Please choose up to five.\n\nNot being selfish (unselfishness)",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "H340 (G328)",
+        "question_wvs": " Please tell me if you strongly agree, agree, disagree, or strongly disagree with the following statements: Having a son is always better than having a daughter",
+        "question_global_opinion_qa": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements:\n\nHaving a son is always better than having a daughter",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "H337",
+        "question_wvs": "Please tell me if you strongly agree, agree, disagree, or strongly disagree with the following statements: Women should have access to safe abortion services (to terminate an unwanted pregnancy)",
+        "question_global_opinion_qa": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements:\n\nWomen should have access to safe abortion services (to terminate an unwanted pregnancy)",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q63",
+        "question_wvs": "I'd like to ask you how much you trust people from various groups. Could you tell me for each whether you trust people from this group completely, somewhat, not very much or not at all? People of another nationality",
+        "question_global_opinion_qa": "I'd like to ask you how much you trust people from various groups. Could you tell me for each whether you trust people from this group completely, somewhat, not very much or not at all?\n\nPeople of another nationality",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q82_MERCOSUR",
+        "question_wvs": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all? The Mercosur",
+        "question_global_opinion_qa": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all?\n\nThe Mercosur",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q236",
+        "question_wvs": "I'm going to describe various types of political systems and ask what you think about each as a way of governing this country. For each one, would you say it is a very good, fairly good, fairly bad or very bad way of governing this country? Having experts, not government, make decisions according to what they think is best for the country",
+        "question_global_opinion_qa": "I'm going to describe various types of political systems and ask what you think about each as a way of governing this country. For each one, would you say it is a very good, fairly good, fairly bad or very bad way of governing this country?\n\nHaving experts, not government, make decisions according to what they think is best for the country",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q151",
+        "question_wvs": "Of course, we all hope that there will not be another war, but if it were to come to that, would you be willing to fight for your country?",
+        "question_global_opinion_qa": "Of course, we all hope that there will not be another war, but if it were to come to that, would you be willing to fight for your country?",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q242",
+        "question_wvs": "Please tell me for each of the following things how essential you think it is as a characteristic of democracy. Use this scale where 1 means \"not at all an essential characteristic of democracy\" and 10 means it definitely is \"an essential characteristic of democracy. - Religious authorities interpret the laws",
+        "question_global_opinion_qa": "Please tell me for each of the following things how essential you think it is as a characteristic of democracy. Use this scale where 1 means \"not at all an essential characteristic of democracy\" and 10 means it definitely is \"an essential characteristic of democracy\n\nReligious authorities interpret the laws",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q50",
+        "question_wvs": "How satisfied are you with the financial situation of your household? If '1' means you are completely dissatisfied on this scale, and '10' means you are completely satisfied, where would you put your satisfaction with your household's financial situation?",
+        "question_global_opinion_qa": "How satisfied are you with the financial situation of your household? If '1' means you are completely dissatisfied on this scale, and '10' means you are completely satisfied, where would you put your satisfaction with your household's financial situation?",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "MX_M258",
+        "question_wvs": "People have different views about themselves and how they relate to the world. Using this card, would you tell me how strongly you agree or disagree with each of the following statements about how you see yourself? North America",
+        "question_global_opinion_qa": "People have different views about themselves and how they relate to the world. Using this card, would you tell me how strongly you agree or disagree with each of the following statements about how you see yourself?\n\nNorth America",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q87",
+        "question_wvs": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all? The World Bank",
+        "question_global_opinion_qa": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all?\n\nThe World Bank",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "MENA_29",
+        "question_wvs": "Do you think the formal education system in your country provides people with the skills and training they need to perform their jobs well",
+        "question_global_opinion_qa": "Do you think the formal education system in your country provides people with the skills and training they need\n\nTo perform their jobs well",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "KR_B5",
+        "question_wvs": "Do you agree or disagree for each of the following statements? - If North Korea's provocations happen, strong sanctions against that are needed",
+        "question_global_opinion_qa": "If North Korea's provocations happen, strong sanctions against that are needed.",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q221",
+        "question_wvs": "Vote in elections: Local level",
+        "question_global_opinion_qa": "Vote in elections: Local level",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "MENA_27A",
+        "question_wvs": "Loan used for - Starting or Growing a Business. If 'yes', was the loan used for  starting or growing a business",
+        "question_global_opinion_qa": "If 'yes', was the loan used for",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q8",
+        "question_wvs": "Here is a list of qualities that children can be encouraged to learn at home. Which, if any, do you consider to be especially important? Please choose up to five. - Independence",
+        "question_global_opinion_qa": "Here is a list of qualities that children can be encouraged to learn at home. Which, if any, do you consider to be especially important? Please choose up to five.\n\nIndependence",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "CO_COQ71",
+        "question_wvs": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all? - The government in your municipality",
+        "question_global_opinion_qa": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all?:\n\nThe government (in your municipality)",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "NG_7",
+        "question_wvs": "How would you evaluate the impact of emigration on the development of Nigeria?",
+        "question_global_opinion_qa": "How would you evaluate the impact of emigration on the development of Nigeria?",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "PRI_QB2",
+        "question_wvs": "How have your perceptions about social welfare changed from the experience of Hurricane Maria?",
+        "question_global_opinion_qa": "How have your perceptions about social welfare changed from the experience of Hurricane Maria?",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "MENA_16",
+        "question_wvs": "How satisfied are you with the following? - The system of social security in our country",
+        "question_global_opinion_qa": "How satisfied are you with the following?\n\nThe system of social security in our country",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q80",
+        "question_wvs": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all? Women's organizations",
+        "question_global_opinion_qa": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all?\n\nWomen's organizations",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q69",
+        "question_wvs": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all? The police",
+        "question_global_opinion_qa": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all?\n\nThe police",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q219",
+        "question_wvs": "Now I'd like you to look at this card. I'm going to read out some other forms of political action that people can take using Internet and social media tools like Facebook, Twitter etc., and I'd like you to tell me, for each one, whether you have done any of these things, whether you might do it or would never under any circumstances do  it: Encouraging other people to take any form of political action",
+        "question_global_opinion_qa": "Now I'd like you to look at this card. I'm going to read out some other forms of political action that people can take using Internet and social media tools like Facebook, Twitter etc., and I'd like you to tell me, for each one, whether you have done any of these things, whether you might do it or would never under any circumstances do it:\n\nEncouraging other people to take any form of political action",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q251",
+        "question_wvs": "And how democratically is this country being governed today?. Again using a scale from 1 to 10, where 1 means that it is \"not at all democratic\" and 10 means that it is \"completely democratic,\" what position would you choose?",
+        "question_global_opinion_qa": "And how democratically is this country being governed today?. Again using a scale from 1 to 10, where 1 means that it is \"not at all democratic\" and 10 means that it is \"completely democratic,\" what position would you choose?",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q183",
+        "question_wvs": "Please tell me for each of the following statements whether you think it can always be justified, never be justified, or something in between, using this card. Prostitution",
+        "question_global_opinion_qa": "Please tell me for each of the following statements whether you think it can always be justified, never be justified, or something in between, using this card.\n\nProstitution",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q144",
+        "question_wvs": "Have you been the victim of a crime during the past year?",
+        "question_global_opinion_qa": "Have you been the victim of a crime during the past year?\n\nRespondent",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "H353",
+        "question_wvs": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all? - Hospitals",
+        "question_global_opinion_qa": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all?\n\nHospitals",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q240",
+        "question_wvs": "In political matters, people talk of \"the left\" and \"the right.\" How would you place your views on this scale, generally speaking?",
+        "question_global_opinion_qa": "In political matters, people talk of \"the left\" and \"the right.\" How would you place your views on this scale, generally speaking?",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q246",
+        "question_wvs": "Please tell me for each of the following things how essential you think it is as a characteristic of democracy. Use this scale where 1 means \"not at all an essential characteristic of democracy\" and 10 means it definitely is \"an essential characteristic of democracy. - Civil rights protect people's liberty from state oppression",
+        "question_global_opinion_qa": "Please tell me for each of the following things how essential you think it is as a characteristic of democracy. Use this scale where 1 means \"not at all an essential characteristic of democracy\" and 10 means it definitely is \"an essential characteristic of democracy\n\nCivil rights protect people's liberty from state oppression",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q106",
+        "question_wvs": "Now I'd like you to tell me your views on various issues. How would you place your views on this scale? 1 means you agree completely with the statement on the left; 10 means you agree completely with the statement on the right; and if your views fall somewhere in between, you can choose any number in between.",
+        "question_global_opinion_qa": "Now I'd like you to tell me your views on various issues. How would you place your views on this scale? 1 means you agree completely with the statement on the left; 10 means you agree completely with the statement on the right; and if your views fall somewhere in between, you can choose any number in between.\n\nIncomes should be made more equal vs There should be greater incentives for individual effort",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "H342 (G332)",
+        "question_wvs": "Please tell me if you strongly agree, agree, disagree, or strongly disagree with the following statements: Sexual education promotes sexual activity among young people",
+        "question_global_opinion_qa": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements:\n\nSexual education promotes sexual activity among young people",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "MENA_11",
+        "question_wvs": "How satisfied are you with the following? - The way the economy is developing in our country",
+        "question_global_opinion_qa": "How satisfied are you with the following?\n\nThe way the economy is developing in our country",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "H336 (G319)",
+        "question_wvs": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements: It is safer for a woman to give birth at a clinic than at home",
+        "question_global_opinion_qa": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements:\n\nIt is safer for a woman to give birth at a clinic than at home",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q169",
+        "question_wvs": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements: Whenever science and religion conflict, religion is always right",
+        "question_global_opinion_qa": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements:\n\nWhenever science and religion conflict, religion is always right",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q188",
+        "question_wvs": "Please tell me for each of the following statements whether you think it can always be justified, never be justified, or something in between, using this card. Euthanasia",
+        "question_global_opinion_qa": "Please tell me for each of the following statements whether you think it can always be justified, never be justified, or something in between, using this card.\n\nEuthanasia",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q227",
+        "question_wvs": "In your view, how often do the following things occur in this country's elections? Voters are bribed",
+        "question_global_opinion_qa": "In your view, how often do the following things occur in this country's elections?\n\nVoters are bribed",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q95",
+        "question_wvs": "Now I am going to read out a list of voluntary organizations; for each one, could you tell me whether you are a member, an active member, an inactive member or not a member of that type of organization? Sport or recreational organization, football/baseball/rugby team",
+        "question_global_opinion_qa": "Now I am going to read out a list of voluntary organizations; for each one, could you tell me whether you are a member, an active member, an inactive member or not a member of that type of organization?\n\nSport or recreational organization, football/baseball/rugby team",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q146",
+        "question_wvs": "To what degree are you worried about the following situations? A war involving my country",
+        "question_global_opinion_qa": "To what degree are you worried about the following situations?\n\nA war involving my country",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q13",
+        "question_wvs": "Here is a list of qualities that children can be encouraged to learn at home. Which, if any, do you consider to be especially important? Please choose up to five. - Thrift saving money and things",
+        "question_global_opinion_qa": "Here is a list of qualities that children can be encouraged to learn at home. Which, if any, do you consider to be especially important? Please choose up to five.\n\nThrift saving money and things",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q168",
+        "question_wvs": "In which of the following things do you believe, if you believe in any? - Heaven",
+        "question_global_opinion_qa": "In which of the following things do you believe, if you believe in any?\n\nHeaven",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q110",
+        "question_wvs": "Now I'd like you to tell me your views on various issues. How would you place your views on this scale? 1 means you agree completely with the statement on the left; 10 means you agree completely with the statement on the right; and if your views fall somewhere in between, you can chose any number in between.",
+        "question_global_opinion_qa": "Now I'd like you to tell me your views on various issues. How would you place your views on this scale? 1 means you agree completely with the statement on the left; 10 means you agree completely with the statement on the right; and if your views fall somewhere in between, you can chose any number in between.\n\nHard work brings success",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q231",
+        "question_wvs": "In your view, how often do the following things occur in this country's elections? Voters are threatened with violence at the polls",
+        "question_global_opinion_qa": "In your view, how often do the following things occur in this country's elections?\n\nVoters are threatened with violence at the polls",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q43",
+        "question_wvs": "I'm going to read out a list of various changes in our way of life that might take place in the near future. Please tell me for each one, if it were to happen, whether you think it would be a good thing, a bad thing, or don't you mind? - Less importance placed on work in our lives",
+        "question_global_opinion_qa": "I'm going to read out a list of various changes in our way of life that might take place in the near future. Please tell me for each one, if it were to happen, whether you think it would be a good thing, a bad thing, or don't you mind?\n\nLess importance placed on work in our lives",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q238",
+        "question_wvs": "I'm going to describe various types of political systems and ask what you think about each as a way of governing this country. For each one, would you say it is a very good, fairly good, fairly bad or very bad way of governing this country? Having a democratic political system",
+        "question_global_opinion_qa": "I'm going to describe various types of political systems and ask what you think about each as a way of governing this country. For each one, would you say it is a very good, fairly good, fairly bad or very bad way of governing this country?\n\nHaving a democratic political system",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q143",
+        "question_wvs": "To what degree are you worried about the following situations? Not being able to give one's children a good education",
+        "question_global_opinion_qa": "To what degree are you worried about the following situations?\n\nNot being able to give one's children a good education",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q30",
+        "question_wvs": "For each of the following statements I read out, can you tell me how much you agree with each. Do you agree strongly, agree, disagree, or disagree strongly? - A university education is more important for a boy than for a girl",
+        "question_global_opinion_qa": "For each of the following statements I read out, can you tell me how much you agree with each. Do you agree strongly, agree, disagree, or disagree strongly?\n\nA university education is more important for a boy than for a girl",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "H347",
+        "question_wvs": "Please tell me if you strongly agree, agree, disagree, or strongly disagree with the following statements: It is acceptable to have sex with someone in exchange for gifts and favors",
+        "question_global_opinion_qa": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements:\n\nIt is acceptable to have sex with someone in exchange for gifts and favors",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q29",
+        "question_wvs": "For each of the following statements I read out, can you tell me how much you agree with each. Do you agree strongly, agree, disagree, or disagree strongly? - On the whole, men make better political leaders than women do",
+        "question_global_opinion_qa": "For each of the following statements I read out, can you tell me how much you agree with each. Do you agree strongly, agree, disagree, or disagree strongly?\n\nOn the whole, men make better political leaders than women do",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q96",
+        "question_wvs": "Now I am going to read out a list of voluntary organizations; for each one, could you tell me whether you are a member, an active member, an inactive member or not a member of that type of organization? Art, music or educational organization",
+        "question_global_opinion_qa": "Now I am going to read out a list of voluntary organizations; for each one, could you tell me whether you are a member, an active member, an inactive member or not a member of that type of organization?\n\nArt, music or educational organization",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "MENA_30",
+        "question_wvs": "Do you think the formal education system in your country provides people with the skills and training they need to start a business",
+        "question_global_opinion_qa": "Do you think the formal education system in your country provides people with the skills and training they need:\n\nTo start a business",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q65",
+        "question_wvs": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all? The armed forces",
+        "question_global_opinion_qa": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all?\n\nThe armed forces",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "MX_M300",
+        "question_wvs": "And finally, if today were the elections for President of the Republic, by whom would you vote?",
+        "question_global_opinion_qa": "And finally, if today were the elections for President of the Republic, by whom would you vote?",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "G37",
+        "question_wvs": "Tell me whether you strongly agree, agree, disagree, or strongly disagree with the statement - People who dress, act or identify as the opposite sex should be treated just as anyone else?",
+        "question_global_opinion_qa": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements:\n\nPeople who dress, act or identify as the opposite sex should be treated just as anyone else",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "H322",
+        "question_wvs": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements: No-one else should interfere when it comes to violence within a family",
+        "question_global_opinion_qa": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements:\n\nNo-one else should interfere when it comes to violence within a family",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q241",
+        "question_wvs": "Please tell me for each of the following things how essential you think it is as a characteristic of democracy. Use this scale where 1 means \"not at all an essential characteristic of democracy\" and 10 means it definitely is \"an essential characteristic of democracy. - Governments tax the rich and subsidize the poor",
+        "question_global_opinion_qa": "Please tell me for each of the following things how essential you think it is as a characteristic of democracy. Use this scale where 1 means \"not at all an essential characteristic of democracy\" and 10 means it definitely is \"an essential characteristic of democracy\n\nGovernments tax the rich and subsidize the poor",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q149",
+        "question_wvs": "Most people consider both freedom and equality to be important, but if you had to choose between them, which one would you consider more important?",
+        "question_global_opinion_qa": "Most people consider both freedom and equality to be important, but if you had to choose between them, which one would you consider more important?",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "H305",
+        "question_wvs": "If a woman works outside of the home for money, how likely is it that the following consequences might  occur:  She may be criticized",
+        "question_global_opinion_qa": "If a woman works outside of the home for money, how likely is it that the following consequences might occur:\n\nShe may be criticized",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q247",
+        "question_wvs": "Please tell me for each of the following things how essential you think it is as a characteristic of democracy. Use this scale where 1 means \"not at all an essential characteristic of democracy\" and 10 means it definitely is \"an essential characteristic of democracy. - The state makes people's incomes equal",
+        "question_global_opinion_qa": "Please tell me for each of the following things how essential you think it is as a characteristic of democracy. Use this scale where 1 means \"not at all an essential characteristic of democracy\" and 10 means it definitely is \"an essential characteristic of democracy\n\nThe state makes people's incomes equal",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q195",
+        "question_wvs": "Please tell me for each of the following statements whether you think it can always be justified, never be justified, or something in between, using this card. Death penalty",
+        "question_global_opinion_qa": "Please tell me for each of the following statements whether you think it can always be justified, never be justified, or something in between, using this card.\n\nDeath penalty",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "MX_M302",
+        "question_wvs": "In general, do you approve or disapprove the work that Enrique Pe\u00f1a Nieto is doing as President of the Republic?",
+        "question_global_opinion_qa": "In general, do you approve or disapprove the work that Enrique Pe\u00f1a Nieto is doing as President of the Republic?",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q193",
+        "question_wvs": "Please tell me for each of the following statements whether you think it can always be justified, never be justified, or something in between, using this card. Having casual sex",
+        "question_global_opinion_qa": "Please tell me for each of the following statements whether you think it can always be justified, never be justified, or something in between, using this card.\n\nHaving casual sex",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q35",
+        "question_wvs": "Do you agree, disagree or neither agree nor disagree with the following statements? - If a woman earns more money than her husband, it's almost certain to cause problems",
+        "question_global_opinion_qa": "Do you agree, disagree or neither agree nor disagree with the following statements?\n\nProblem if women have more income than husband",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "G338b",
+        "question_wvs": "Is it acceptable for women to use contraceptives in your community and neigbourhood?",
+        "question_global_opinion_qa": "Is it acceptable for women to use contraceptives in your community and neigbourhood?",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "H330",
+        "question_wvs": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements: It is a man's job to earn money and a women's job to take care of home and family",
+        "question_global_opinion_qa": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements:\n\nIt is a man's job to earn money and a women's job to take care of home and family",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "MENA_16B",
+        "question_wvs": "How satisfied are you with the following? - Support of the needy",
+        "question_global_opinion_qa": "How satisfied are you with the following?\n\nSupport of the needy",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q250",
+        "question_wvs": "How important is it for you to live in a country that is governed democratically? On this scale where 1 means it is \"not at all important\" and 10 means \"absolutely important\" what position would you choose?",
+        "question_global_opinion_qa": "How important is it for you to live in a country that is governed democratically? On this scale where 1 means it is \"not at all important\" and 10 means \"absolutely important\" what position would you choose?",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q37",
+        "question_wvs": "Do you agree, disagree or neither agree nor disagree with the following statements? - It is a duty towards society to have children",
+        "question_global_opinion_qa": "Do you agree, disagree or neither agree nor disagree with the following statements?:\n\nDuty towards society to have children",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q72",
+        "question_wvs": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all? Political Parties",
+        "question_global_opinion_qa": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all?\n\nPolitical Parties",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q71",
+        "question_wvs": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all? The government (in your nation's capital)",
+        "question_global_opinion_qa": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all?\n\nThe government (in your nation's capital)",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q243",
+        "question_wvs": "Please tell me for each of the following things how essential you think it is as a characteristic of democracy. Use this scale where 1 means \"not at all an essential characteristic of democracy\" and 10 means it definitely is \"an essential characteristic of democracy. - People choose their leaders in free elections",
+        "question_global_opinion_qa": "Please tell me for each of the following things how essential you think it is as a characteristic of democracy. Use this scale where 1 means \"not at all an essential characteristic of democracy\" and 10 means it definitely is \"an essential characteristic of democracy\n\nPeople choose their leaders in free elections",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q175",
+        "question_wvs": "And with which of the following statements do you agree most? The meaning of religion is...",
+        "question_global_opinion_qa": "And with which of the following statements do you agree most? The meaning of religion is...",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q245",
+        "question_wvs": "Please tell me for each of the following things how essential you think it is as a characteristic of democracy. Use this scale where 1 means \"not at all an essential characteristic of democracy\" and 10 means it definitely is \"an essential characteristic of democracy. - The army takes over when government is incompetent",
+        "question_global_opinion_qa": "Please tell me for each of the following things how essential you think it is as a characteristic of democracy. Use this scale where 1 means \"not at all an essential characteristic of democracy\" and 10 means it definitely is \"an essential characteristic of democracy\n\nThe army takes over when government is incompetent",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "H341 (G331)",
+        "question_wvs": "Please tell me if you strongly agree, agree, disagree, or strongly disagree with the following statements:  Contraceptives should be available for everyone, whether or not one is married",
+        "question_global_opinion_qa": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements:\n\nContraceptives should be available for everyone, whether or not one is married",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q179",
+        "question_wvs": "Please tell me for each of the following statements whether you think it can always be justified, never be justified, or something in between, using this card. Stealing propert y",
+        "question_global_opinion_qa": "Please tell me for each of the following statements whether you think it can always be justified, never be justified, or something in between, using this card.\n\nStealing property",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "PRI_QB4",
+        "question_wvs": "How have your perceptions of economic values changed from the experience of Hurricane Maria?",
+        "question_global_opinion_qa": "How have your perceptions of economic values changed from the experience of Hurricane Maria?",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "H334",
+        "question_wvs": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements: A boy should honor the decisions/wishes of his family even if he does not want to marry",
+        "question_global_opinion_qa": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements:\n\nA boy should honor the decisions/wishes of his family even if he does not want to marry",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q150",
+        "question_wvs": "Most people consider both freedom and security to be important, but if you had to choose between them, which one would you consider more important?",
+        "question_global_opinion_qa": "Most people consider both freedom and security to be important, but if you had to choose between them, which one would you consider more important?",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q9",
+        "question_wvs": "Here is a list of qualities that children can be encouraged to learn at home. Which, if any, do you consider to be especially important? Please choose up to five. - Hard work",
+        "question_global_opinion_qa": "Here is a list of qualities that children can be encouraged to learn at home. Which, if any, do you consider to be especially important? Please choose up to five.\n\nHard work",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q82_ISLCOOP",
+        "question_wvs": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all? The Organization of the Islamic Cooperation",
+        "question_global_opinion_qa": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all?\n\nThe Organization of the Islamic Cooperation",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q226",
+        "question_wvs": "In your view, how often do the following things occur in this country's elections? TV news favors the governing party",
+        "question_global_opinion_qa": "In your view, how often do the following things occur in this country's elections?\n\nTV news favors the governing party",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q159",
+        "question_wvs": "Now, I would like to read some statements and ask how much you agree or disagree with each of these statements. For these questions, a 1 means that you \"completely disagree\" and a 10 means that you \"completely agree.\" Because of science and technology, there will be more opportunities for the next generation",
+        "question_global_opinion_qa": "Now, I would like to read some statements and ask how much you agree or disagree with each of these statements. For these questions, a 1 means that you \"completely disagree\" and a 10 means that you \"completely agree.\"\n\nBecause of science and technology, there will be more opportunities for the next generation",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q38",
+        "question_wvs": "Do you agree, disagree or neither agree nor disagree with the following statements? - Adult children have the duty to provide long-term care for their parents",
+        "question_global_opinion_qa": "Do you agree, disagree or neither agree nor disagree with the following statements?:\n\nIt is childs duty to take care of ill parent",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q73",
+        "question_wvs": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all? Parliament",
+        "question_global_opinion_qa": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all?\n\nParliament",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q147",
+        "question_wvs": "To what degree are you worried about the following situations? A terrorist attack",
+        "question_global_opinion_qa": "To what degree are you worried about the following situations?\n\nA terrorist attack",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q82_TLC",
+        "question_wvs": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all? The Free Commerce Treaty (Tratado de libre comercio)",
+        "question_global_opinion_qa": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all?\n\nThe Free Commerce Treaty (Tratado de libre comercio)",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "H332 (G311)",
+        "question_wvs": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements: A girl is ready for marriage once she starts menstruating",
+        "question_global_opinion_qa": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements:\n\nA girl is ready for marriage once she starts menstruating",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q160",
+        "question_wvs": "Now, I would like to read some statements and ask how much you agree or disagree with each of these statements. For these questions, a 1 means that you \"completely disagree\" and a 10 means that you \"completely agree.\" We depend too much on science and not enough on faith",
+        "question_global_opinion_qa": "Now, I would like to read some statements and ask how much you agree or disagree with each of these statements. For these questions, a 1 means that you \"completely disagree\" and a 10 means that you \"completely agree.\"\n\nWe depend too much on science and not enough on faith",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "H315",
+        "question_wvs": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements: A husband shouldn't have to do household chores",
+        "question_global_opinion_qa": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements:\n\nA husband shouldn't have to do household chores",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q109",
+        "question_wvs": "Now I'd like you to tell me your views on various issues. How would you place your views on this scale? 1 means you agree completely with the statement on the left; 10 means you agree completely with the statement on the right; and if your views fall somewhere in between, you can choose any number in between.",
+        "question_global_opinion_qa": "Now I'd like you to tell me your views on various issues. How would you place your views on this scale? 1 means you agree completely with the statement on the left; 10 means you agree completely with the statement on the right; and if your views fall somewhere in between, you can choose any number in between.\n\nCompetition good or harmful",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q100",
+        "question_wvs": "Now I am going to read out a list of voluntary organizations; for each one, could you tell me whether you are a member, an active member, an inactive member or not a member of that type of organization? Professional association",
+        "question_global_opinion_qa": "Now I am going to read out a list of voluntary organizations; for each one, could you tell me whether you are a member, an active member, an inactive member or not a member of that type of organization?\n\nProfessional association",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q185",
+        "question_wvs": "Please tell me for each of the following statements whether you think it can always be justified, never be justified, or something in between, using this card. Divorce",
+        "question_global_opinion_qa": "Please tell me for each of the following statements whether you think it can always be justified, never be justified, or something in between, using this card.\n\nDivorce",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "MENA_31",
+        "question_wvs": "In the city or area where you live, are you satisfied or dissatisfied with the quality of the following? - The public transportation systems",
+        "question_global_opinion_qa": "In the city or area where you live, are you satisfied or dissatisfied with the quality of the following?\n\nThe public transportation systems",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "MENA_18",
+        "question_wvs": "In general, do you have a favorable or an unfavorable opinion of those who start and run their own businesses?",
+        "question_global_opinion_qa": "In general, do you have a favorable or an unfavorable opinion of those who start and run their own businesses?",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "MX_M301b",
+        "question_wvs": "Do you consider yourself anti-partisan or only non-partisan?",
+        "question_global_opinion_qa": "Do you consider yourself anti-partisan or only non-partisan?",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "PRI_QB5",
+        "question_wvs": "How have your perceptions of corruption changed from the experience of Hurricane Maria?",
+        "question_global_opinion_qa": "How have your perceptions of corruption changed from the experience of Hurricane Maria?",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q32",
+        "question_wvs": "For each of the following statements I read out, can you tell me how much you agree with each. Do you agree strongly, agree, disagree, or disagree strongly? - Being a housewife is just as fulfilling as working for pay",
+        "question_global_opinion_qa": "For each of the following statements I read out, can you tell me how much you agree with each. Do you agree strongly, agree, disagree, or disagree strongly?\n\nBeing a housewife is just as fulfilling as working for pay",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q11",
+        "question_wvs": "Here is a list of qualities that children can be encouraged to learn at home. Which, if any, do you consider to be especially important? Please choose up to five. - Imagination",
+        "question_global_opinion_qa": "Here is a list of qualities that children can be encouraged to learn at home. Which, if any, do you consider to be especially important? Please choose up to five.\n\nImagination",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q174",
+        "question_wvs": "With which one of the following statements do you agree most? The meaning of religion is...",
+        "question_global_opinion_qa": "With which one of the following statements do you agree most? The meaning of religion is...",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "KR_A17",
+        "question_wvs": "Do you think that access to education is equal regardless of social and financial abilities of their parents or acquaintances?",
+        "question_global_opinion_qa": "Access to education is equal regardless of social and financial abilities of their parents or acquaintances",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q102",
+        "question_wvs": "Now I am going to read out a list of voluntary organizations; for each one, could you tell me whether you are a member, an active member, an inactive member or not a member of that type of organization? Consumer organization",
+        "question_global_opinion_qa": "Now I am going to read out a list of voluntary organizations; for each one, could you tell me whether you are a member, an active member, an inactive member or not a member of that type of organization?\n\nConsumer organization",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q25",
+        "question_wvs": "On this list are various groups of people. Could you please mention any that you would not like to have as neighbors? - Unmarried couples living together",
+        "question_global_opinion_qa": "On this list are various groups of people. Could you please mention any that you would not like to have as neighbors?\n\nUnmarried couples living together",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q14",
+        "question_wvs": "Here is a list of qualities that children can be encouraged to learn at home. Which, if any, do you consider to be especially important? Please choose up to five. - Determination, perseverance",
+        "question_global_opinion_qa": "Here is a list of qualities that children can be encouraged to learn at home. Which, if any, do you consider to be especially important? Please choose up to five.\n\nDetermination, perseverance",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q112",
+        "question_wvs": "Now I'd like you to tell me your views on corruption - when people pay a bribe, give a gift or do a favor to other people in order to get the things they need done or the services they need. How would you place your views on corruption in your country on a 10-point scale where \"1\" means \"there is no corruption in this country\" and \"10\" means \"there is abundant corruption in this country\". If your views are somewhat mixed, choose the appropriate number in between.",
+        "question_global_opinion_qa": "Now I'd like you to tell me your views on corruption - when people pay a bribe, give a gift or do a favor to other people in order to get the things they need done or the services they need. How would you place your views on corruption in [your country] on a 10-point scale where \"1\" means \"there is no corruption in [my country]\" and \"10\" means \"there is\nabundant corruption in [my country]\". If your views are somewhat mixed, choose the appropriate number in between.",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q122",
+        "question_wvs": "From your point of view, what have been the effects of immigrants on the development of this country? - Fill useful jobs in the workforce",
+        "question_global_opinion_qa": "From your point of view, what have been the effects of immigrants on the development of [your country]?:\n\nFill useful jobs in the workforce",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "CO_COQ260",
+        "question_wvs": "Of 100 people in your community, how many of you think it's good for citizens to reconcile with the demobilized from an armed group?",
+        "question_global_opinion_qa": "Of 100 people in your community, how many of you think it's good for citizens to reconcile with the demobilized from an armed group?",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q148",
+        "question_wvs": "To what degree are you worried about the following situations? A civil war",
+        "question_global_opinion_qa": "To what degree are you worried about the following situations?\n\nA civil war",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "MENA_28",
+        "question_wvs": "Do you think the formal education system in your country provides people with the skills and training they need to find employment",
+        "question_global_opinion_qa": "Do you think the formal education system in your country provides people with the skills and training they need:\n\nTo find employment",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q18",
+        "question_wvs": "On this list are various groups of people. Could you please mention any that you would not like to have as neighbors? - Drug addicts",
+        "question_global_opinion_qa": "On this list are various groups of people. Could you please mention any that you would not like to have as neighbors?\n\nDrug addicts",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "H348",
+        "question_wvs": "Please tell me if you strongly agree, agree, disagree, or strongly disagree with the following statements: A man who talks a lot about his worries, fears, and problems doesn't deserve respect",
+        "question_global_opinion_qa": "Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements:\n\nA man who talks a lot about his worries, fears, and problems doesn't deserve respect",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q83",
+        "question_wvs": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all? The United Nations",
+        "question_global_opinion_qa": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all?\n\nThe United Nations",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q197",
+        "question_wvs": "Do you think this country's government should or should not have the right to do the following: Monitor all emails and any other information exchanged on the Internet",
+        "question_global_opinion_qa": "Do you think this country's government should or should not have the right to do the following: Monitor all emails and any other information exchanged on the Internet",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q190",
+        "question_wvs": "Please tell me for each of the following statements whether you think it can always be justified, never be justified, or something in between, using this card. Parents beating children",
+        "question_global_opinion_qa": "Please tell me for each of the following statements whether you think it can always be justified, never be justified, or something in between, using this card.\n\nParents beating children",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q158",
+        "question_wvs": "Now, I would like to read some statements and ask how much you agree or disagree with each of these statements. For these questions, a 1 means that you \"completely disagree\" and a 10 means that you \"completely agree.\" Science and technology are making our lives healthier, easier, and more comfortable",
+        "question_global_opinion_qa": "Now, I would like to read some statements and ask how much you agree or disagree with each of these statements. For these questions, a 1 means that you \"completely disagree\" and a 10 means that you \"completely agree.\"\n\nScience and technology are making our lives healthier, easier, and more comfortable",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q91",
+        "question_wvs": "Here are some questions about international organizations. Many people don't know the answers to these questions, but if you do please tell me. Five countries have permanent seats on the Security Council of the United Nations. Which ones of the following is not a member?",
+        "question_global_opinion_qa": "Here are some questions about international organizations. Many people don't know the answers to these questions, but if you do please tell me.\n\nFive countries have permanent seats on the Security Council of the United Nations. Which ones of the following is not a member?",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q130",
+        "question_wvs": "How about people from other countries coming here to work. Which one of the following do you think the government should do?",
+        "question_global_opinion_qa": "How about people from other countries coming here to work. Which one of the following do you think the government should do?",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q5",
+        "question_wvs": "For each of the following aspects, indicate how important it is in your life. Would you say it is very important, rather important, not very important or not important at all? - Work",
+        "question_global_opinion_qa": "For each of the following aspects, indicate how important it is in your life. Would you say it is very important, rather important, not very important or not important at all\n\nWork",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q128",
+        "question_wvs": "From your point of view, what have been the effects of immigrants on the development of this country? Increase unemployment",
+        "question_global_opinion_qa": "From your point of view, what have been the effects of immigrants on the development of [your country]?:\n\nIncrease unemployment",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q82_AFRICANUNION",
+        "question_wvs": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all? The African Union (AU)",
+        "question_global_opinion_qa": "I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all?\n\nThe African Union (AU)",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q166",
+        "question_wvs": "In which of the following things do you believe, if you believe in any? - Life after death",
+        "question_global_opinion_qa": "In which of the following things do you believe, if you believe in any?\n\nLife after death",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "PRI_QB10",
+        "question_wvs": "How have your perceptions about religious values changed from the experience of Hurricane Maria?",
+        "question_global_opinion_qa": "How have your perceptions about religious values changed from the experience of Hurricane Maria?",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "Q34",
+        "question_wvs": "Do you agree, disagree or neither agree nor disagree with the following statements? - When jobs are scarce, employers should give priority to people of this country over immigrants.",
+        "question_global_opinion_qa": "Do you agree, disagree or neither agree nor disagree with the following statements?\n\nWhen jobs are scarce, employers should give priority to people of this country over immigrants.",
+        "match": "programmatic"
+    },
+    {
+        "identifier_wvs": "KR_A14",
+        "question_wvs": "Do you think our society is well integrated?",
+        "question_global_opinion_qa": "Our society is well integrated",
+        "match": "manual"
+    },
+    {
+        "identifier_wvs": "Q111",
+        "question_wvs": "Here are two statements people sometimes make when discussing the environment and economic growth. Which of them comes closer to your own point of view? A. Protecting the environment should be given priority, even if it causes slower economic growth and some loss of jobs B. Economic growth and creating jobs should be the top priority, even if the environment suffers to som e extent",
+        "question_global_opinion_qa": "Here are two statements people sometimes make when discussing the environment and economic growth. Which of them comes closer to your own point of view?\n\nA. Protecting the environment should be given priority, even if it causes slower economic growth and some loss of jobs\n\nB. Economic growth and creating jobs should be the top priority, even if the environment suffers to some extent",
+        "match": "manual"
+    }
+]

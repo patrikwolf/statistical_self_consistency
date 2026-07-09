@@ -1,0 +1,24 @@
+You are estimating the distribution of survey responses for a demographic subpopulation.
+
+The subpopulation is characterized by the following attributes:
+{attribute_list}
+
+Survey question:
+{question}
+
+Answer options:
+{answer_option_list}
+
+Task:
+Estimate the probability distribution over the answer options for a randomly selected individual from this subpopulation.
+
+Strict output rules:
+- Return only valid JSON.
+- Use exactly the following keys: {answer_option_keys}.
+- Each value must be a single number in [0, 1].
+- The values must sum to 1.
+- Use decimal probabilities, not percentages.
+- Do not include explanations, comments, uncertainty intervals, or any text outside the JSON object.
+
+Return only a valid JSON object of the following form. The numbers below are illustrative only and must be replaced by your estimated probabilities:
+{example_output}

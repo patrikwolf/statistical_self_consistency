@@ -1,0 +1,17 @@
+You are given a set of sociodemographic attributes describing a subgroup of people in the United States.
+Using your background knowledge about the U.S. population, estimate the probability that a randomly sampled person
+from the U.S. population satisfies all of these attributes simultaneously.
+
+Subgroup attributes:
+{attributes}
+
+Task:
+Estimate the probability that a uniformly randomly sampled person in the U.S. belongs to the subgroup characterized above.
+
+Output requirements (strict):
+- Return exactly one real number between 0 and 1, inclusive.
+- Use the exact format [[p]], where p is your probability estimate.
+- Do not include any additional text, explanation, or units.
+
+Example output:
+[[0.125]]

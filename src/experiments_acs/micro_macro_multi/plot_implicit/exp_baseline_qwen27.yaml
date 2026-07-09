@@ -1,0 +1,28 @@
+experiments_log:
+  experiment_name: "micro_macro_aggregation_baseline"
+  decomposition: ["AGEP", "COW", "WKHP", "OCCP"]
+  model: "qwen/qwen3.5-27b"
+  reasoning_effort: "none"
+  num_of_samples: 20
+  improved_age_desc: False
+
+  experiments:
+    - income_threshold: 100
+      timestamp: "2026-06-10__08-14-35"
+      cluster: True
+
+    - income_threshold: 20_000
+      timestamp: "2026-06-10__08-44-16"
+      cluster: True
+
+    - income_threshold: 40_000
+      timestamp: "2026-06-10__08-49-21"
+      cluster: True
+
+    - income_threshold: 60_000
+      timestamp: "2026-06-10__08-56-42"
+      cluster: True
+
+    - income_threshold: 80_000
+      timestamp: "2026-06-10__09-03-49"
+      cluster: True

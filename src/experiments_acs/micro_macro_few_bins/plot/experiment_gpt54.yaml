@@ -1,0 +1,19 @@
+experiments_log:
+  model: "openai/gpt-5.4"
+  reasoning_effort: "none"
+  num_of_samples: 20
+
+  # Baseline results
+  baseline:
+    decomposition: ["AGEP", "COW", "WKHP", "OCCP"]
+    experiment_name: "micro_macro_few_bins_baseline"
+    timestamp: "2026-06-03__09-22-50"
+    cluster: True
+
+
+
+  # Micro macro results
+  micro_macro:
+    experiment_name: "micro_macro_implicit_few_bins"
+    timestamp: "2026-06-03__09-39-42"
+    cluster: False

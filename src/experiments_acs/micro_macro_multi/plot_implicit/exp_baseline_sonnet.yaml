@@ -1,0 +1,28 @@
+experiments_log:
+  experiment_name: "micro_macro_aggregation_baseline"
+  decomposition: ["AGEP", "COW", "WKHP", "OCCP"]
+  model: "anthropic/claude-sonnet-4.6"
+  reasoning_effort: "none"
+  num_of_samples: 20
+  improved_age_desc: False
+
+  experiments:
+    - income_threshold: 100
+      timestamp: "2026-06-15__11-07-08"
+      cluster: True
+
+    - income_threshold: 20_000
+      timestamp: "2026-06-15__11-12-20"
+      cluster: True
+
+    - income_threshold: 40_000
+      timestamp: "2026-06-15__11-17-16"
+      cluster: True
+
+    - income_threshold: 60_000
+      timestamp: "2026-06-15__11-19-12"
+      cluster: True
+
+    - income_threshold: 80_000
+      timestamp: "2026-06-15__11-29-04"
+      cluster: True

@@ -1,0 +1,14 @@
+shared_config:
+  model_name: "anthropic/claude-opus-4.7"
+  reasoning_effort: "none"
+  survey_name: "ACS"
+  survey_year: 2024
+  set_nan_to_zero: True
+  improved_age_desc: False
+  prompting_scheme: "sociodemographic"
+  prompt_reasoning: False
+  llm_aggregation_priors: False
+  num_of_samples: 20
+  max_number_attempts: 10
+  weighted: True
+  income_greater_than_threshold: True

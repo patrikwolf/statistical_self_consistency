@@ -1,0 +1,10 @@
+Based on your general knowledge of income distributions in the United States, estimate the
+probability of the specified outcome.
+Please make an approximate probabilistic estimate.
+
+Question:
+What is the estimated probability that a randomly selected person’s annual income exceeds {income_threshold} USD?
+
+Output requirements (strict):
+- Return a single real number between 0 and 1 (inclusive).
+- Format the answer exactly as: [[p]] where p is your probability estimate (for example: [[0.5]]).

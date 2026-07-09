@@ -1,0 +1,272 @@
+{
+    "Q1": {
+        "question_identifier": "Q1",
+        "question": "For each of the following aspects, indicate how important it is in your life. Would you say it is very important, rather important, not very important or not important at all? - Family",
+        "answer_options": [
+            "Very important",
+            "Rather important",
+            "Not very important",
+            "Not at all important"
+        ],
+        "llm_estimates": [
+            {
+                "combination": [],
+                "llm_answer_distribution": [
+                    0.72,
+                    0.21000000000000002,
+                    0.055,
+                    0.015
+                ],
+                "llm_prior": 1,
+                "level": 0
+            },
+            {
+                "combination": [
+                    {
+                        "attribute_description": "sex",
+                        "value_description": "female"
+                    }
+                ],
+                "llm_answer_distribution": [
+                    0.7,
+                    0.225,
+                    0.055,
+                    0.02
+                ],
+                "llm_prior": 0.5005,
+                "level": 1
+            },
+            {
+                "combination": [
+                    {
+                        "attribute_description": "sex",
+                        "value_description": "male"
+                    }
+                ],
+                "llm_answer_distribution": [
+                    0.65,
+                    0.25,
+                    0.08,
+                    0.02
+                ],
+                "llm_prior": 0.4995,
+                "level": 1
+            },
+            {
+                "combination": [
+                    {
+                        "attribute_description": "sex",
+                        "value_description": "female"
+                    },
+                    {
+                        "attribute_description": "age",
+                        "value_description": "16 - 44 years old"
+                    }
+                ],
+                "llm_answer_distribution": [
+                    0.685,
+                    0.25,
+                    0.055,
+                    0.01
+                ],
+                "llm_prior": 0.2991346153846154,
+                "level": 2
+            },
+            {
+                "combination": [
+                    {
+                        "attribute_description": "sex",
+                        "value_description": "female"
+                    },
+                    {
+                        "attribute_description": "age",
+                        "value_description": "45 - 103 years old"
+                    }
+                ],
+                "llm_answer_distribution": [
+                    0.72,
+                    0.225,
+                    0.045,
+                    0.01
+                ],
+                "llm_prior": 0.23538461538461536,
+                "level": 2
+            },
+            {
+                "combination": [
+                    {
+                        "attribute_description": "sex",
+                        "value_description": "male"
+                    },
+                    {
+                        "attribute_description": "age",
+                        "value_description": "16 - 44 years old"
+                    }
+                ],
+                "llm_answer_distribution": [
+                    0.65,
+                    0.27,
+                    0.06,
+                    0.02
+                ],
+                "llm_prior": 0.2892307692307692,
+                "level": 2
+            },
+            {
+                "combination": [
+                    {
+                        "attribute_description": "sex",
+                        "value_description": "male"
+                    },
+                    {
+                        "attribute_description": "age",
+                        "value_description": "45 - 103 years old"
+                    }
+                ],
+                "llm_answer_distribution": [
+                    0.735,
+                    0.21000000000000002,
+                    0.045,
+                    0.01
+                ],
+                "llm_prior": 0.17625000000000002,
+                "level": 2
+            }
+        ]
+    },
+    "Q2": {
+        "question_identifier": "Q2",
+        "question": "For each of the following aspects, indicate how important it is in your life. Would you say it is very important, rather important, not very important or not important at all? - Friends",
+        "answer_options": [
+            "Very important",
+            "Rather important",
+            "Not very important",
+            "Not at all important"
+        ],
+        "llm_estimates": [
+            {
+                "combination": [],
+                "llm_answer_distribution": [
+                    0.44999999999999996,
+                    0.365,
+                    0.14,
+                    0.045
+                ],
+                "llm_prior": 1,
+                "level": 0
+            },
+            {
+                "combination": [
+                    {
+                        "attribute_description": "sex",
+                        "value_description": "female"
+                    }
+                ],
+                "llm_answer_distribution": [
+                    0.435,
+                    0.365,
+                    0.15,
+                    0.05
+                ],
+                "llm_prior": 0.5005,
+                "level": 1
+            },
+            {
+                "combination": [
+                    {
+                        "attribute_description": "sex",
+                        "value_description": "male"
+                    }
+                ],
+                "llm_answer_distribution": [
+                    0.42500000000000004,
+                    0.35,
+                    0.175,
+                    0.05
+                ],
+                "llm_prior": 0.4995,
+                "level": 1
+            },
+            {
+                "combination": [
+                    {
+                        "attribute_description": "sex",
+                        "value_description": "female"
+                    },
+                    {
+                        "attribute_description": "age",
+                        "value_description": "16 - 44 years old"
+                    }
+                ],
+                "llm_answer_distribution": [
+                    0.45,
+                    0.365,
+                    0.14500000000000002,
+                    0.04
+                ],
+                "llm_prior": 0.2991346153846154,
+                "level": 2
+            },
+            {
+                "combination": [
+                    {
+                        "attribute_description": "sex",
+                        "value_description": "female"
+                    },
+                    {
+                        "attribute_description": "age",
+                        "value_description": "45 - 103 years old"
+                    }
+                ],
+                "llm_answer_distribution": [
+                    0.42,
+                    0.38,
+                    0.15,
+                    0.05
+                ],
+                "llm_prior": 0.23538461538461536,
+                "level": 2
+            },
+            {
+                "combination": [
+                    {
+                        "attribute_description": "sex",
+                        "value_description": "male"
+                    },
+                    {
+                        "attribute_description": "age",
+                        "value_description": "16 - 44 years old"
+                    }
+                ],
+                "llm_answer_distribution": [
+                    0.385,
+                    0.41500000000000004,
+                    0.15,
+                    0.05
+                ],
+                "llm_prior": 0.2892307692307692,
+                "level": 2
+            },
+            {
+                "combination": [
+                    {
+                        "attribute_description": "sex",
+                        "value_description": "male"
+                    },
+                    {
+                        "attribute_description": "age",
+                        "value_description": "45 - 103 years old"
+                    }
+                ],
+                "llm_answer_distribution": [
+                    0.35,
+                    0.42500000000000004,
+                    0.175,
+                    0.05
+                ],
+                "llm_prior": 0.17625000000000002,
+                "level": 2
+            }
+        ]
+    }
+}

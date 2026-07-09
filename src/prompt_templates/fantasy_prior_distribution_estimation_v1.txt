@@ -1,0 +1,22 @@
+You are given a mutually exclusive and exhaustive partition of possible encounter scenarios in a fictional fantasy
+role-playing game. The groups are defined by contextual attributes of the encounter.
+
+For each group below, estimate the probability that a randomly generated encounter scenario belongs to that group.
+
+{groups}
+
+Important:
+- Treat the listed groups as the full scenario partition.
+- Assign probability mass across all groups.
+- The returned probabilities must sum to 1.
+- Use your best judgment about how common each encounter scenario would be in a typical fantasy role-playing game world.
+
+Return only a valid JSON object of the following form:
+{example_output}
+
+Strict output rules:
+- Do not include any text outside the JSON object.
+- Do not include explanations or uncertainty intervals.
+- Each probability must be a single number in [0, 1].
+- The JSON object must contain exactly one entry per group.
+- Use the group names exactly as given: {group_names}.

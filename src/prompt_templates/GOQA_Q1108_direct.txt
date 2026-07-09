@@ -1,0 +1,13 @@
+Based on your general knowledge of public opinion in {country}, estimate the probability of the specified
+survey response. Treat the target respondent as a randomly selected adult in {country}. The available
+information is sufficient for an approximate probabilistic estimate.
+
+Survey question:
+Do you think the government of China respects the personal freedoms of its people?
+
+Question:
+What is the estimated probability that a randomly selected adult in {country} would answer "YES" to the question above?
+
+Output requirements (strict):
+- Return a single real number between 0 and 1 (inclusive).
+- Format the answer exactly as: [[p]] where p is your probability estimate (for example: [[0.5]]).

@@ -1,0 +1,22 @@
+You are estimating the outcome of a fantasy combat encounter.
+
+A main character is engaged in combat against an enemy in an imaginary fantasy setting. The world has a day--night
+cycle and varying weather conditions.
+
+The current encounter context is characterized by the following attributes:
+{attribute_list}
+
+Forecasting question:
+What is the probability that the main character wins the encounter?
+
+Task:
+Estimate the probability that the main character wins the encounter under the specified context.
+
+Strict output rules:
+- Return a single real number between 0 and 1, inclusive.
+- Use decimal probabilities, not percentages.
+- Format the answer exactly as: [[p]], where p is your probability estimate.
+- Do not include explanations, comments, uncertainty intervals, or any text outside the required format.
+
+Return only an answer of the following form. The number below is illustrative only and must be replaced
+by your estimated probability: [[0.5]]

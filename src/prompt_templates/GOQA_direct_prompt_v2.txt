@@ -1,0 +1,22 @@
+You are estimating an aggregate statistic for the population of people living in {country}.
+
+Based on your general knowledge, estimate the probability distribution over the answer options for a randomly selected
+person from this population.
+
+Question:
+{question}
+
+Answer options:
+{answer_options}
+
+Strict output rules:
+- Return only valid JSON.
+- Do not include explanations, comments, uncertainty intervals, or any text outside the JSON object.
+- Use exactly the following keys: {answer_option_keys}.
+- Each key must correspond to one answer option.
+- Each value must be a single number in [0, 1].
+- The values must sum to 1.
+- Use decimal probabilities, not percentages.
+
+Return only a valid JSON object of the following form:
+{example_output}

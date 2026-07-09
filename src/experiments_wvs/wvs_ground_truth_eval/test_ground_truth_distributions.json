@@ -1,0 +1,64 @@
+{
+    "Q1": {
+        "encoded_distribution": [
+            {
+                "key": "1",
+                "answer_option": "Very important",
+                "probability": 0.9007475199142174
+            },
+            {
+                "key": "2",
+                "answer_option": "Rather important",
+                "probability": 0.08634100779308732
+            },
+            {
+                "key": "3",
+                "answer_option": "Not very important",
+                "probability": 0.009109664408080592
+            },
+            {
+                "key": "4",
+                "answer_option": "Not at all important",
+                "probability": 0.002313387859847364
+            }
+        ],
+        "answer_distribution": [
+            0.9007475199142174,
+            0.08634100779308732,
+            0.009109664408080592,
+            0.002313387859847364
+        ],
+        "sum_of_relevant_probs": 0.9985115799752327
+    },
+    "Q2": {
+        "encoded_distribution": [
+            {
+                "key": "1",
+                "answer_option": "Very important",
+                "probability": 0.44118930308607435
+            },
+            {
+                "key": "2",
+                "answer_option": "Rather important",
+                "probability": 0.4222605814704739
+            },
+            {
+                "key": "3",
+                "answer_option": "Not very important",
+                "probability": 0.11343312011354355
+            },
+            {
+                "key": "4",
+                "answer_option": "Not at all important",
+                "probability": 0.020012200293107112
+            }
+        ],
+        "answer_distribution": [
+            0.44118930308607435,
+            0.4222605814704739,
+            0.11343312011354355,
+            0.020012200293107112
+        ],
+        "sum_of_relevant_probs": 0.9968952049631989
+    }
+}

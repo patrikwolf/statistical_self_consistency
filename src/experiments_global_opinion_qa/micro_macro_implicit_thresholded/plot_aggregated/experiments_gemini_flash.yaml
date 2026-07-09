@@ -1,0 +1,26 @@
+log:
+  experiment_name: "goqa_micro_macro_thresholded"
+  model: "google/gemini-3-flash-preview"
+  reasoning_effort: "none"
+  num_of_samples: 20
+
+  experiments:
+    - timestamp: "2026-06-16__15-13-27"
+      cluster: True
+      question: "55"
+
+    - timestamp: "2026-06-16__15-41-59"
+      cluster: True
+      question: "136"
+
+    - timestamp: "2026-06-16__15-42-33"
+      cluster: True
+      question: "573"
+
+    - timestamp: "2026-06-16__15-43-04"
+      cluster: True
+      question: "839"
+
+    - timestamp: "2026-06-16__15-44-01"
+      cluster: True
+      question: "1108"

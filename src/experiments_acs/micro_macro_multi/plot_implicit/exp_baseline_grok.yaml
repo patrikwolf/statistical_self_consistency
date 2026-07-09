@@ -1,0 +1,28 @@
+experiments_log:
+  experiment_name: "micro_macro_aggregation_baseline"
+  decomposition: ["AGEP", "COW", "WKHP", "OCCP"]
+  model: "x-ai/grok-4.20"
+  reasoning_effort: "none"
+  num_of_samples: 20
+  improved_age_desc: False
+
+  experiments:
+    - income_threshold: 100
+      timestamp: "2026-06-15__11-33-34"
+      cluster: True
+
+    - income_threshold: 20_000
+      timestamp: "2026-06-15__11-39-27"
+      cluster: True
+
+    - income_threshold: 40_000
+      timestamp: "2026-06-15__11-51-47"
+      cluster: True
+
+    - income_threshold: 60_000
+      timestamp: "2026-06-15__11-52-41"
+      cluster: True
+
+    - income_threshold: 80_000
+      timestamp: "2026-06-15__11-54-39"
+      cluster: True

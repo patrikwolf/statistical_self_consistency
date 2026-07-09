@@ -1,0 +1,94 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sociodemographic_prompting"
+description = "Experiments to analyze statistical alignment of sociodemographic prompting for LLMs"
+readme = "README.md"
+version = "1.0.0"
+requires-python = ">=3.10"
+dynamic = ["dependencies"]
+
+# Authors (hidden before publishing)
+authors = [
+    # { name = "Tom Mustermann" },
+]
+
+# Keywords to be used by PyPI search
+keywords = ["machine learning", "deep learning", "best-of-N", "diversity", "LLM"]
+
+# Package dependencies
+[tool.setuptools.dynamic]
+dependencies = {file = "requirements.txt"}
+
+# Packages
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["*"]
+
+# Project URLs (hidden before publishing)
+[project.urls]
+#homepage = "https://github.com/..."
+#repository = "https://github.com/..."
+
+# Linters
+[tool.flake8]
+max-complexity = 15
+max-line-length = 127
+ignore = ["W293", "W503"]
+per-file-ignores = """
+__init__.py: F401
+"""
+
+[tool.isort]
+profile = "hug"
+src_paths = ["src", "tests"]
+
+# Testing
+[tool.pytest.ini_options]
+minversion = "8.0"
+testpaths = ["tests"]
+
+[tool.coverage.run]
+branch = true
+source = ["src"]
+omit = ["src/_version.py", "tests"]
+
+[tool.coverage.report]
+show_missing = true
+
+[tool.mypy]
+ignore_missing_imports = true
+no_implicit_optional = false
+exclude = ["build", "doc"]
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+env_list =
+    py313
+    lint
+    type
+
+[testenv]
+description = run unit tests
+deps =
+    pytest>=8
+commands = python -m pytest {posargs:tests}
+
+[testenv:lint]
+description = run linters
+skip_install = true
+deps =
+    flake8>=7.0
+    flake8-pyproject
+commands = flake8 {posargs:src tests}
+
+[testenv:type]
+description = run type checks
+deps =
+    mypy>=1.9
+commands =
+    mypy {posargs:src tests}
+"""

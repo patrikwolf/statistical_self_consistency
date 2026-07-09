@@ -1,0 +1,16 @@
+Based on your general knowledge of public opinion in {country}, estimate the probability of the specified
+survey response. Treat the target respondent as a randomly selected adult in {country}. The available
+information is sufficient for an approximate probabilistic estimate.
+
+Survey question:
+Please tell me whether you think the following statements apply to the United Nations or not.
+
+Statement:
+The United Nations promotes peace.
+
+Question:
+What is the estimated probability that a randomly selected adult in {country} would answer "YES" to the statement above?
+
+Output requirements (strict):
+- Return a single real number between 0 and 1 (inclusive).
+- Format the answer exactly as: [[p]] where p is your probability estimate (for example: [[0.5]]).

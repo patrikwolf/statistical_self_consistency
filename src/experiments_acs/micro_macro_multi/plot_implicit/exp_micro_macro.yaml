@@ -1,0 +1,56 @@
+experiment_logs:
+  experiment_name: "micro_macro_implicit"
+
+  experiments:
+    - model: "openai/gpt-5.4"
+      reasoning_effort: "none"
+      timestamp: "2026-06-01__09-00-00"
+      cluster: True
+
+    - model: "openai/gpt-4o-mini"
+      reasoning_effort: "none"
+      timestamp: "2026-06-02__15-59-14"
+      cluster: True
+
+    - model: "anthropic/claude-opus-4.7"
+      reasoning_effort: "none"
+      timestamp: "2026-06-02__16-39-30"
+      cluster: True
+
+    - model: "anthropic/claude-sonnet-4.6"
+      reasoning_effort: "none"
+      timestamp: "2026-06-15__11-07-04"
+      cluster: True
+
+    - model: "google/gemini-3.1-pro-preview"
+      reasoning_effort: "low"
+      timestamp: "2026-06-02__17-06-01"
+      cluster: True
+
+    - model: "google/gemini-3-flash"
+      reasoning_effort: "none"
+      # ATTENTION: faced rate limit on OpenRouter
+      timestamp: "2026-06-15__11-56-43"
+      cluster: True
+
+    - model: "x-ai/grok-4.20"
+      reasoning_effort: "none"
+      timestamp: "2026-06-15__11-33-38"
+      cluster: True
+
+    - model: "qwen/qwen3.5-27b"
+      reasoning_effort: "none"
+      timestamp: "2026-06-10__08-15-14"
+      cluster: True
+
+    # GPT-5.4 more threholds
+    #- model: "openai/gpt-5.4"
+    #  reasoning_effort: "none"
+    #  timestamp: "2026-06-01__08-30-38"
+    #  cluster: True
+
+    # GPT-5.4 with new prompt template (minimal discrepancy)
+    #- model: "openai/gpt-5.4"
+    #  reasoning_effort: "none"
+    #  timestamp: "2026-06-03__11-41-12"
+    #  cluster: True

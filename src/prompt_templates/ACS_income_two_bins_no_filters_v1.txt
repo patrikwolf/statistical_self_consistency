@@ -1,0 +1,12 @@
+Based on your general knowledge of income distributions in the United States, decide whether a randomly
+selected person is more likely to earn more or less than the specified annual income threshold.
+
+Question:
+Is a randomly sampled person's annual income more likely to be above or below {income_threshold} USD?
+
+Output requirements (strict):
+- Return exactly one of the following two labels:
+  - ABOVE if the person is more likely to earn more than {income_threshold} USD.
+  - BELOW if the person is more likely to earn less than or equal to {income_threshold} USD.
+- Format the answer exactly as: [[LABEL]], where LABEL is either ABOVE or BELOW.
+- Do not include any explanation or additional text.

@@ -1,0 +1,22 @@
+log:
+  experiment_name: "goqa_micro_macro_thresholded"
+  model:
+  reasoning_effort: "none"
+  num_of_samples: 20
+
+  experiments:
+    "openai/gpt-5.4": "2026-06-17__16-43-29"
+    "qwen/qwen3.6-plus": "2026-06-17__17-08-41"
+    "deepseek/deepseek-v3.2": "2026-06-17__17-07-46"
+    "z-ai/glm-5.1": "2026-06-17__17-09-46"
+
+    "x-ai/grok-4.20": "2026-06-17__16-44-47"
+    "anthropic/claude-opus-4.7": "2026-06-17__17-11-35"
+    "anthropic/claude-sonnet-4.6": "2026-06-17__17-13-34"
+    "openai/gpt-4o-mini": "2026-06-17__17-15-28"
+
+    #"google/gemini-3.1-pro-preview": "xxxxxx"
+    #"google/gemini-3-flash-preview": "xxxxxx"
+    #"deepseek/deepseek-v4-flash": "xxxxxx"
+    #"moonshotai/kimi-k2.6": "xxxxxx"
+    #"qwen/qwen3.7-max": "xxxxxx"

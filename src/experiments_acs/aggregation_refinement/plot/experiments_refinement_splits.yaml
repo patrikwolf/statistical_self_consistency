@@ -1,0 +1,35 @@
+permutation_variation:
+  experiment_name: "aggregation_refinement"
+  model: "openai/gpt-5.4"
+  reasoning_effort: "none"
+  income_threshold: 40000
+  num_of_samples: 100
+
+  experiments:
+    - decomposition: [ "AGEP", "COW", "WKHP", "OCCP" ]
+      cluster: True
+      timestamp: "2026-04-21__00-08-54"
+
+    - decomposition: [ "ESR", "AGEP", "SEX", "MAR" ]
+      cluster: True
+      timestamp: "2026-04-22__03-02-35"
+
+    - decomposition: [ "COW", "MAR", "ESR", "AGEP" ]
+      cluster: True
+      timestamp: "2026-04-22__03-09-00"
+
+    - decomposition: [ "MAR", "COW", "OCCP", "ESR" ]
+      cluster: True
+      timestamp: "2026-04-22__14-56-59"
+
+    - decomposition: [ "OCCP", "ESR", "SEX", "AGEP" ]
+      cluster: True
+      timestamp: "2026-04-22__14-59-30"
+
+    - decomposition: [ "SEX", "ESR", "WKHP", "MAR" ]
+      cluster: True
+      timestamp: "2026-04-22__15-02-40"
+
+    - decomposition: [ "WKHP", "MAR", "AGEP", "SEX" ]
+      cluster: True
+      timestamp: "2026-04-22__15-07-27"

@@ -1,0 +1,22 @@
+effect_of_randomness:
+  experiment_name: "aggregation_refinement"
+  decomposition: ["AGEP", "COW", "WKHP", "OCCP"]
+  model: "openai/gpt-5.4"
+  num_of_samples: 20
+
+  experiments:
+    - income_threshold: 40000
+      cluster: True
+      timestamp: "2026-04-17__18-21-25"
+
+    - income_threshold: 40000
+      cluster: True
+      timestamp: "2026-04-20__03-05-06"
+
+    - income_threshold: 40000
+      cluster: True
+      timestamp: "2026-04-20__03-08-24"
+
+    - income_threshold: 40000
+      cluster: True
+      timestamp: "2026-04-20__03-18-57"

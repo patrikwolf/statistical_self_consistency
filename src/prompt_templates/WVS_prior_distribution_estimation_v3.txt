@@ -1,0 +1,25 @@
+You are estimating the population shares of a set of mutually exclusive and exhaustive demographic groups.
+
+Population:
+- {country}
+
+The following groups form a complete partition of the population. Each person in the population belongs to exactly one of the listed groups.
+
+{groups}
+
+Task:
+Estimate the probability that a randomly selected person from the population belongs to each group.
+
+Use your best demographic knowledge of {country}. Since the groups form a complete partition, assign probability
+mass across all groups such that the probabilities sum to 1.
+
+Strict output rules:
+- Return only valid JSON.
+- Do not include explanations, comments, uncertainty intervals, or any text outside the JSON object.
+- Use exactly the following keys: {group_names}.
+- Each value must be a single number in [0, 1].
+- The values must sum to 1.
+- Use decimal probabilities, not percentages.
+
+Return only a valid JSON object of the following form:
+{example_output}

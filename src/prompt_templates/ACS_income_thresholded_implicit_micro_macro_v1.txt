@@ -1,0 +1,19 @@
+You are estimating an aggregate statistic for the population of people living in the United States.
+Based on your general knowledge of income distributions in the United States, estimate the probability of
+the specified outcome.
+
+Question:
+What is the estimated probability that a randomly selected person living in the United States has an annual
+income exceeding {income_threshold} USD?
+
+Before giving your final answer, reason from micro to macro:
+1. Identify several relevant subpopulations within the U.S. population that may differ in income.
+2. For each subpopulation, consider both its approximate prevalence in the U.S. population and its
+likely probability of exceeding the income threshold.
+3. Combine these subgroup-level considerations into a single aggregate estimate for the U.S. population.
+
+Output requirements:
+- Return only a single real number between 0 and 1.
+- Format the answer exactly as: [[p]] where p is your final aggregate probability estimate.
+- Do not include explanations, subgroup descriptions, calculations, uncertainty intervals, or any text outside
+the required format.

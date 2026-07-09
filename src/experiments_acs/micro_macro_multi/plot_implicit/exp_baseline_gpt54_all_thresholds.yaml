@@ -1,0 +1,28 @@
+experiments_log:
+  experiment_name: "micro_macro_aggregation_baseline"
+  decomposition: ["AGEP", "COW", "WKHP", "OCCP"]
+  model: "openai/gpt-5.4"
+  reasoning_effort: "none"
+  num_of_samples: 20
+  improved_age_desc: False
+
+  experiments:
+    - income_threshold: 100
+      timestamp: "2026-06-01__10-28-12"
+      cluster: True
+
+    - income_threshold: 20_000
+      timestamp: "2026-05-30__00-18-04"
+      cluster: True
+
+    - income_threshold: 40_000
+      timestamp: "2026-05-22__18-17-50"
+      cluster: True
+
+    - income_threshold: 60_000
+      timestamp: "2026-05-30__00-19-21"
+      cluster: True
+
+    - income_threshold: 80_000
+      timestamp: "2026-05-29__15-03-16"
+      cluster: True
