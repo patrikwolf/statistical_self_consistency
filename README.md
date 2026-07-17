@@ -1,17 +1,18 @@
-# From Contexts to Conditionals: Statistical Self-Consistency in Language Models
+# Partition, Prompt, Aggregate: Statistical Self-Consistency in Language Models
 
-<!-- [![Paper](https://img.shields.io/badge/arXiv-xxxxxxx.svg?logo=arxiv)]() -->
-<!-- [![Model](https://img.shields.io/badge/HuggingFace-xxxxxxx-orange.svg?logo=huggingface)]() -->
-<!-- [![Code](https://img.shields.io/badge/GitHub-xxxxxxx-blue.svg?logo=github)]() -->
-<!-- [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) -->
+[![Paper](https://img.shields.io/badge/arXiv-2607.15277-b31b1b.svg?logo=arxiv)](https://arxiv.org/abs/2607.15277)
 [![Python 3.13](https://img.shields.io/badge/Python-3.13-blue.svg)](https://python.org/downloads/release/python-31311/)
-[![PyTorch 2.9.0](https://img.shields.io/badge/PyTorch-2.9.0-green.svg)](https://pytorch.org/)
+<!-- [![PyTorch 2.9.0](https://img.shields.io/badge/PyTorch-2.9.0-green.svg)](https://pytorch.org/) -->
+<!-- [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/) -->
+<!-- [![Code](https://img.shields.io/badge/GitHub-statistical_self_consistency-blue.svg?logo=github)]() -->
+<!-- [![Model](https://img.shields.io/badge/HuggingFace-xxxxxxx-orange.svg?logo=huggingface)]() -->
 
-This repository implements the experiments accompanying the paper *"From Contexts to Conditionals: Statistical Self-Consistency in
-Language Models."* Please cite our work if you use this code, in full or in part, for your research (see [BibTeX below](#-citation)):
+This repository implements the experiments accompanying the paper:
 
-> [From Contexts to Conditionals: Statistical Self-Consistency in Language Models]()
+> [Partition, Prompt, Aggregate: Statistical Self-Consistency in Language Models](https://arxiv.org/abs/2607.15277)
 > *by Patrik Wolf, Thomas Kleine Buening, Andreas Krause, Celestine Mendler-Dünner*
+
+Please cite our work if you use this code, in full or in part, for your research (see [BibTeX below](#-citation)).
 
 ### 📚 Table of Contents
 
@@ -41,7 +42,7 @@ checks**. Comparing them against survey statistics evaluates **alignment** with 
 
 ---
 
-### 🌳 Experiment Domains
+## 🌳 Experiment Domains
 
 The self-consistency experiments are organized by data domain under `src/`:
 
@@ -58,7 +59,7 @@ attribute dictionaries, and ground-truth prior computation.
 
 ---
 
-### 🚀 Quickstart
+## 🚀 Quickstart
 
 #### 1. Create and activate a Python environment (Python 3.10+)
 
@@ -83,10 +84,11 @@ This installs the package in editable mode based on `pyproject.toml` and `requir
 
 ---
 
-### 💾 Data
+## 💾 Data
 
 Download the data for the experiments:
-- ACS: `src/data_loader_acs/data_to_parquet.py` (via folktables), verify with `src/data_loader_acs/data_loader.py`
+
+- ACS: `src/data_loader_acs/data_to_parquet.py`, verify with `src/data_loader_acs/data_loader.py`
 - WVS: download the WVS 7 SPSS dataset file from [WVS website](https://www.worldvaluessurvey.org) and place it in `data/wvs_wave_7/WVS_Cross-National_Wave_7_spss_v6_0.sav`, verify with `src/data_loader_wvs/data_loader.py`
 
 ---
@@ -102,7 +104,7 @@ pyenv local 3.13.3
 
 ---
 
-### 🔐 Configuration and Secrets
+## 🔐 Configuration and Secrets
 
 - **Secrets** (API keys) are stored in `secrets/secret_config.yaml`.
 - Start from the template:
@@ -120,7 +122,7 @@ query via `src/language_models/`.
 
 ---
 
-### 📄 Linting, Testing, and Type Checks
+## 📄 Linting, Testing, and Type Checks
 
 This project is configured with `flake8`, `pytest`, and `mypy` (see `pyproject.toml`).
 You can use `tox` to run common tasks:
@@ -141,5 +143,13 @@ tox -e type
 If you use this repository in your research, please cite the accompanying work:
 
 ```bibtex
-<tbd>
+@misc{wolf2026partitionpromptaggregatestatistical,
+      title={Partition, Prompt, Aggregate: Statistical Self-Consistency in Language Models}, 
+      author={Patrik Wolf and Thomas Kleine Buening and Andreas Krause and Celestine Mendler-Dünner},
+      year={2026},
+      eprint={2607.15277},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2607.15277}, 
+}
 ```
