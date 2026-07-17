@@ -138,6 +138,8 @@ tox -e lint
 tox -e type
 ```
 
+---
+
 ## 🎈 Citation
 
 If you use this repository in your research, please cite the accompanying work:
