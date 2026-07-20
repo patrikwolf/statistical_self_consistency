@@ -1,4 +1,4 @@
-from experiments_acs.consistency_lotp.helper.compute_aggregation import _compute_aggregated_estimate
+from experiments_acs.consistency_lotp_income.helper.compute_aggregation import _compute_aggregated_estimate
 from file_logging.read_and_write_json import save_as_json
 
 

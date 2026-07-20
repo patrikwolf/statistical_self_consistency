@@ -1,7 +1,7 @@
 import json
 
-from experiments_acs.consistency_lotp.helper.evaluation import evaluate_aggregated_results
-from experiments_acs.consistency_lotp.helper.final_scoring import compute_final_scores
+from experiments_acs.consistency_lotp_income.helper.evaluation import evaluate_aggregated_results
+from experiments_acs.consistency_lotp_income.helper.final_scoring import compute_final_scores
 from file_logging.read_and_write_json import read_json
 
 

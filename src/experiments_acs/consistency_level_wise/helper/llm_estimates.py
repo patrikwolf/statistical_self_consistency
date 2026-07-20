@@ -1,5 +1,5 @@
 from config.model_config import ModelConfig
-from experiments_acs.consistency_lotp.helper.llm_estimates import get_llm_estimated_prior_distribution, \
+from experiments_acs.consistency_lotp_income.helper.llm_estimates import get_llm_estimated_prior_distribution, \
     get_llm_estimated_answer_distribution
 from file_logging.read_and_write_json import save_as_json
 

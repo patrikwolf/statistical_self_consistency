@@ -2,13 +2,16 @@ import json
 import time
 
 from config.model_config import ModelConfig
-from experiments_acs.consistency_lotp.helper.compute_aggregation import compute_all_aggregated_estimates
-from experiments_acs.consistency_lotp.helper.evaluation import evaluate_aggregated_results
-from experiments_acs.consistency_lotp.helper.final_scoring import compute_final_scores
-from experiments_acs.consistency_lotp.helper.find_aggregation import get_all_aggregations
-from experiments_acs.consistency_lotp.helper.llm_estimates import get_all_llm_estimates
+from experiments_acs.consistency_lotp_commute.helper.llm_estimates import get_all_llm_estimates
+#
+from experiments_acs.consistency_lotp_income.helper.compute_aggregation import compute_all_aggregated_estimates
+from experiments_acs.consistency_lotp_income.helper.evaluation import evaluate_aggregated_results, \
+    evaluate_order_consistency
+from experiments_acs.consistency_lotp_income.helper.final_scoring import compute_new_final_scores
+from experiments_acs.consistency_lotp_income.helper.find_aggregation import get_all_aggregations
+#
 from experiments_acs.filtering.filter_definitions import extend_generic_filter
-from experiments_acs.consistency_lotp.helper.build_tree_nodes import get_attribute_combinations
+from experiments_acs.consistency_lotp_income.helper.build_tree_nodes import get_attribute_combinations
 from data_loader_acs.data_loader import load_original_attribute_dict
 from data_loader_acs.value_map import get_value_map
 from experiments_acs.filtering.filter import Filter
@@ -67,17 +70,26 @@ def main(
     )
 
     # Evaluate aggregated versus direct estimate (Wasserstein)
-    sanity_check_results = evaluate_aggregated_results(
+    split_consistency_results = evaluate_aggregated_results(
         experiment_folder=experiment_folder,
         llm_estimates_list=llm_estimates_list,
         aggregation_results=aggregation_results,
     )
 
-    # Compute final scores
-    results = compute_final_scores(
+    # For all questions, get the order consistency pairs and evaluate discrepancy
+    order_consistency_results = evaluate_order_consistency(
         experiment_folder=experiment_folder,
-        sanity_check_results=sanity_check_results,
+        llm_estimates_list=llm_estimates_list,
+    )
+
+    # Compute final scores
+    results = compute_new_final_scores(
+        experiment_folder=experiment_folder,
+        split_consistency_results=split_consistency_results,
+        order_consistency_results=order_consistency_results,
         epsilon=epsilon,
+        num_split_checks=3,
+        num_order_checks=4,
     )
 
     # Timer
@@ -130,21 +142,25 @@ if __name__ == "__main__":
         ]
     }
 
-    # Bins
-    bin_edges = [-11500, 1, 25000, 60000, 1849000]
+    # Bins (optimized for approximately uniform distribution)
+    bin_edges = [0, 1, 15, 30, 195]
 
     # Slack
     epsilon = 0.02
 
     # Model
+    # model = "openai/gpt-5.4"
+    # model = "anthropic/claude-sonnet-4.6"
+    # model = "x-ai/grok-4.3"
     model = "qwen/qwen3.6-plus"
 
     # Config
     cfg = ModelConfig(
-        experiment_name="self_consistency_llm_estimates",
+        experiment_name="acs_commute_self_consistency",
         model_name=model,
         reasoning_effort="none",
         sampling_temperature=1.0,
+        # todo: increase to 20
         num_of_samples=20,
         max_number_attempts=10,
     )

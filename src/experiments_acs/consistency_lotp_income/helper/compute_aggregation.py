@@ -1,6 +1,7 @@
 import json
 import numpy as np
 
+from experiments_acs.filtering.filter import Filter
 from file_logging.read_and_write_json import save_as_json
 
 
@@ -8,7 +9,6 @@ def _compute_aggregated_estimate(
         attribute_nodes: list,
         llm_estimate_dict: list[dict],
 ) -> dict:
-
     # Extract shared attributes
     shared_attributes = _get_shared_attributes(nodes=attribute_nodes)
 
@@ -50,8 +50,14 @@ def _compute_aggregated_estimate(
     return results
 
 
+def _serialize_filter(value_description: Filter | dict):
+    if isinstance(value_description, Filter):
+        return value_description.serialize()
+    return value_description
+
+
 def _serialize_combination(combination: list[dict]) -> list[dict]:
-    return [d["value_description"].serialize() for d in combination]
+    return [_serialize_filter(d["value_description"]) for d in combination]
 
 
 def _get_shared_attributes(nodes: list[list[dict]]) -> list[dict]:
@@ -59,7 +65,7 @@ def _get_shared_attributes(nodes: list[list[dict]]) -> list[dict]:
     shared = set(
         (
             d["attribute_description"],
-            json.dumps(d["value_description"].serialize(), sort_keys=False)
+            json.dumps(_serialize_filter(d["value_description"]), sort_keys=False)
         ) for d in nodes[0])
 
     # Compute intersection with attributes from all other nodes
@@ -67,7 +73,7 @@ def _get_shared_attributes(nodes: list[list[dict]]) -> list[dict]:
         current = set(
             (
                 d["attribute_description"],
-                json.dumps(d["value_description"].serialize(), sort_keys=False)
+                json.dumps(_serialize_filter(d["value_description"]), sort_keys=False)
             ) for d in node)
         shared &= current
 
@@ -88,11 +94,11 @@ def _assert_shared_attribute_position(nodes: list[list[dict]], shared_attributes
     shared_positions = {
         (
             d["attribute_description"],
-            json.dumps(d["value_description"].serialize(), sort_keys=False)
+            json.dumps(_serialize_filter(d["value_description"]), sort_keys=False)
         ): idx
         for idx, d in enumerate(nodes[0])
         if (d["attribute_description"],
-            json.dumps(d["value_description"].serialize(), sort_keys=False)) in shared_attribute_tuples
+            json.dumps(_serialize_filter(d["value_description"]), sort_keys=False)) in shared_attribute_tuples
     }
 
     # Check that every shared attribute appears at the same index in every node
@@ -100,7 +106,7 @@ def _assert_shared_attribute_position(nodes: list[list[dict]], shared_attributes
         for attr, expected_idx in shared_positions.items():
             current = (
                 node[expected_idx]["attribute_description"],
-                json.dumps(node[expected_idx]["value_description"].serialize(), sort_keys=False),
+                json.dumps(_serialize_filter(node[expected_idx]["value_description"]), sort_keys=False),
             )
 
             assert current == attr, (
@@ -125,15 +131,29 @@ def compute_all_aggregated_estimates(
     # Compute aggregated estimates (within tree)
     aggregated_estimates_within = []
     for key, val in aggregation_dict["within_tree"].items():
-        print(f"     [Within tree] Computing aggregated estimate for {key}")
+        if len(val) > 2:
+            print("     [Within tree] WARNING: Skipping aggregations over more than 2 nodes.")
+            continue
+        else:
+            print(f"     [Within tree] Computing aggregated estimate for {key}")
+            print(f"                   Aggregating {len(val)} nodes")
+
         aggregated_estimate = _compute_aggregated_estimate(attribute_nodes=val,
                                                            llm_estimate_dict=llm_estimate_dict)
         aggregated_estimates_within.append(aggregated_estimate)
 
+    print("                   -----------")
+
     # Compute aggregated estimates (cross tree)
     aggregated_estimates_cross = []
     for key, val in aggregation_dict["cross_tree"].items():
-        print(f"     [Cross tree] Compute aggregated estimate for {key}")
+        if len(val) > 2:
+            print("     [Cross tree] WARNING: Skipping aggregations over more than 2 nodes.")
+            continue
+        else:
+            print(f"     [Cross tree] Computing aggregated estimate for {key}")
+            print(f"                   Aggregating {len(val)} nodes")
+
         aggregated_estimate = _compute_aggregated_estimate(attribute_nodes=val,
                                                            llm_estimate_dict=llm_estimate_dict)
         aggregated_estimates_cross.append(aggregated_estimate)
