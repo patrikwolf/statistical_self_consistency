@@ -18,8 +18,6 @@ def _compute_aggregated_estimate(
     unconditional_priors = []
     answer_distributions = []
     for node in attribute_nodes:
-        print(json.dumps(llm_estimate_dict, indent=4))
-
         # Find LLM estimates in list
         llm_estimates = next((entry for entry in llm_estimate_dict if entry["combination"] == node), None)
 
@@ -53,9 +51,9 @@ def _compute_aggregated_estimate(
 
 
 def _get_shared_attributes(nodes: list[list[dict]]) -> list[dict]:
-    print("*" * 80)
-    print("Nodes")
-    print(nodes)
+    # print("*" * 80)
+    # print("Nodes")
+    # print(nodes)
 
     # Initialize shared set with attributes from first node
     shared = set((d["attribute_description"], d["value_description"]) for d in nodes[0])
@@ -112,15 +110,29 @@ def compute_all_aggregated_estimates_synthetic(
     # Compute aggregated estimates (within tree)
     aggregated_estimates_within = []
     for key, val in aggregation_dict["within_tree"].items():
-        print(f"     [Within tree] Computing aggregated estimate for {key}")
+        if len(val) > 2:
+            print("     [Within tree] WARNING: Skipping aggregations over more than 2 nodes.")
+            continue
+        else:
+            print(f"     [Within tree] Computing aggregated estimate for {key}")
+            print(f"                   Aggregating {len(val)} nodes")
+
         aggregated_estimate = _compute_aggregated_estimate(attribute_nodes=val,
                                                            llm_estimate_dict=llm_estimate_dict)
         aggregated_estimates_within.append(aggregated_estimate)
 
+    print("                   -----------")
+
     # Compute aggregated estimates (cross tree)
     aggregated_estimates_cross = []
     for key, val in aggregation_dict["cross_tree"].items():
-        print(f"     [Cross tree] Compute aggregated estimate for {key}")
+        if len(val) > 2:
+            print("     [Cross tree] WARNING: Skipping aggregations over more than 2 nodes.")
+            continue
+        else:
+            print(f"     [Cross tree] Computing aggregated estimate for {key}")
+            print(f"                   Aggregating {len(val)} nodes")
+
         aggregated_estimate = _compute_aggregated_estimate(attribute_nodes=val,
                                                            llm_estimate_dict=llm_estimate_dict)
         aggregated_estimates_cross.append(aggregated_estimate)

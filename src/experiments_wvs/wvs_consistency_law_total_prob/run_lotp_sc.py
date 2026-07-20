@@ -3,7 +3,7 @@ import time
 
 from config.model_config import ModelConfig
 from experiments_wvs.config.loader import load_shared_wvs_config
-from experiments_wvs.wvs_consistency_law_total_prob.compute_aggregation import compute_all_aggregated_estimates
+from experiments_wvs.wvs_consistency_law_total_prob.compute_aggregation import OLD_compute_all_aggregated_estimates
 from experiments_wvs.wvs_consistency_law_total_prob.build_tree_nodes import get_attribute_combinations
 from experiments_wvs.wvs_consistency_law_total_prob.evaluation import evaluate_aggregated_results
 from experiments_wvs.wvs_consistency_law_total_prob.final_scoring import compute_final_scores
@@ -64,7 +64,7 @@ def main(
     )
 
     # For all questions, compute the 8 aggregated estimates and store them
-    aggregation_results = compute_all_aggregated_estimates(
+    aggregation_results = OLD_compute_all_aggregated_estimates(
         experiment_folder=experiment_folder,
         question_answer_list=question_answer_list,
         llm_estimate_dict=llm_estimate_dict,

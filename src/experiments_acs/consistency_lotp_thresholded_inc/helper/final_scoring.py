@@ -3,23 +3,23 @@ import numpy as np
 from file_logging.read_and_write_json import save_as_json
 
 
-def compute_new_final_scores_synthetic(
+def compute_new_final_scores(
         experiment_folder: str,
         split_consistency_results: dict,
         order_consistency_results: dict,
         epsilon: float,
         num_split_checks: int,
         num_order_checks: int,
-        rerun: bool = False,
         cluster: bool = False,
-):
+) -> dict:
+
     # Split consistency within-tree
-    within_res = split_consistency_results["wasserstein_distances_within_tree"]
+    within_res = split_consistency_results["absolute_distances_within_tree"]
     assert len(within_res) == num_split_checks
     num_within_tree_checks_satisfied = float(np.sum(np.array(within_res) < epsilon))
 
     # Split consistency cross-tree
-    cross_res = split_consistency_results["wasserstein_distances_cross_tree"]
+    cross_res = split_consistency_results["absolute_distances_cross_tree"]
     assert len(cross_res) == num_split_checks
     num_cross_tree_checks_satisfied = float(np.sum(np.array(cross_res) < epsilon))
 
@@ -50,16 +50,11 @@ def compute_new_final_scores_synthetic(
         "order_consistency": order_consistency_scores,
     }
 
-    if rerun:
-        filename = f"final_scores_{epsilon}.json"
-    else:
-        filename = "final_scores.json"
-
-    # Save to file
+    # Save results
     results_path = save_as_json(
         data=results,
         experiment=experiment_folder,
-        filename=filename,
+        filename=f"final_scores_{epsilon}.json",
         cluster=cluster,
     )
     print(f"\nFinal score saved to {results_path}")
@@ -85,43 +80,38 @@ def score_order_consistency(
     return order_consistency_scores
 
 
-def compute_final_scores_synthetic(
-        experiment_folder: str,
-        sanity_check_results: dict,
-        epsilon: float,
-        num_checks_per_question: int = 4,
-        rerun: bool = False,
-        cluster: bool = False,
+def compute_final_scores(
+    experiment_folder: str,
+    sanity_check_results: dict,
+    epsilon: float,
+    cluster: bool = False,
 ) -> dict:
 
-    # Within-tree
-    within_res = sanity_check_results["wasserstein_distances_within_tree"]
-    assert len(within_res) == num_checks_per_question
-    num_within_tree_checks_satisfied = float(np.sum(np.array(within_res) < epsilon))
-
-    # Cross-tree
-    cross_res = sanity_check_results["wasserstein_distances_cross_tree"]
-    assert len(cross_res) == num_checks_per_question
-    num_cross_tree_checks_satisfied = float(np.sum(np.array(cross_res) < epsilon))
-
-    results = {
-        "epsilon": epsilon,
-        "num_within_tree_checks_satisfied": num_within_tree_checks_satisfied,
-        "num_cross_tree_checks_satisfied": num_cross_tree_checks_satisfied,
-        "fraction_of_within_tree_checks_satisfied": num_within_tree_checks_satisfied / num_checks_per_question,
-        "fraction_of_cross_tree_checks_satisfied": num_cross_tree_checks_satisfied / num_checks_per_question,
+    distance_keys = {
+        "within_tree": "wasserstein_distances_within_tree",
+        "cross_tree": "wasserstein_distances_cross_tree",
     }
 
-    if rerun:
-        filename = f"final_scores_{epsilon}.json"
-    else:
-        filename = "final_scores.json"
+    # Initialize results
+    results = {
+        "epsilon": epsilon
+    }
 
-    # Save to file
+    # Iterate over within- and cross-tree results
+    for label, key in distance_keys.items():
+        distances = np.asarray(sanity_check_results[key])
+        num_satisfied = float(np.sum(distances < epsilon))
+        total_num_checks = len(distances)
+
+        results[f"num_{label}_checks_satisfied"] = num_satisfied
+        results[f"fraction_of_{label}_checks_satisfied"] = (
+            num_satisfied / total_num_checks if total_num_checks > 0 else np.nan
+        )
+
     results_path = save_as_json(
         data=results,
         experiment=experiment_folder,
-        filename=filename,
+        filename=f"final_scores_{epsilon}.json",
         cluster=cluster,
     )
     print(f"\nFinal score saved to {results_path}")

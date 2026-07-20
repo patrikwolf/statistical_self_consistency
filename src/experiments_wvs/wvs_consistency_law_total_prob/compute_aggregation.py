@@ -108,6 +108,72 @@ def compute_all_aggregated_estimates(
     print("Computing aggregated estimates for all questions")
     print("*" * 80)
     for question_answer_dict in question_answer_list:
+        print(f"\nComputing aggregated estimate for question with identifier {question_answer_dict['question_identifier']}")
+        question_identifier = str(question_answer_dict["question_identifier"])
+
+        # Compute aggregated estimates (within tree)
+        aggregated_estimates_within = []
+        for key, val in aggregation_dict["within_tree"].items():
+
+            if len(val) > 2:
+                print("     [Within tree] WARNING: Skipping aggregations over more than 2 nodes.")
+                continue
+            else:
+                print(f"     [Within tree] Computing aggregated estimate for {key}")
+                print(f"                   Aggregating {len(val)} nodes")
+
+            aggregated_estimate = _compute_aggregated_estimate(question_identifier=question_identifier,
+                                                               attribute_nodes=val,
+                                                               llm_estimate_dict=llm_estimate_dict)
+            aggregated_estimates_within.append(aggregated_estimate)
+
+        print("                   -----------")
+
+        # Compute aggregated estimates (cross tree)
+        aggregated_estimates_cross = []
+        for key, val in aggregation_dict["cross_tree"].items():
+            if len(val) > 2:
+                print("     [Cross tree] WARNING: Skipping aggregations over more than 2 nodes.")
+                continue
+            else:
+                print(f"     [Cross tree] Computing aggregated estimate for {key}")
+                print(f"                   Aggregating {len(val)} nodes")
+
+            aggregated_estimate = _compute_aggregated_estimate(question_identifier=question_identifier,
+                                                               attribute_nodes=val,
+                                                               llm_estimate_dict=llm_estimate_dict)
+            aggregated_estimates_cross.append(aggregated_estimate)
+
+        # Add results for the given question to dict
+        aggregation_results[question_identifier] = {
+            "question_identifier": question_identifier,
+            "aggregated_estimates_within_tree": aggregated_estimates_within,
+            "aggregated_estimates_cross_tree": aggregated_estimates_cross,
+        }
+
+    # Save to file
+    results_path = save_as_json(
+        data=aggregation_results,
+        experiment=experiment_folder,
+        filename="aggregation_results.json",
+    )
+    print(f"\nAggregated LLM estimates saved to {results_path}")
+
+    return aggregation_results
+
+
+def OLD_compute_all_aggregated_estimates(
+        experiment_folder: str,
+        question_answer_list: list,
+        aggregation_dict: dict,
+        llm_estimate_dict: dict
+) -> dict:
+
+    aggregation_results = {}
+    print("*" * 80)
+    print("Computing aggregated estimates for all questions")
+    print("*" * 80)
+    for question_answer_dict in question_answer_list:
         print(f"Computing aggregated estimate for question with identifier {question_answer_dict['question_identifier']}")
         question_identifier = str(question_answer_dict["question_identifier"])
 

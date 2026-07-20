@@ -1,4 +1,5 @@
 from file_logging.read_and_write_json import save_as_json
+from utility.matching_pairs import find_and_evaluate_matching_pairs
 from utility.wasserstein_helper import _evaluate_normalized_wasserstein_distance
 
 
@@ -67,3 +68,45 @@ def evaluate_aggregated_results(
     print(f"\nSanity check evaluation saved to {results_path}")
 
     return sanity_check_results
+
+
+def evaluate_order_consistency(
+        experiment_folder: str,
+        question_answer_list: list[dict],
+        llm_estimate_dict: dict,
+):
+    order_consistency_results = {}
+
+    # For every question, evaluate all aggregated estimates against the direct estimates
+    for question_answer_dict in question_answer_list:
+        question_identifier = str(question_answer_dict["question_identifier"])
+
+        # Get all direct estimates for this question
+        direct_estimates_for_question = llm_estimate_dict[question_identifier]["llm_estimates"]
+
+        # Find all level-2 nodes
+        level_two_nodes = [entry for entry in direct_estimates_for_question if len(entry["combination"]) == 2]
+        assert len(level_two_nodes) == 8
+
+        # Find matching pairs
+        matching_pairs = find_and_evaluate_matching_pairs(level_two_nodes)
+        assert len(matching_pairs) == 4
+
+        # Extract wasserstein distances
+        wasserstein_distances_for_question = [entry["wasserstein_distance"] for entry in matching_pairs]
+
+        # Store results
+        order_consistency_results[question_identifier] = {
+            "question_identifier": question_identifier,
+            "wasserstein_distances": wasserstein_distances_for_question,
+        }
+
+    # Save to file
+    results_path = save_as_json(
+        data=order_consistency_results,
+        experiment=experiment_folder,
+        filename="order_consistency_results.json",
+    )
+    print(f"\nOrder consistency evaluation saved to {results_path}")
+
+    return order_consistency_results

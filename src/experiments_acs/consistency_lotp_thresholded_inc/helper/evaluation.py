@@ -1,5 +1,8 @@
+import json
+
 from collections import defaultdict
 from file_logging.read_and_write_json import save_as_json
+from utility.wasserstein_helper import _evaluate_normalized_wasserstein_distance
 
 
 def _eval_abs_error_for_all_aggregations(
@@ -7,14 +10,14 @@ def _eval_abs_error_for_all_aggregations(
         direct_estimates_for_question: list[dict],
 ) -> list[float]:
 
-    ws_distances_for_question = []
+    absolute_distances_for_question = []
     for agg_res in aggregation_estimates:
         # Extract combination
-        aggregated_combination = agg_res["shared_combination_of_aggregate"]
+        aggregated_combination = [f["value_description"] for f in agg_res["shared_combination_of_aggregate"]]
 
         # Get direct estimate for the same question and combination
         direct_estimate = next((item for item in direct_estimates_for_question
-                                if item["combination"] == aggregated_combination), None)
+                                if [json.dumps(f) for f in item["combination"]] == aggregated_combination), None)
 
         print(f"Direct estimate: {direct_estimate['llm_answer_distribution']}")
         print(f"Aggregated results: {agg_res['aggregated_estimate']}")
@@ -23,30 +26,30 @@ def _eval_abs_error_for_all_aggregations(
 
         # Add results to list
         error = abs(direct_estimate["llm_answer_distribution"] - agg_res['aggregated_estimate'])
-        ws_distances_for_question.append(error)
+        absolute_distances_for_question.append(error)
 
-    return ws_distances_for_question
+    return absolute_distances_for_question
 
 
-def evaluate_aggregated_results_synthetic(
+def evaluate_aggregated_results(
         experiment_folder: str,
-        llm_estimate_dict: list[dict],
+        llm_estimates_list: list[dict],
         aggregation_results: dict,
 ):
     # Evaluate absolute distance for all aggregated estimates for this question
-    ws_distances_for_question_within = _eval_abs_error_for_all_aggregations(
+    distances_for_question_within = _eval_abs_error_for_all_aggregations(
         aggregation_estimates=aggregation_results["aggregated_estimates_within_tree"],
-        direct_estimates_for_question=llm_estimate_dict,
+        direct_estimates_for_question=llm_estimates_list,
     )
-    ws_distances_for_question_cross = _eval_abs_error_for_all_aggregations(
+    distances_for_question_cross = _eval_abs_error_for_all_aggregations(
         aggregation_estimates=aggregation_results["aggregated_estimates_cross_tree"],
-        direct_estimates_for_question=llm_estimate_dict,
+        direct_estimates_for_question=llm_estimates_list,
     )
 
     # Store results
     sanity_check_results = {
-        "wasserstein_distances_within_tree": ws_distances_for_question_within,
-        "wasserstein_distances_cross_tree": ws_distances_for_question_cross,
+        "absolute_distances_within_tree": distances_for_question_within,
+        "absolute_distances_cross_tree": distances_for_question_cross,
     }
 
     # Save to file
@@ -68,7 +71,10 @@ def find_and_evaluate_matching_pairs(estimates: list[dict]) -> list[dict]:
     for estimate in estimates:
         # Get canonical combination
         canonical_combination = tuple(
-            sorted((item["attribute_description"], item["value_description"]) for item in estimate["combination"])
+            sorted(
+                (item["description"], tuple(item["values"]))
+                for item in estimate["combination"]
+            )
         )
         groups[canonical_combination].append(estimate)
 
@@ -95,10 +101,10 @@ def find_and_evaluate_matching_pairs(estimates: list[dict]) -> list[dict]:
 
 def evaluate_order_consistency(
         experiment_folder: str,
-        llm_estimate_dict: list[dict],
+        llm_estimates_list: list[dict],
 ):
     # Find all level-2 nodes
-    level_two_nodes = [entry for entry in llm_estimate_dict if len(entry["combination"]) == 2]
+    level_two_nodes = [entry for entry in llm_estimates_list if len(entry["combination"]) == 2]
     assert len(level_two_nodes) == 8
 
     # Find matching pairs
@@ -117,3 +123,11 @@ def evaluate_order_consistency(
     print(f"\nOrder consistency evaluation saved to {results_path}")
 
     return abs_differences
+
+
+if __name__ == "__main__":
+    direct_estimates = [0.71, 0.22, 0.055, 0.015]
+    aggregated_estimates = [0.6825, 0.24, 0.0575, 0.02]
+
+    w1 = _evaluate_normalized_wasserstein_distance(direct_estimates, aggregated_estimates)
+    print(f"Wasserstein distance: {w1}")
