@@ -1,6 +1,7 @@
 import json
 import time
 
+from typing import Literal
 from config.model_config import ModelConfig
 from experiments_wvs.config.loader import load_shared_wvs_config
 from experiments_wvs.wvs_consistency_law_total_prob.compute_aggregation import OLD_compute_all_aggregated_estimates
@@ -20,8 +21,11 @@ def main(
         epsilon: float,
         question_identifiers: list = None,
         truncate: int = None,
+        prompting_scheme: Literal["sociodemographic", "persona", "unspecified"] = "sociodemographic",
 ):
     print(f"\nModel: {cfg.model_name}")
+    print(f"Prompting scheme: {prompting_scheme}")
+    print(f"Reasoning effort: {cfg.reasoning_effort}")
     print(f"Country: {cfg.country}")
     print(f"Epsilon: {epsilon}\n")
 
@@ -54,6 +58,7 @@ def main(
         question_answer_list=question_answer_list,
         attributes=attributes,
         combination_dict=combination_dict,
+        prompting_scheme=prompting_scheme,
     )
 
     # Get aggregation dict for the given question
@@ -132,6 +137,7 @@ if __name__ == "__main__":
         binary_splits=binary_splits,
         epsilon=epsilon,
         question_identifiers=question_identifiers,
+        prompting_scheme="sociodemographic",
     )
     timestamp = experiment_folder.split("/")[1]
 

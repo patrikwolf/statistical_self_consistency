@@ -1,6 +1,7 @@
 from typing import Literal
 from transformers import PreTrainedModel, PreTrainedTokenizer
-from language_models.prompt_unified import prompt_llm_and_extract, prompt_llm_and_extract_json
+from language_models.prompt_unified import prompt_llm_and_extract, prompt_llm_and_extract_json, \
+    prompt_logprobs_and_extract_json
 
 
 def llm_direct_prompting(
@@ -22,6 +23,7 @@ def llm_direct_prompting(
     log_direct = {}
     for idx in range(num_of_samples):
         print(f"Sample {idx + 1}/{num_of_samples}")
+
         # LLM direct prompting
         llm_prediction, llm_lower_bound, llm_upper_bound, llm_output = prompt_llm_and_extract(
             model_name=model_name,
@@ -53,6 +55,7 @@ def llm_distribution_prompting(
         num_of_samples: int,
         max_number_attempts: int = 5,
         expected_json_keys: list[str] | None = None,
+        normalization_slack: float = 1e-6
 ) -> dict:
     # Load model and tokenizer if necessary
     if model_name.startswith("Qwen"):
@@ -72,7 +75,42 @@ def llm_distribution_prompting(
             prompt=prompt,
             max_number_attempts=max_number_attempts,
             expected_json_keys=expected_json_keys,
+            normalization_slack=normalization_slack,
         )
+
+        # Store log
+        log_direct[f"run_{idx}"] = {
+            "llm_distribution": llm_distribution,
+            "output": llm_output
+        }
+
+    return log_direct
+
+
+def llm_logprob_prompting(
+        model_name: str,
+        prompt: str,
+        reasoning_effort: Literal["none", "minimal", "low", "medium", "high", "xhigh"],
+        num_of_samples: int,
+        max_number_attempts: int,
+        expected_keys: list[str],
+) -> dict:
+    # LLM prediction of income > threshold
+    log_direct = {}
+    for idx in range(num_of_samples):
+        print(f"Sample {idx + 1}/{num_of_samples}")
+        # LLM direct prompting
+        llm_distribution, llm_output = prompt_logprobs_and_extract_json(
+            model_name=model_name,
+            reasoning_effort=reasoning_effort,
+            prompt=prompt,
+            max_number_attempts=max_number_attempts,
+            expected_keys=expected_keys,
+        )
+
+        # Serialize logprobs
+        serialized_logprobs = [item.model_dump() for item in llm_output["logprobs"]]
+        llm_output["logprobs"] = serialized_logprobs
 
         # Store log
         log_direct[f"run_{idx}"] = {

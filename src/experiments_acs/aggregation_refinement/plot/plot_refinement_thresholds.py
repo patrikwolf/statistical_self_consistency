@@ -135,7 +135,7 @@ def plot_aggregation_refinement(results: dict, plot_dir: Path, experiment_name: 
              "\n"
              r"\normalsize "
              f"Number of repetitions per setting: {results['num_of_samples']}"
-             "\n")
+             "\n\n")
 
     # Plot size
     plt.figure(figsize=(9, 9))
@@ -146,6 +146,8 @@ def plot_aggregation_refinement(results: dict, plot_dir: Path, experiment_name: 
 
     # Store values per level for averaging
     values_by_level = defaultdict(list)
+
+    ci_widths = []
 
     # Plot all results in the list
     all_x = set()
@@ -162,7 +164,10 @@ def plot_aggregation_refinement(results: dict, plot_dir: Path, experiment_name: 
             error_list = result["aggregated_error_list"]
             mean, lower, upper = bootstrap_confidence_interval(values=error_list, n_boot=1_000, ci=0.9)
 
-            # Add to list
+            # CI width for this plotted point
+            ci_width = upper - lower
+            ci_widths.append(ci_width)
+
             x.append(level_int)
             y_mean.append(mean)
             y_lower.append(lower)
@@ -188,6 +193,16 @@ def plot_aggregation_refinement(results: dict, plot_dir: Path, experiment_name: 
         # Bootstrap CI
         plt.fill_between(x, y_lower, y_upper, color=color, alpha=0.2, zorder=0)
 
+    # Summaries across all curves and levels
+    average_width = np.mean(ci_widths)
+    maximum_width = np.max(ci_widths)
+    median_width = np.median(ci_widths)
+
+    print(f"Number of plotted points: {len(ci_widths)}")
+    print(f"Mean 90% CI width:   {average_width:.4f}")
+    print(f"Median 90% CI width: {median_width:.4f}")
+    print(f"Maximum 90% CI width:{maximum_width:.4f}")
+
     # Compute average trend
     x_avg = sorted(values_by_level.keys())
     y_avg = [np.mean(values_by_level[level]) for level in x_avg]
@@ -209,7 +224,14 @@ def plot_aggregation_refinement(results: dict, plot_dir: Path, experiment_name: 
     plt.ylabel("Error of aggregated estimate", labelpad=15)
     x_ticks = list(range(min(all_x), max(all_x) + 1))
     plt.xticks(x_ticks)
-    plt.legend(loc="upper right")
+    plt.legend(
+        loc="upper center",
+        bbox_to_anchor=(0.5, 1.15),
+        ncol=4,
+        prop={"size": 10},
+        columnspacing=0.8,
+        handletextpad=0.4,
+    )
     plt.grid()
     plt.tight_layout()
 

@@ -1,0 +1,20 @@
+You are estimating the distribution of survey responses for a demographic subpopulation.
+
+The subpopulation is characterized by the following attributes:
+{attribute_list}
+
+Based on the provided information, determine how a randomly selected person from this subpopulation would
+answer the following survey question.
+
+Survey question:
+{question}
+
+Answer options:
+{answer_option_list}
+
+Respond with exactly one of the following letters:
+{answer_option_keys}
+
+Do not include punctuation, explanations, or any other text.
+
+Answer:

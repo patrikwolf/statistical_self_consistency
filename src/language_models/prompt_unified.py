@@ -1,9 +1,11 @@
-from typing import Literal
+import json
 
+from typing import Literal
 from transformers import PreTrainedModel, PreTrainedTokenizer
 from language_models.prompt_local_llm import prompt_llm
 from language_models.prompt_open_router import prompt_open_router_api
-from utility.completion_postprocessing import extract_estimates, extract_textual_response, extract_json_response
+from utility.completion_postprocessing import extract_estimates, extract_textual_response, extract_json_response, \
+    process_top_logprobs
 
 
 def prompt_llm_and_extract(
@@ -131,6 +133,7 @@ def prompt_llm_and_extract_json(
         prompt: str,
         max_number_attempts: int,
         expected_json_keys: list[str] | None = None,
+        normalization_slack: float = 1e-6,
 ) -> tuple[dict, dict]:
     # Initialization
     json_response = None
@@ -154,8 +157,10 @@ def prompt_llm_and_extract_json(
 
         if json_response is not None:
             # Sum of probabilities should be 1
-            if abs(sum([val for val in json_response.values()]) - 1) > 1e-6:
-                print(f"    ---> WARNING: Extracted JSON does not sum to 1. Attempt {k + 1}/{max_number_attempts}...")
+            sum_of_priors = sum([val for val in json_response.values()])
+            if abs(sum_of_priors - 1) > normalization_slack:
+                print(f"    ---> WARNING: Extracted JSON does not sum to 1 (sum = {sum_of_priors}). "
+                      f"Attempt {k + 1}/{max_number_attempts}...")
                 continue
 
             if expected_json_keys is not None:
@@ -182,9 +187,58 @@ def prompt_llm_and_extract_json(
     return json_response, result
 
 
+def prompt_logprobs_and_extract_json(
+        model_name: str,
+        reasoning_effort: Literal["none", "minimal", "low", "medium", "high", "xhigh"],
+        prompt: str,
+        max_number_attempts: int,
+        expected_keys: list[str],
+) -> tuple[dict, dict]:
+    # Initialization
+    json_response = None
+    result = {}
+
+    for k in range(max_number_attempts):
+        # Generate response
+        result = prompt_open_router_api(
+            model=model_name,
+            prompt=prompt,
+            reasoning_effort=reasoning_effort,
+            logprobs=True,
+            num_top_logprobs=2 * len(expected_keys),
+        )
+
+        if result["response"] is None or result["logprobs"] is None:
+            print(f"    ---> WARNING: Result or logprobs were 'None'. Attempt {k + 1}/{max_number_attempts}...")
+            continue
+
+        # Extract top logprobs for first token
+        top_logprobs = result["logprobs"][0].top_logprobs
+
+        # Parse response
+        json_response, captured_probability = process_top_logprobs(top_logprobs=top_logprobs, expected_keys=expected_keys)
+
+        # Add captured probability to results
+        result["prob_captured_by_top_logprobs"] = captured_probability
+
+        if json_response is not None:
+            # Assert normalization --> guaranteed by processing stage
+            assert abs(sum([prob for prob in json_response.values()]) - 1) < 1e-6
+            break
+        else:
+            print(
+                f"    ---> WARNING: Could not extract estimate from response. Attempt {k + 1}/{max_number_attempts}...")
+            print(f"    ---> Response: {result['response']}")
+
+    # Ensure we have a valid estimate
+    assert json_response is not None, f"Could not extract JSON from response within {max_number_attempts} attempts."
+
+    return json_response, result
+
+
 if __name__ == "__main__":
     # Select model
-    model = "openai/gpt-5.4"
+    model = "openai/gpt-4o-mini"
 
     # Define prompt
     prompt = ("What is the probability that someone in France earns for than 40'000 EUR per year? Please answer "
@@ -214,3 +268,34 @@ if __name__ == "__main__":
     print(result["reasoning"])
     print("\n*** Logprobs ***")
     print(result["logprobs"])
+    print("\n" + "*" * 80 + "\n")
+
+    # Define prompt
+    prompt = """Based on the provided information and general knowledge of U.S. income distributions,
+answer the question below.
+
+Question:
+Which income bin did this person’s annual income fall into?
+
+Income bins:
+A: 0 to 40'000 USD
+B: 40'000 to 80'000 USD
+C: 80'000 to 100'000 USD
+D: 100'000 to 120'000 USD
+
+Respond with exactly one of the following letters:
+A, B, C, D
+
+Do not include punctuation, explanations, or any other text.
+
+Answer:"""
+
+    json_response, result = prompt_logprobs_and_extract_json(
+        model_name=model,
+        reasoning_effort=reasoning_effort,
+        prompt=prompt,
+        max_number_attempts=10,
+        expected_keys=["A", "B", "C", "D"],
+    )
+
+    print(json.dumps(json_response, indent=2))

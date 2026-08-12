@@ -2,7 +2,7 @@ import os
 
 from config.minimal_experiment_config import MinimalExperimentConfig
 from data_loader_acs.data_loader import load_survey_data
-from experiments_acs.aggregation_refinement.standard_values.standard_value_loader import load_standard_values
+from experiments_acs.split_analysis.standard_value_loader import load_standard_values
 from experiments_acs.tree_income_threshold.analysis.binary_threshold_split import main
 from utility.argument_parser import parse_arguments
 from utility.hyperparameters import assert_decomposition_validity, process_hyperparameters

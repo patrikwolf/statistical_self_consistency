@@ -18,6 +18,8 @@ def compute_all_aggregated_estimates(
         print(f"  ---> Computing aggregated estimate for level {level}")
         aggregated_estimate = _compute_aggregated_estimate(attribute_nodes=val,
                                                            llm_estimate_dict=llm_estimate_dict)
+        if aggregated_estimate is None:
+            raise ValueError("Aggregated estimate is None because priors sum up to zero (degenerate case).")
         aggregated_estimates[level] = aggregated_estimate
 
     # Save to file

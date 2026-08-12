@@ -4,8 +4,8 @@ import numpy as np
 from transformers import PreTrainedModel, PreTrainedTokenizer
 from config.prior_computation_config import PriorComputationConfig
 from data_loader_acs.data_loader import load_original_attribute_dict
-from experiments_acs.aggregation_refinement.standard_values.standard_value_loader import load_standard_values
-from experiments_acs.llm_piors.filter_helper import generate_filters
+from experiments_acs.split_analysis.standard_value_loader import load_standard_values
+from experiments_acs.llm_priors.filter_helper import generate_filters
 from language_models.prior_estimation import get_joint_llm_prior_estimates
 from file_logging.read_and_write_json import save_as_json
 from utility.time_helper import get_experiment_timestamp
@@ -22,6 +22,7 @@ def joint_prior_elicitation(
         template_filename: str,
         improved_age_desc: bool,
         verbose: bool = False,
+        normalization_slack: float = 1e-6,
 ) -> dict:
     print(f"\nModel: {cfg.model_name}")
     print(f"Reasoning effort: {cfg.reasoning_effort}\n")
@@ -38,6 +39,7 @@ def joint_prior_elicitation(
         filter_list=filter_list,
         improved_age_desc=improved_age_desc,
         template_filename=template_filename,
+        normalization_slack=normalization_slack,
     )
 
     # Normalize prior distribution for each run

@@ -1,0 +1,13 @@
+You are given a mutually exclusive and exhaustive partition of the population in {country} into groups defined by
+sociodemographic attributes.
+
+Which group does a randomly selected person from the population in {country} belong to?
+
+{groups}
+
+Respond with exactly one letter from the following set:
+{group_names}
+
+Do not include punctuation, explanations, or any other text.
+
+Answer:

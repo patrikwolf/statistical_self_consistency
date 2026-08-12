@@ -1,10 +1,10 @@
 import json
 import numpy as np
 
-from experiments_wvs.wvs_ground_truth_eval.evaluation import evaluate_wasserstein_distance
 from file_logging.read_and_write_json import save_as_json
 from utility.prior_weighted_avg import weighted_avg
 from utility.time_helper import get_experiment_timestamp
+from utility.wasserstein_helper import _evaluate_normalized_wasserstein_distance
 
 
 def _compute_aggregated_answer_distribution(level_nodes: list) -> list[float]:
@@ -43,8 +43,8 @@ def compute_reconstruction_errors(
         l0_estimate = next(item for item in llm_estimates_for_question if item["combination"] == [])
 
         # Compare direct LLM estimate against ground-truth at root-level
-        error_0 = evaluate_wasserstein_distance(ground_truth_distribution=ground_truth_distribution,
-                                                llm_estimate=l0_estimate["llm_answer_distribution"])
+        error_0 = _evaluate_normalized_wasserstein_distance(direct_estimate=ground_truth_distribution,
+                                                            aggregated_estimate=l0_estimate["llm_answer_distribution"])
 
         # Aggregate level 1 estimates
         level = 1
@@ -52,8 +52,8 @@ def compute_reconstruction_errors(
         level_1_llm_estimates = [item for item in llm_estimates_for_question if item["level"] == level]
         assert len(level_1_llm_estimates) == 2, f"Expected 2 nodes at level {level}, but found {len(level_1_llm_estimates)}"
         aggregated_l1_llm_estimate = _compute_aggregated_answer_distribution(level_nodes=level_1_llm_estimates)
-        error_1 = evaluate_wasserstein_distance(ground_truth_distribution=ground_truth_distribution,
-                                                llm_estimate=aggregated_l1_llm_estimate)
+        error_1 = _evaluate_normalized_wasserstein_distance(direct_estimate=ground_truth_distribution,
+                                                            aggregated_estimate=aggregated_l1_llm_estimate)
 
         # Aggregate level 1 estimates
         level = 2
@@ -61,8 +61,8 @@ def compute_reconstruction_errors(
         level_2_llm_estimates = [item for item in llm_estimates_for_question if item["level"] == level]
         assert len(level_2_llm_estimates) == 4, f"Expected 4 nodes at level {level}, but found {len(level_2_llm_estimates)}"
         aggregated_l2_llm_estimate = _compute_aggregated_answer_distribution(level_nodes=level_2_llm_estimates)
-        error_2 = evaluate_wasserstein_distance(ground_truth_distribution=ground_truth_distribution,
-                                                llm_estimate=aggregated_l2_llm_estimate)
+        error_2 = _evaluate_normalized_wasserstein_distance(direct_estimate=ground_truth_distribution,
+                                                            aggregated_estimate=aggregated_l2_llm_estimate)
 
         # Add results to dict
         reconstruction_errors[question_identifier] = {

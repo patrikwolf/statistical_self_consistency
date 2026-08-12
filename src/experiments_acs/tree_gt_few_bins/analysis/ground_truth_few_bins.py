@@ -3,7 +3,7 @@ import numpy as np
 
 from config.minimal_experiment_config import MinimalExperimentConfig
 from data_loader_acs.data_loader import load_survey_data
-from experiments_acs.aggregation_refinement.standard_values.standard_value_loader import load_standard_values
+from experiments_acs.split_analysis.standard_value_loader import load_standard_values
 from experiments_acs.distribution.experiment_ground_truth_distribution import compute_and_save_survey_distribution
 from utility.hyperparameters import assert_decomposition_validity, process_hyperparameters
 from utility.argument_parser import parse_arguments

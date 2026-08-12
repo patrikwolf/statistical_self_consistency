@@ -1,4 +1,5 @@
 import json
+import math
 import numpy as np
 
 from typing import Any
@@ -43,14 +44,38 @@ def _generate_improved_attribute_list(filters: list[Filter]) -> str:
     """Render filter definitions into the bullet list expected by the templates."""
     attribute_list = []
     for filter_definition in filters:
-        if filter_definition.description != "age":
-            attribute_list.append(f"- {filter_definition.description}: {_generate_attribute_values(filter_definition)}")
-        else:
+        if filter_definition.description == "age":
             # Improved age description: group ages into ranges
             age_intervals = format_age_intervals(np.array(filter_definition.values))
             attribute_list.append(f"- {filter_definition.description}: {age_intervals}")
+        elif filter_definition.description == "class of worker":
+            # Improved COW description
+            cow_description = format_class_of_worker(np.array(filter_definition.values))
+            attribute_list.append(f"- {filter_definition.description}: {cow_description}")
+        elif filter_definition.description == "usual number of hours worked per week":
+            # Improved WKHP description: group into ranges
+            wkhp_ranges = format_wkhp_ranges(np.array(filter_definition.values))
+            attribute_list.append(f"- {filter_definition.description}: {wkhp_ranges}")
+        else:
+            attribute_list.append(f"- {filter_definition.description}: {_generate_attribute_values(filter_definition)}")
 
     return "\n".join(attribute_list)
+
+
+def normalize_values(values: np.ndarray) -> set[Any]:
+    normalized = set()
+
+    for value in values:
+        if (
+            value is None
+            or value == "NaN"
+            or (isinstance(value, float) and math.isnan(value))
+        ):
+            normalized.add("NaN")
+        else:
+            normalized.add(value)
+
+    return normalized
 
 
 def format_age_intervals(values: np.ndarray) -> str:
@@ -91,6 +116,56 @@ def format_age_intervals(values: np.ndarray) -> str:
             parts.append(f"{start}–{end} years old")
 
     return " or ".join(parts)
+
+
+def format_wkhp_ranges(values: np.ndarray) -> str:
+    if len(values) == 1:
+        return f"{values[0]} hours per week"
+
+    # Separate missing values
+    has_unknown = np.isnan(values).any()
+
+    # Keep only valid numeric values and sort them
+    wkhp = np.sort(values[~np.isnan(values)].astype(int))
+
+    if len(wkhp) == 0:
+        return "unknown" if has_unknown else ""
+
+    # Group consecutive wkhp
+    intervals = []
+    start = prev = wkhp[0]
+
+    for wk in wkhp[1:]:
+        if wk == prev + 1:
+            prev = wk
+        else:
+            intervals.append((start, prev))
+            start = prev = wk
+
+    intervals.append((start, prev))
+
+    # Format intervals
+    parts = []
+    if has_unknown:
+        parts.append("unknown")
+
+    for start, end in intervals:
+        if start == end:
+            parts.append(f"{start} hours per week")
+        else:
+            parts.append(f"{start}–{end} hours per week")
+
+    return " or ".join(parts)
+
+
+def format_class_of_worker(values: np.ndarray) -> str:
+    normalized_values = normalize_values(values)
+
+    if normalized_values == {1, 2, 3, 4, 5, 6, 7}:
+        return "Currently employed or self-employed"
+    elif normalized_values == {8, 9, "NaN"}:
+        return "Not currently in paid employment"
+    raise ValueError(f"Unknown mapping from class of worker list {values} to improved split description.")
 
 
 def _generate_attribute_list_from_combination(combination: list[dict]) -> str:
@@ -189,6 +264,18 @@ def example_filters() -> list[Filter]:
                 2: "Non-citizen",
             }.get(i, None),
         ),
+        Filter(
+            attribute="COW",
+            description="class of worker",
+            values=[1, 2, 3, 4, 5, 6, 7],
+            value_map=lambda i: f"{i}"
+        ),
+        Filter(
+            attribute="WKHP",
+            description="usual number of hours worked per week",
+            values=[40, 41, 42, 43, 44, 45, 46],
+            value_map=lambda i: f"{i} hours"
+        )
     ]
 
 

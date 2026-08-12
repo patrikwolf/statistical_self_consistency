@@ -9,7 +9,7 @@ def prompt_open_router_api(
         prompt: str,
         reasoning_effort: Literal["none", "minimal", "low", "medium", "high", "xhigh"],
         logprobs: bool = False,
-        num_top_logprobs: int = 5,
+        num_top_logprobs: int = 10,
         token=None,
         temperature: float = 1.0,
 ) -> dict:

@@ -50,6 +50,7 @@ def get_joint_llm_prior_estimates(
         filter_list: list[list[Filter]],
         improved_age_desc: bool,
         template_filename: str = "ACS_joint_prior_estimation_v1.txt",
+        normalization_slack: float = 1e-6,
 ) -> tuple[dict, list]:
     # Assemble prompt
     prompt, group_wise_filters = assemble_joint_prior_estimation_prompt(
@@ -68,6 +69,7 @@ def get_joint_llm_prior_estimates(
         reasoning_effort=reasoning_effort,
         num_of_samples=num_of_samples,
         max_number_attempts=max_number_attempts,
+        normalization_slack=normalization_slack,
     )
 
     return log_direct, group_wise_filters

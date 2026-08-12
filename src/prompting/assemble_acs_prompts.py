@@ -1,13 +1,110 @@
+from string import ascii_uppercase
 from typing import Literal
 from experiments_acs.filtering.filter import Filter
 from prompting.formatting_helper import format_numeric_value, assemble_prompt_with_optional_filters, \
     format_template, _generate_attribute_list, map_filter_value, make_example_json, example_filters, \
-    example_filter_partition
+    example_filter_partition, _open_template, _generate_attribute_values
+
+
+DUMMY_ATTRIBUTES = [
+    "- internal ID: 417",
+    "- session number: 91",
+    "- color code: blue",
+    "- reference token: XJ4",
+    "- batch number: 12",
+    "- record index: 583",
+    "- processing queue: 4",
+    "- archive version: 2",
+    "- document code: D-17",
+    "- checksum: A93F",
+    "- entry label: K12",
+    "- sequence ID: 1048",
+    "- routing code: R-8",
+    "- storage unit: B14",
+]
 
 
 def assemble_income_prompt(
         filters: list[Filter],
-        income_threshold: float,
+        income_threshold: float | int,
+        prompting_scheme: Literal["sociodemographic", "persona", "unspecified"],
+        filtered_template_filename: str,
+        no_filter_template_filename: str,
+        income_greater_than_threshold: bool,
+        extract_confidence: bool = False,
+        confidence: int | float | None = None,
+        improved_age_desc: bool = False,
+        prompt_len_ablation: str = "none",
+        fixed_num_of_attributes: int | None = None,
+) -> str:
+    if prompt_len_ablation == "none":
+        return assemble_income_prompt_base(
+            filters=filters,
+            income_threshold=income_threshold,
+            filtered_template_filename=filtered_template_filename,
+            no_filter_template_filename=no_filter_template_filename,
+            extract_confidence=extract_confidence,
+            confidence=confidence,
+            prompting_scheme=prompting_scheme,
+            income_greater_than_threshold=income_greater_than_threshold,
+            improved_age_desc=improved_age_desc,
+        )
+    elif prompt_len_ablation == "dummy":
+        return assemble_income_prompt_dummy_attributes(
+            filters=filters,
+            income_threshold=income_threshold,
+            prompting_scheme=prompting_scheme,
+            filtered_template_filename=filtered_template_filename,
+            fixed_num_of_attributes=fixed_num_of_attributes,
+            income_greater_than_threshold=income_greater_than_threshold,
+            extract_confidence=extract_confidence,
+            improved_age_desc=improved_age_desc,
+        )
+    elif prompt_len_ablation == "repeat":
+        raise NotImplementedError()
+    else:
+        raise ValueError(f"Unknown prompt length ablation: {prompt_len_ablation}")
+
+
+def assemble_income_prompt_dummy_attributes(
+        filters: list[Filter],
+        income_threshold: float | int,
+        prompting_scheme: Literal["sociodemographic", "persona", "unspecified"],
+        filtered_template_filename: str,
+        income_greater_than_threshold: bool,
+        fixed_num_of_attributes: int | None,
+        extract_confidence: bool = False,
+        improved_age_desc: bool = False,
+):
+    assert prompting_scheme == "sociodemographic"
+    assert fixed_num_of_attributes is not None
+    assert income_greater_than_threshold is True
+    assert extract_confidence is False
+    assert improved_age_desc is False
+
+    template_values = {
+        "income_threshold": format_numeric_value(income_threshold),
+    }
+
+    # Attribute list
+    true_attributes = [f"- {filter_definition.description}: {_generate_attribute_values(filter_definition)}"
+                       for filter_definition in filters]
+    num_dummy_attributes = fixed_num_of_attributes - len(true_attributes)
+    assert len(DUMMY_ATTRIBUTES) >= num_dummy_attributes
+    all_attributes = true_attributes + DUMMY_ATTRIBUTES[:num_dummy_attributes]
+    attribute_list = "\n".join(all_attributes)
+
+    # Filters
+    template = _open_template(filtered_template_filename)
+    return template.format(
+        attributes=attribute_list,
+        **template_values
+    )
+
+
+def assemble_income_prompt_base(
+        filters: list[Filter],
+        income_threshold: float | int,
         prompting_scheme: Literal["sociodemographic", "persona", "unspecified"],
         filtered_template_filename: str,
         no_filter_template_filename: str,
@@ -259,6 +356,110 @@ def assemble_few_bin_income_prompt(
     return prompt, bin_details
 
 
+def assemble_few_bin_income_logprobs_prompt(
+        bin_edges: list[float],
+        filters: list[Filter],
+        prompting_scheme: Literal["sociodemographic", "persona", "unspecified"],
+        filtered_template_filename: str,
+        no_filter_template_filename: str,
+        uniform_example_distribution: bool = False,
+        improved_age_desc: bool = False,
+) -> tuple[str, dict, list]:
+
+    if prompting_scheme != "sociodemographic":
+        raise ValueError(f"Prompting scheme '{prompting_scheme}' is not supported.")
+
+    # Bins
+    bins = [[left, right] for left, right in zip(bin_edges[:-1], bin_edges[1:])]
+
+    # Generate group names
+    bin_details = {
+        f"Bin {idx + 1}": {
+            "bin_name": ascii_uppercase[idx],
+            "bin": bin,
+        } for idx, bin in enumerate(bins)
+    }
+    bin_name_list = [item["bin_name"] for item in bin_details.values()]
+    bin_names = ", ".join(bin_name_list)
+
+    # Concatenate
+    bins_str = ""
+    for bin, bin_name in zip(bins, bin_name_list):
+        bins_str += bin_name + f": {bin[0]} to {bin[1]} USD" + "\n"
+
+    # Truncate last two \n
+    bins_str = bins_str[:-1]
+
+    # Generate example output
+    example_output = make_example_json(num_groups=len(bins),
+                                       group_descriptor="Bin",
+                                       uniform_distribution=uniform_example_distribution)
+
+    prompt = assemble_prompt_with_optional_filters(
+        filters=filters,
+        bins=bins_str,
+        bin_names=bin_names,
+        example_output=example_output,
+        filtered_template_filename=filtered_template_filename,
+        no_filter_template_filename=no_filter_template_filename,
+        improved_age_desc=improved_age_desc,
+    )
+
+    return prompt, bin_details, bin_name_list
+
+
+def assemble_few_bin_commute_prompt(
+        bin_edges: list[float],
+        filters: list[Filter],
+        prompting_scheme: Literal["sociodemographic", "persona", "unspecified"],
+        filtered_template_filename: str,
+        no_filter_template_filename: str,
+        uniform_example_distribution: bool = False,
+        improved_age_desc: bool = False,
+) -> tuple[str, dict]:
+
+    if prompting_scheme != "sociodemographic":
+        raise ValueError(f"Prompting scheme '{prompting_scheme}' is not supported.")
+
+    # Bins
+    bins = [[left, right] for left, right in zip(bin_edges[:-1], bin_edges[1:])]
+
+    # Generate group names
+    bin_details = {
+        f"Bin {idx + 1}": {
+            "bin_name": f"Bin {idx + 1}",
+            "bin": bin,
+        } for idx, bin in enumerate(bins)
+    }
+    bin_name_list = [item["bin_name"] for item in bin_details.values()]
+    bin_names = ", ".join(bin_name_list)
+
+    # Concatenate
+    bins_str = ""
+    for bin, bin_name in zip(bins, bin_name_list):
+        bins_str += bin_name + ": " + f"{bin[0]} to {bin[1]} minutes" + "\n\n"
+
+    # Truncate last two \n
+    bins_str = bins_str[:-2]
+
+    # Generate example output
+    example_output = make_example_json(num_groups=len(bins),
+                                       group_descriptor="Bin",
+                                       uniform_distribution=uniform_example_distribution)
+
+    prompt = assemble_prompt_with_optional_filters(
+        filters=filters,
+        bins=bins_str,
+        bin_names=bin_names,
+        example_output=example_output,
+        filtered_template_filename=filtered_template_filename,
+        no_filter_template_filename=no_filter_template_filename,
+        improved_age_desc=improved_age_desc,
+    )
+
+    return prompt, bin_details
+
+
 def assemble_sociodemographic_income_prompt(
         filters: list[Filter],
         income_threshold: float,
@@ -426,6 +627,46 @@ def assemble_joint_prior_estimation_prompt(
     return prompt, group_wise_attribute_lists
 
 
+def assemble_joint_prior_logprobs_prompt(
+        base_filters: list[Filter],
+        filter_list: list[list[Filter]],
+        improved_age_desc: bool,
+        template_filename: str = "ACS_joint_prior_logprobs_v1.txt",
+) -> tuple[str, list, list]:
+    # Generate all group descriptions
+    group_wise_attribute_lists = []
+    for idx, filters in enumerate(filter_list):
+        combined_filters = base_filters + filters
+        group_wise_attribute_lists.append(
+            {
+                "group_name": ascii_uppercase[idx],
+                "attribute_list_string": _generate_attribute_list(
+                    filters=combined_filters,
+                    improved_age_desc=improved_age_desc),
+                "filters": [f.serialize() for f in combined_filters],
+            }
+        )
+
+    # Concatenate
+    groups = ""
+    for group in group_wise_attribute_lists:
+        groups += group["group_name"] + ":\n" + group["attribute_list_string"] + "\n\n"
+
+    # Truncate last two \n
+    groups = groups[:-2]
+
+    # Generate group names
+    group_name_list = [ascii_uppercase[idx] for idx in range(len(filter_list))]
+    group_names = ", ".join(group_name_list)
+
+    prompt = format_template(template_filename=template_filename,
+                             groups=groups,
+                             group_names=group_names,
+                             )
+
+    return prompt, group_wise_attribute_lists, group_name_list
+
+
 def assemble_generic_prompt(
         filters: list[Filter],
         template_filename: str,
@@ -509,6 +750,46 @@ if __name__ == "__main__":
         template_filename="ACS_commute_time_micro_macro_v1.txt",
     )
 
+    few_bin_commute_prompt, _ = assemble_few_bin_commute_prompt(
+        bin_edges=[0, 10, 20, 30],
+        filters=filters,
+        prompting_scheme="sociodemographic",
+        filtered_template_filename="ACS_commute_few_bins_v1.txt",
+        no_filter_template_filename="ACS_commute_few_bins_no_filter_v1.txt"
+    )
+
+    ablation_dummy_attr_no_filter = assemble_income_prompt_dummy_attributes(
+        filters=[],
+        income_threshold=income_threshold,
+        prompting_scheme="sociodemographic",
+        filtered_template_filename="ACS_income_v3.txt",
+        fixed_num_of_attributes=6,
+        income_greater_than_threshold=True,
+    )
+
+    ablation_dummy_attr = assemble_income_prompt_dummy_attributes(
+        filters=filters,
+        income_threshold=income_threshold,
+        prompting_scheme="sociodemographic",
+        filtered_template_filename="ACS_income_v3.txt",
+        fixed_num_of_attributes=6,
+        income_greater_than_threshold=True,
+    )
+
+    few_bins_logprobs, _, _ = assemble_few_bin_income_logprobs_prompt(
+        bin_edges=[0, 1000, 20_000],
+        filters=filters,
+        prompting_scheme="sociodemographic",
+        filtered_template_filename="ACS_income_few_bins_logprobs_v1.txt",
+        no_filter_template_filename="ACS_income_few_bins_logprobs_no_filters_v1.txt"
+    )
+
+    prior_prompt_logprobs, _, _ = assemble_joint_prior_logprobs_prompt(
+        base_filters=[],
+        filter_list=filter_list,
+        improved_age_desc=False,
+    )
+
     print(income_prompt)
     print("\n\n" + "*" * 80 + "\n\n")
     print(income_prompt_conf)
@@ -528,3 +809,14 @@ if __name__ == "__main__":
     print(commute_prompt)
     print("\n\n" + "*" * 80 + "\n\n")
     print(commute_micro_macro)
+    print("\n\n" + "*" * 80 + "\n\n")
+    print(few_bin_commute_prompt)
+    print("\n\n" + "*" * 80 + "\n\n")
+    print(ablation_dummy_attr_no_filter)
+    print("\n\n" + "*" * 80 + "\n\n")
+    print(ablation_dummy_attr)
+    print("\n\n" + "*" * 80 + "\n\n")
+    print(few_bins_logprobs)
+    print("\n\n" + "*" * 80 + "\n\n")
+    print(prior_prompt_logprobs)
+    print("\n\n" + "*" * 80 + "\n\n")

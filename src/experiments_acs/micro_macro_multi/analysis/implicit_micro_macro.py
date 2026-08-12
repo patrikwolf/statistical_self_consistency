@@ -12,7 +12,7 @@ from config.minimal_experiment_config import MinimalExperimentConfig
 from data_loader_acs.data_loader import load_survey_data
 from file_logging.read_and_write_csv import log_to_csv, print_tabulated
 from file_logging.read_and_write_json import save_as_json
-from experiments_acs.aggregation_refinement.standard_values.standard_value_loader import load_standard_values
+from experiments_acs.split_analysis.standard_value_loader import load_standard_values
 from utility.argument_parser import parse_arguments
 from utility.hyperparameters import assert_decomposition_validity
 from utility.time_helper import get_experiment_timestamp

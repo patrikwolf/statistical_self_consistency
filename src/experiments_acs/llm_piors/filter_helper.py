@@ -1,6 +1,6 @@
 from data_loader_acs.data_loader import load_original_attribute_dict
 from data_loader_acs.value_map import get_value_map
-from experiments_acs.aggregation_refinement.standard_values.standard_value_loader import load_standard_values
+from experiments_acs.split_analysis.standard_value_loader import load_standard_values
 from experiments_acs.filtering.filter import Filter
 from experiments_acs.filtering.filter_definitions import extend_generic_filter
 

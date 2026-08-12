@@ -3,8 +3,8 @@ import numpy as np
 from transformers import PreTrainedModel, PreTrainedTokenizer
 from config.minimal_experiment_config import MinimalExperimentConfig
 from data_loader_acs.data_loader import load_original_attribute_dict
-from experiments_acs.aggregation_refinement.standard_values.standard_value_loader import load_standard_values
-from experiments_acs.llm_piors.filter_helper import generate_filters
+from experiments_acs.split_analysis.standard_value_loader import load_standard_values
+from experiments_acs.llm_priors.filter_helper import generate_filters
 from language_models.prior_estimation import get_individual_llm_prior_estimate
 from file_logging.read_and_write_json import save_as_json
 from utility.time_helper import get_experiment_timestamp

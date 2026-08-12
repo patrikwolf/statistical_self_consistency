@@ -1,0 +1,24 @@
+Based on your general knowledge of demographic and geographic commuting patterns in the United States,
+estimate the probability of the specified outcome. Please make an approximate probabilistic estimate.
+The data provided is sufficient to make an approximate judgment.
+
+Commute-time bins:
+{bins}
+
+Task:
+Estimate the probability that a randomly selected person's commute time falls into each bin.
+
+Requirements:
+- Assign probability mass across all commute-time bins.
+- The probabilities must sum to 1.
+- Return one probability for each bin and no additional entries.
+
+Return only a valid JSON object in the following format:
+{example_output}
+
+Strict output rules:
+- Do not include any text outside the JSON object.
+- Do not include explanations, comments, or uncertainty intervals.
+- Each probability must be a single number in [0, 1].
+- The JSON object must contain exactly one entry per commute-time bin.
+- The JSON keys must exactly match the following bin names: {bin_names}.

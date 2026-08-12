@@ -1,4 +1,6 @@
 import json
+from typing import Literal
+
 import numpy as np
 
 from config.model_config import ModelConfig
@@ -105,6 +107,7 @@ def get_llm_estimated_answer_distribution(
         combination_idx: int,
         num_combinations: int,
         combination: list,
+        prompting_scheme: Literal["sociodemographic", "persona", "unspecified"]
 ) -> dict:
     print(f"Computing LLM results for question {question_idx + 1} out of {num_questions} and "
           f"combination {combination_idx + 1} out of {num_combinations}")
@@ -115,6 +118,7 @@ def get_llm_estimated_answer_distribution(
         answer_options=answer_options,
         attributes=combination,
         country=cfg.country,
+        prompting_scheme=prompting_scheme,
     )
 
     # Extract expected keys
@@ -180,18 +184,14 @@ def get_llm_estimated_answer_distribution(
     return results
 
 
-def get_all_llm_estimates(
+def get_all_priors(
         cfg: ModelConfig,
         experiment_folder: str,
-        question_answer_list: list[dict],
         attributes: list[str],
         combination_dict: dict,
-) -> dict:
+) -> list:
     # Compute priors for all nodes
     llm_prior_list = []
-    print("*" * 80)
-    print("Computing priors for all levels...")
-    print("*" * 80)
     for depth, combinations in combination_dict.items():
         if depth == 0:
             assert len(combinations) == 1, "We only have one root node, so expected one combination for depth 0."
@@ -222,11 +222,33 @@ def get_all_llm_estimates(
             # Add results to list
             llm_prior_list.extend(level_wise_priors)
 
+    return llm_prior_list
+
+
+def get_all_llm_estimates(
+        cfg: ModelConfig,
+        experiment_folder: str,
+        question_answer_list: list[dict],
+        attributes: list[str],
+        combination_dict: dict,
+        prompting_scheme: Literal["sociodemographic", "persona", "unspecified"],
+) -> dict:
+    # Compute priors for all nodes
+    print("*" * 80)
+    print("Computing priors for all levels...")
+    print("*" * 80)
+    llm_prior_list = get_all_priors(
+        cfg=cfg,
+        experiment_folder=experiment_folder,
+        attributes=attributes,
+        combination_dict=combination_dict
+    )
+
     # For every question and every combination, sample LLM-estimated answer distribution
-    llm_estimate_dict = {}
     print("*" * 80)
     print("Computing answer distribution estimates for all question and combinations...")
     print("*" * 80)
+    llm_estimate_dict = {}
     for question_idx, question_answer_dict in enumerate(question_answer_list):
         question_identifier = str(question_answer_dict["question_identifier"])
         question = question_answer_dict["question"]
@@ -249,6 +271,7 @@ def get_all_llm_estimates(
                     combination_idx=combination_idx,
                     num_combinations=num_combinations,
                     combination=combination,
+                    prompting_scheme=prompting_scheme,
                 )
 
                 # Add prior from level-wise computation
@@ -357,5 +380,6 @@ if __name__ == "__main__":
         question_answer_list=question_answer_list,
         attributes=attributes,
         combination_dict=combination_dict,
+        prompting_scheme="sociodemographic",
     )
     print(json.dumps(all_llm_estimates, indent=4))

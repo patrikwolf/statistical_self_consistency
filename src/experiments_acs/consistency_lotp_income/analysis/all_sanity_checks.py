@@ -147,7 +147,20 @@ if __name__ == "__main__":
     epsilon = 0.02
 
     # Model
-    model = "qwen/qwen3.6-plus"
+    model = "openai/gpt-5.6-sol"
+    # model = "openai/gpt-5.6-terra"
+    # model = "openai/gpt-5.6-luna"
+    # model = "openai/gpt-5.4"
+    # model = "openai/gpt-5.4-nano"
+    # model = "openai/gpt-5.1"
+    # model = "openai/gpt-4o-mini"
+    # model = "openai/gpt-oss-120b"
+    # model = "openai/gpt-oss-20b"
+    # model = "x-ai/grok-4.5"
+    # model = "x-ai/grok-4.3"
+    # model = "x-ai/grok-4.20"
+    # model = "qwen/qwen3.7-max"
+    # model = "qwen/qwen3.6-plus"
 
     # Config
     cfg = ModelConfig(
@@ -161,7 +174,6 @@ if __name__ == "__main__":
     )
 
     # Run analysis
-    # --> Run time is approximately 10 minutes (with 20 samples; GPT 5.4)
     results, experiment_folder = main(
         cfg=cfg,
         binary_splits=binary_splits,

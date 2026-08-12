@@ -1,5 +1,6 @@
 import json
 
+from typing import Literal
 from config.model_config import ModelConfig
 from experiments_wvs.wvs_consistency_law_total_prob.build_tree_nodes import get_original_attribute_combinations
 from experiments_wvs.wvs_consistency_law_total_prob.llm_estimates import get_llm_estimated_prior_distribution, \
@@ -14,6 +15,7 @@ def get_all_llm_estimates_for_original_tree(
         experiment_folder: str,
         question_answer_list: list[dict],
         combination_dict: dict,
+        prompting_scheme: Literal["sociodemographic", "persona", "unspecified"],
 ) -> dict:
     # Compute priors for all nodes
     llm_prior_list = []
@@ -70,6 +72,7 @@ def get_all_llm_estimates_for_original_tree(
                     combination_idx=combination_idx,
                     num_combinations=num_combinations,
                     combination=combination,
+                    prompting_scheme=prompting_scheme,
                 )
 
                 # Add prior from level-wise computation

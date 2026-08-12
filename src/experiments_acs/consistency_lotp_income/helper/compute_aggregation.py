@@ -8,7 +8,7 @@ from file_logging.read_and_write_json import save_as_json
 def _compute_aggregated_estimate(
         attribute_nodes: list,
         llm_estimate_dict: list[dict],
-) -> dict:
+) -> dict | None:
     # Extract shared attributes
     shared_attributes = _get_shared_attributes(nodes=attribute_nodes)
 
@@ -30,8 +30,14 @@ def _compute_aggregated_estimate(
                                                            f"attributes since we are aggregating back to the root node. "
                                                            f"Expected sum to be 1, but got {sum(unconditional_priors)}")
 
+    # Total unconditional prior
+    total_prior = sum(unconditional_priors)
+
     # Compute conditional prior for both children based on unconditional prior
-    conditional_priors = (np.array(unconditional_priors) / sum(unconditional_priors)).tolist()
+    if total_prior < 1e-6:
+        return None
+    else:
+        conditional_priors = (np.array(unconditional_priors) / total_prior).tolist()
 
     # Compute aggregated estimate
     aggregated_estimate = sum(prior * np.array(distribution) for prior, distribution
@@ -140,7 +146,10 @@ def compute_all_aggregated_estimates(
 
         aggregated_estimate = _compute_aggregated_estimate(attribute_nodes=val,
                                                            llm_estimate_dict=llm_estimate_dict)
-        aggregated_estimates_within.append(aggregated_estimate)
+        if aggregated_estimate is not None:
+            aggregated_estimates_within.append(aggregated_estimate)
+        else:
+            print("  ---> WARNING: Aggregated estimate is None because priors sum up to zero (degenerate case).")
 
     print("                   -----------")
 
@@ -156,7 +165,10 @@ def compute_all_aggregated_estimates(
 
         aggregated_estimate = _compute_aggregated_estimate(attribute_nodes=val,
                                                            llm_estimate_dict=llm_estimate_dict)
-        aggregated_estimates_cross.append(aggregated_estimate)
+        if aggregated_estimate is not None:
+            aggregated_estimates_cross.append(aggregated_estimate)
+        else:
+            print("  ---> WARNING: Aggregated estimate is None because priors sum up to zero (degenerate case).")
 
     # Add results for the given question to dict
     aggregation_results = {

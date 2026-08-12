@@ -1,6 +1,7 @@
 import json
 import time
 
+from typing import Literal
 from config.model_config import ModelConfig
 from experiments_wvs.config.loader import load_shared_wvs_config
 from experiments_wvs.wvs_ground_truth_eval.ground_truth_distribution import get_ground_truth_distributions
@@ -16,6 +17,7 @@ def main(
         cfg: ModelConfig,
         binary_splits: dict,
         country: str,
+        prompting_scheme: Literal["sociodemographic", "persona", "unspecified"],
         question_identifiers: list = None,
         truncate: int = None,
 ):
@@ -54,6 +56,7 @@ def main(
         experiment_folder=experiment_folder,
         question_answer_list=question_answer_list,
         combination_dict=combination_dict,
+        prompting_scheme=prompting_scheme,
     )
 
     # Get ground-truth answer distribution at root-level for all questions
@@ -112,6 +115,7 @@ if __name__ == "__main__":
         binary_splits=binary_splits,
         country=cfg.country,
         question_identifiers=question_identifiers,
+        prompting_scheme="sociodemographic",
     )
     timestamp = experiment_folder.split("/")[1]
 

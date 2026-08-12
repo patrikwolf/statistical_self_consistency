@@ -1,0 +1,19 @@
+You are given a brief sociodemographic profile of an individual in the United States.
+
+Individual attributes:
+{attributes}
+
+Based on the provided information and general knowledge of U.S. income distributions, answer the question below.
+
+Question:
+Which income bin did this person’s annual income fall into?
+
+Income bins:
+{bins}
+
+Respond with exactly one of the following letters:
+{bin_names}
+
+Do not include punctuation, explanations, or any other text.
+
+Answer:

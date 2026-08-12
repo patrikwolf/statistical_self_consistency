@@ -8,7 +8,6 @@ from utility.plot_style import set_plot_style
 from file_logging.read_and_write_json import read_json
 from utility.directories import get_plot_dir
 from experiments_acs.tree_llm_few_bins.latex_helper.aggregation_helper import build_aggregated_distribution_tree
-from utility.wasserstein_helper import compute_wasserstein_distance
 
 # Set style
 set_plot_style(sans_serif=False, factor=1.225)
@@ -129,13 +128,19 @@ def compute_mtm_error_list(mtm_result: dict):
         llm_distribution = [raw_distribution[bin] for bin in bins]
 
         # Compute Wasserstein distance
-        error = compute_wasserstein_distance(
-            d1=gt_distribution,
-            d2=llm_distribution,
-        )
+        # error = compute_wasserstein_distance(
+        #    d1=gt_distribution,
+        #    d2=llm_distribution,
+        # )
+        print(gt_distribution)
+        print(llm_distribution)
+        error = None
 
         # Add to list
         error_list.append(error)
+
+    print(error_list)
+    raise NotImplementedError("Use normalized WS distance")
 
     return error_list
 

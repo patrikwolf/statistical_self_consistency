@@ -5,10 +5,10 @@ import pandas as pd
 from config.minimal_experiment_config import MinimalExperimentConfig
 from config.prior_computation_config import PriorComputationConfig
 from data_loader_acs.data_loader import load_survey_data
-from experiments_acs.aggregation_refinement.standard_values.standard_value_loader import load_standard_values
+from experiments_acs.split_analysis.standard_value_loader import load_standard_values
 from experiments_acs.filtering.filter_survey_data import filter_survey_data
-from experiments_acs.llm_piors.individual_elicitation import generate_filters, individual_prior_elicitation
-from experiments_acs.llm_piors.joint_elicitation import joint_prior_elicitation
+from experiments_acs.llm_priors.individual_elicitation import generate_filters, individual_prior_elicitation
+from experiments_acs.llm_priors.joint_elicitation import joint_prior_elicitation
 from utility.directories import get_plot_dir
 from utility.plot_style import set_plot_style
 from utility.time_helper import get_experiment_timestamp

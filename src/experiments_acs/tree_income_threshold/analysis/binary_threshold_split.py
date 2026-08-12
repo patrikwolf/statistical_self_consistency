@@ -28,6 +28,8 @@ def main(survey_df: pd.DataFrame,
          no_filter_template_filename: str,
          extract_confidence: bool,
          confidence: int | float = None,
+         prompt_len_ablation: str = "none",
+         fixed_num_of_attributes: int | None = None,
          ) -> None:
     print(f"\nHyperparameters: {hyperparameters}")
     print(f"Model: {cfg.model_name}")
@@ -160,6 +162,8 @@ def main(survey_df: pd.DataFrame,
         prompting_scheme=cfg.prompting_scheme,
         income_greater_than_threshold=cfg.income_greater_than_threshold,
         improved_age_desc=cfg.improved_age_desc,
+        prompt_len_ablation=prompt_len_ablation,
+        fixed_num_of_attributes=fixed_num_of_attributes,
     )
 
     # LLM prediction of income > threshold

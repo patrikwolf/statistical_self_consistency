@@ -1,0 +1,15 @@
+shared_config:
+  model_name: "google/gemini-3.1-pro-preview"
+  reasoning_effort: "low"
+  survey_name: "ACS"
+  survey_year: 2024
+  set_nan_to_zero: True
+  improved_age_desc: False
+  prompting_scheme: "sociodemographic"
+  prompt_reasoning: False
+  llm_aggregation_priors: True
+  num_of_samples: 20
+  max_number_attempts: 10
+  weighted: True
+  income_threshold: 40_000
+  income_greater_than_threshold: True
