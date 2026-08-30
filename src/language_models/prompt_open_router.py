@@ -21,7 +21,7 @@ def prompt_open_router_api(
         )
     else:
         secret_config = load_secret_config()
-        api_key = secret_config["open_router_key_celestine"]
+        api_key = secret_config["open_router_key"]
         client = OpenAI(
             base_url="https://openrouter.ai/api/v1",
             api_key=api_key,
