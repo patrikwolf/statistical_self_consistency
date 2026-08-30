@@ -44,6 +44,3 @@ if __name__ == "__main__":
         num_of_samples=2,
         max_number_attempts=10,
     )
-
-    file_path = Path('/Users/patrikwolf/Desktop/config.json')
-    cfg.save_json(path=file_path)
