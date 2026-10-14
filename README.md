@@ -1,5 +1,6 @@
 # Partition, Prompt, Aggregate: Statistical Self-Consistency in Language Models
 
+[![ICLR 2025](https://img.shields.io/badge/NeurIPS-2026-D5FFC1?labelColor=2A363F)](https://neurips.cc/virtual/2026/loc/sydney/poster/149804)
 [![Paper](https://img.shields.io/badge/arXiv-2607.15277-b31b1b.svg?logo=arxiv)](https://arxiv.org/abs/2607.15277)
 [![Python 3.13](https://img.shields.io/badge/Python-3.13-blue.svg)](https://python.org/downloads/release/python-31311/)
 <!-- [![PyTorch 2.9.0](https://img.shields.io/badge/PyTorch-2.9.0-green.svg)](https://pytorch.org/) -->
