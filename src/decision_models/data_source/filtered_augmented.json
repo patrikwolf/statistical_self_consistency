@@ -1,0 +1,1468 @@
+{
+  "source": "paleka",
+  "file": "high-quality-questions--all-domains.jsonl",
+  "date_fetched": "2026-10-14",
+  "questions": [
+    {
+      "root": {
+        "id": "8fb28a2b-9e88-4b7f-9bee-2a04c50fc6a7",
+        "resolution_date": "2029-12-31 00:00:00",
+        "context": "",
+        "target_event": "Ukraine becomes a full member of NATO before January 1, 2030",
+        "question": "What is the probability that Ukraine becomes a full member of NATO before January 1, 2030? Estimate the probability under the specified context.",
+        "options": {
+          "yes": "Ukraine becomes a full NATO member before January 1, 2030.",
+          "no": "Ukraine does not become a full NATO member before January 1, 2030."
+        }
+      },
+      "split": {
+        "id": "8fb28a2b-9e88-4b7f-9bee-2a04c50fc6a7:split",
+        "context": "",
+        "event": "Ukraine and Russia jointly announce a ceasefire agreement covering all active fronts of their interstate armed conflict by December 31, 2028",
+        "definition": "The condition holds if both governments officially announce their acceptance of the same ceasefire agreement covering all active fronts by the cutoff. Local ceasefires, unilateral declarations, and proposals do not qualify. Later violations do not undo an announcement that qualified at the cutoff.",
+        "question": "What is the probability that Ukraine and Russia jointly announce a ceasefire agreement covering all active fronts of their interstate armed conflict by December 31, 2028? Estimate the unconditional probability of this conditioning event.",
+        "options": {
+          "condition": "Ukraine and Russia jointly announce a ceasefire covering all active fronts by December 31, 2028.",
+          "complement": "They do not jointly announce such a ceasefire by December 31, 2028."
+        },
+        "rationale": "A comprehensive ceasefire is a relevant security scenario for accession without itself constituting NATO membership."
+      },
+      "children": [
+        {
+          "id": "8fb28a2b-9e88-4b7f-9bee-2a04c50fc6a7:condition",
+          "parent_id": "8fb28a2b-9e88-4b7f-9bee-2a04c50fc6a7",
+          "split_option": "condition",
+          "context": "Ukraine and Russia jointly announce a ceasefire agreement covering all active fronts of their interstate armed conflict by December 31, 2028",
+          "question": "What is the probability that Ukraine becomes a full member of NATO before January 1, 2030, given that Ukraine and Russia jointly announce a ceasefire agreement covering all active fronts of their interstate armed conflict by December 31, 2028? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "Ukraine becomes a full NATO member before January 1, 2030.",
+            "no": "Ukraine does not become a full NATO member before January 1, 2030."
+          },
+          "children": []
+        },
+        {
+          "id": "8fb28a2b-9e88-4b7f-9bee-2a04c50fc6a7:complement",
+          "parent_id": "8fb28a2b-9e88-4b7f-9bee-2a04c50fc6a7",
+          "split_option": "complement",
+          "context": "Ukraine and Russia do not jointly announce such a ceasefire agreement by December 31, 2028",
+          "question": "What is the probability that Ukraine becomes a full member of NATO before January 1, 2030, given that Ukraine and Russia do not jointly announce such a ceasefire agreement by December 31, 2028? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "Ukraine becomes a full NATO member before January 1, 2030.",
+            "no": "Ukraine does not become a full NATO member before January 1, 2030."
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "root": {
+        "id": "6ad65d6e-721f-40ad-85dc-bef1bf467d62",
+        "resolution_date": "2030-12-31 00:00:00",
+        "context": "",
+        "target_event": "the WHO officially declares a global health emergency explicitly attributed to climate-related diseases by December 31, 2030",
+        "question": "What is the probability that the WHO officially declares a global health emergency explicitly attributed to climate-related diseases by December 31, 2030? Estimate the probability under the specified context.",
+        "options": {
+          "yes": "The WHO declares a global health emergency due to climate-related diseases by December 31, 2030.",
+          "no": "The WHO does not declare such an emergency by December 31, 2030."
+        }
+      },
+      "split": {
+        "id": "6ad65d6e-721f-40ad-85dc-bef1bf467d62:split",
+        "context": "",
+        "event": "the WHO publishes a report by December 31, 2028 explicitly attributing increased transmission of at least one vector-borne disease across at least three WHO regions to climate change",
+        "definition": "A qualifying WHO report must identify increased transmission of a named vector-borne disease across at least three distinct WHO regions and explicitly attribute at least part of that increase to climate change. A report alone is sufficient for this condition; an emergency declaration is not required.",
+        "question": "What is the probability that the WHO publishes a report by December 31, 2028 explicitly attributing increased transmission of at least one vector-borne disease across at least three WHO regions to climate change? Estimate the unconditional probability of this conditioning event.",
+        "options": {
+          "condition": "The WHO publishes the specified climate-related disease report by December 31, 2028.",
+          "complement": "The WHO publishes no such report by December 31, 2028."
+        },
+        "rationale": "Documented spread across multiple regions is a relevant precursor to a global emergency declaration."
+      },
+      "children": [
+        {
+          "id": "6ad65d6e-721f-40ad-85dc-bef1bf467d62:condition",
+          "parent_id": "6ad65d6e-721f-40ad-85dc-bef1bf467d62",
+          "split_option": "condition",
+          "context": "the WHO publishes a report by December 31, 2028 explicitly attributing increased transmission of at least one vector-borne disease across at least three WHO regions to climate change",
+          "question": "What is the probability that the WHO officially declares a global health emergency explicitly attributed to climate-related diseases by December 31, 2030, given that the WHO publishes a report by December 31, 2028 explicitly attributing increased transmission of at least one vector-borne disease across at least three WHO regions to climate change? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "The WHO declares a global health emergency due to climate-related diseases by December 31, 2030.",
+            "no": "The WHO does not declare such an emergency by December 31, 2030."
+          },
+          "children": []
+        },
+        {
+          "id": "6ad65d6e-721f-40ad-85dc-bef1bf467d62:complement",
+          "parent_id": "6ad65d6e-721f-40ad-85dc-bef1bf467d62",
+          "split_option": "complement",
+          "context": "the WHO publishes no such report by December 31, 2028",
+          "question": "What is the probability that the WHO officially declares a global health emergency explicitly attributed to climate-related diseases by December 31, 2030, given that the WHO publishes no such report by December 31, 2028? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "The WHO declares a global health emergency due to climate-related diseases by December 31, 2030.",
+            "no": "The WHO does not declare such an emergency by December 31, 2030."
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "root": {
+        "id": "e8aee1cb-9711-4d10-9da6-b66141d8b51c",
+        "resolution_date": "2030-12-31 00:00:00",
+        "context": "",
+        "target_event": "Australia has a fully operational sovereign satellite navigation system under its primary control, capable of independent navigation services for its territory and maritime regions, by December 31, 2030",
+        "question": "What is the probability that Australia has a fully operational sovereign satellite navigation system under its primary control, capable of independent navigation services for its territory and maritime regions, by December 31, 2030? Estimate the probability under the specified context.",
+        "options": {
+          "yes": "Australia operates its own independent satellite navigation system by December 31, 2030.",
+          "no": "Australia does not operate such a system by December 31, 2030."
+        }
+      },
+      "split": {
+        "id": "e8aee1cb-9711-4d10-9da6-b66141d8b51c:split",
+        "context": "",
+        "event": "the Australian government awards a funded contract by December 31, 2028 to develop a sovereign satellite navigation constellation designed to operate independently of foreign GNSS",
+        "definition": "A qualifying contract must be officially awarded, have committed government funding, and cover development of an Australian-controlled navigation satellite constellation designed to provide positioning independently of foreign GNSS. Studies alone, foreign GNSS receivers, and augmentation-only systems do not qualify.",
+        "question": "What is the probability that the Australian government awards a funded contract by December 31, 2028 to develop a sovereign satellite navigation constellation designed to operate independently of foreign GNSS? Estimate the unconditional probability of this conditioning event.",
+        "options": {
+          "condition": "Australia awards the funded satellite-navigation development contract by December 31, 2028.",
+          "complement": "Australia awards no such contract by December 31, 2028."
+        },
+        "rationale": "A funded development contract is a concrete program milestone that can change the probability of operational deployment."
+      },
+      "children": [
+        {
+          "id": "e8aee1cb-9711-4d10-9da6-b66141d8b51c:condition",
+          "parent_id": "e8aee1cb-9711-4d10-9da6-b66141d8b51c",
+          "split_option": "condition",
+          "context": "the Australian government awards a funded contract by December 31, 2028 to develop a sovereign satellite navigation constellation designed to operate independently of foreign GNSS",
+          "question": "What is the probability that Australia has a fully operational sovereign satellite navigation system under its primary control, capable of independent navigation services for its territory and maritime regions, by December 31, 2030, given that the Australian government awards a funded contract by December 31, 2028 to develop a sovereign satellite navigation constellation designed to operate independently of foreign GNSS? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "Australia operates its own independent satellite navigation system by December 31, 2030.",
+            "no": "Australia does not operate such a system by December 31, 2030."
+          },
+          "children": []
+        },
+        {
+          "id": "e8aee1cb-9711-4d10-9da6-b66141d8b51c:complement",
+          "parent_id": "e8aee1cb-9711-4d10-9da6-b66141d8b51c",
+          "split_option": "complement",
+          "context": "the Australian government awards no such funded development contract by December 31, 2028",
+          "question": "What is the probability that Australia has a fully operational sovereign satellite navigation system under its primary control, capable of independent navigation services for its territory and maritime regions, by December 31, 2030, given that the Australian government awards no such funded development contract by December 31, 2028? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "Australia operates its own independent satellite navigation system by December 31, 2030.",
+            "no": "Australia does not operate such a system by December 31, 2030."
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "root": {
+        "id": "532c693b-e8c5-46cf-88c8-f938b058e226",
+        "resolution_date": "2030-12-31 00:00:00",
+        "context": "",
+        "target_event": "a new international climate treaty meeting the source criteria for participation, ratification, and a reduction of global greenhouse gas emissions of at least 40% from 1990 levels by 2050 is ratified by December 31, 2030",
+        "question": "What is the probability that a new international climate treaty meeting the source criteria for participation, ratification, and a reduction of global greenhouse gas emissions of at least 40% from 1990 levels by 2050 is ratified by December 31, 2030? Estimate the probability under the specified context.",
+        "options": {
+          "yes": "A new climate treaty meeting the stated requirements is ratified by December 31, 2030.",
+          "no": "No such climate treaty is ratified by December 31, 2030."
+        }
+      },
+      "split": {
+        "id": "532c693b-e8c5-46cf-88c8-f938b058e226:split",
+        "context": "",
+        "event": "a UN-convened intergovernmental conference formally adopts the text of a new climate treaty with a global greenhouse gas reduction target of at least 40% below 1990 levels by 2050 by December 31, 2028",
+        "definition": "Formal adoption of a new treaty text must be recorded in official conference documents. Amendments, extensions of existing treaties, draft texts, and nonbinding declarations do not qualify. Adoption of the text does not require subsequent national ratification or the target question's 75% participation threshold.",
+        "question": "What is the probability that a UN-convened intergovernmental conference formally adopts the text of a new climate treaty with a global greenhouse gas reduction target of at least 40% below 1990 levels by 2050 by December 31, 2028? Estimate the unconditional probability of this conditioning event.",
+        "options": {
+          "condition": "A UN-convened conference adopts the specified new climate treaty text by December 31, 2028.",
+          "complement": "No UN-convened conference adopts such a text by December 31, 2028."
+        },
+        "rationale": "An adopted text provides a concrete basis for later ratification while leaving participation and ratification uncertain."
+      },
+      "children": [
+        {
+          "id": "532c693b-e8c5-46cf-88c8-f938b058e226:condition",
+          "parent_id": "532c693b-e8c5-46cf-88c8-f938b058e226",
+          "split_option": "condition",
+          "context": "a UN-convened intergovernmental conference formally adopts the text of a new climate treaty with a global greenhouse gas reduction target of at least 40% below 1990 levels by 2050 by December 31, 2028",
+          "question": "What is the probability that a new international climate treaty meeting the source criteria for participation, ratification, and a reduction of global greenhouse gas emissions of at least 40% from 1990 levels by 2050 is ratified by December 31, 2030, given that a UN-convened intergovernmental conference formally adopts the text of a new climate treaty with a global greenhouse gas reduction target of at least 40% below 1990 levels by 2050 by December 31, 2028? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "A new climate treaty meeting the stated requirements is ratified by December 31, 2030.",
+            "no": "No such climate treaty is ratified by December 31, 2030."
+          },
+          "children": []
+        },
+        {
+          "id": "532c693b-e8c5-46cf-88c8-f938b058e226:complement",
+          "parent_id": "532c693b-e8c5-46cf-88c8-f938b058e226",
+          "split_option": "complement",
+          "context": "no UN-convened intergovernmental conference formally adopts such a treaty text by December 31, 2028",
+          "question": "What is the probability that a new international climate treaty meeting the source criteria for participation, ratification, and a reduction of global greenhouse gas emissions of at least 40% from 1990 levels by 2050 is ratified by December 31, 2030, given that no UN-convened intergovernmental conference formally adopts such a treaty text by December 31, 2028? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "A new climate treaty meeting the stated requirements is ratified by December 31, 2030.",
+            "no": "No such climate treaty is ratified by December 31, 2030."
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "root": {
+        "id": "875ced22-1576-40ba-bce7-ddd77a805200",
+        "resolution_date": "2030-12-31 00:00:00",
+        "context": "",
+        "target_event": "the annual average global surface temperature exceeds the 1850–1900 average by more than 2 degrees Celsius by December 31, 2030",
+        "question": "What is the probability that the annual average global surface temperature exceeds the 1850–1900 average by more than 2 degrees Celsius by December 31, 2030? Estimate the probability under the specified context.",
+        "options": {
+          "yes": "Annual global warming exceeds 2°C above the 1850–1900 average by December 31, 2030.",
+          "no": "Annual global warming does not exceed that threshold by December 31, 2030."
+        }
+      },
+      "split": {
+        "id": "875ced22-1576-40ba-bce7-ddd77a805200:split",
+        "context": "",
+        "event": "the WMO publishes an assessment by December 31, 2029 reporting that the calendar-year 2028 global mean surface temperature was at least 1.7 degrees Celsius above the 1850–1900 average",
+        "definition": "Use the central global annual temperature estimate in an official World Meteorological Organization assessment for calendar year 2028 relative to 1850–1900. At least one such assessment published by the cutoff must report an anomaly of 1.7 degrees Celsius or greater. Equality qualifies. No qualifying publication, or only estimates below the threshold, belongs to the complementary branch.",
+        "question": "What is the probability that the WMO publishes an assessment by December 31, 2029 reporting that the calendar-year 2028 global mean surface temperature was at least 1.7 degrees Celsius above the 1850–1900 average? Estimate the unconditional probability of this conditioning event.",
+        "options": {
+          "condition": "The WMO reports 2028 warming of at least 1.7°C by December 31, 2029.",
+          "complement": "The WMO makes no such report by December 31, 2029."
+        },
+        "rationale": "A recent annual warming level is informative about exceeding the higher annual threshold by 2030."
+      },
+      "children": [
+        {
+          "id": "875ced22-1576-40ba-bce7-ddd77a805200:condition",
+          "parent_id": "875ced22-1576-40ba-bce7-ddd77a805200",
+          "split_option": "condition",
+          "context": "the WMO publishes an assessment by December 31, 2029 reporting that the calendar-year 2028 global mean surface temperature was at least 1.7 degrees Celsius above the 1850–1900 average",
+          "question": "What is the probability that the annual average global surface temperature exceeds the 1850–1900 average by more than 2 degrees Celsius by December 31, 2030, given that the WMO publishes an assessment by December 31, 2029 reporting that the calendar-year 2028 global mean surface temperature was at least 1.7 degrees Celsius above the 1850–1900 average? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "Annual global warming exceeds 2°C above the 1850–1900 average by December 31, 2030.",
+            "no": "Annual global warming does not exceed that threshold by December 31, 2030."
+          },
+          "children": []
+        },
+        {
+          "id": "875ced22-1576-40ba-bce7-ddd77a805200:complement",
+          "parent_id": "875ced22-1576-40ba-bce7-ddd77a805200",
+          "split_option": "complement",
+          "context": "the WMO publishes no assessment meeting that 2028 temperature threshold by December 31, 2029",
+          "question": "What is the probability that the annual average global surface temperature exceeds the 1850–1900 average by more than 2 degrees Celsius by December 31, 2030, given that the WMO publishes no assessment meeting that 2028 temperature threshold by December 31, 2029? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "Annual global warming exceeds 2°C above the 1850–1900 average by December 31, 2030.",
+            "no": "Annual global warming does not exceed that threshold by December 31, 2030."
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "root": {
+        "id": "5a081b21-46ba-4e67-bada-d5353039354c",
+        "resolution_date": "2030-12-31 00:00:00",
+        "context": "",
+        "target_event": "the US Supreme Court issues a ruling clarifying copyright eligibility under US law for AI-generated content without human authorship by December 31, 2030",
+        "question": "What is the probability that the US Supreme Court issues a ruling clarifying copyright eligibility under US law for AI-generated content without human authorship by December 31, 2030? Estimate the probability under the specified context.",
+        "options": {
+          "yes": "The US Supreme Court rules on copyright eligibility for AI-generated content without human authorship by December 31, 2030.",
+          "no": "The US Supreme Court does not issue such a ruling by December 31, 2030."
+        }
+      },
+      "split": {
+        "id": "5a081b21-46ba-4e67-bada-d5353039354c:split",
+        "context": "",
+        "event": "the US Supreme Court grants review by December 31, 2028 in a case whose accepted question explicitly concerns copyright eligibility of AI-generated content without human authorship",
+        "definition": "An official Supreme Court order accepting a case for merits review must identify a question concerning US copyright eligibility of AI-generated content without human authorship. A petition alone or a denial of review does not qualify. A later dismissal does not negate the earlier grant of review.",
+        "question": "What is the probability that the US Supreme Court grants review by December 31, 2028 in a case whose accepted question explicitly concerns copyright eligibility of AI-generated content without human authorship? Estimate the unconditional probability of this conditioning event.",
+        "options": {
+          "condition": "The US Supreme Court grants review of the specified AI copyright issue by December 31, 2028.",
+          "complement": "The US Supreme Court does not grant such review by December 31, 2028."
+        },
+        "rationale": "A grant of review changes the likelihood of a merits ruling while not guaranteeing one."
+      },
+      "children": [
+        {
+          "id": "5a081b21-46ba-4e67-bada-d5353039354c:condition",
+          "parent_id": "5a081b21-46ba-4e67-bada-d5353039354c",
+          "split_option": "condition",
+          "context": "the US Supreme Court grants review by December 31, 2028 in a case whose accepted question explicitly concerns copyright eligibility of AI-generated content without human authorship",
+          "question": "What is the probability that the US Supreme Court issues a ruling clarifying copyright eligibility under US law for AI-generated content without human authorship by December 31, 2030, given that the US Supreme Court grants review by December 31, 2028 in a case whose accepted question explicitly concerns copyright eligibility of AI-generated content without human authorship? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "The US Supreme Court rules on copyright eligibility for AI-generated content without human authorship by December 31, 2030.",
+            "no": "The US Supreme Court does not issue such a ruling by December 31, 2030."
+          },
+          "children": []
+        },
+        {
+          "id": "5a081b21-46ba-4e67-bada-d5353039354c:complement",
+          "parent_id": "5a081b21-46ba-4e67-bada-d5353039354c",
+          "split_option": "complement",
+          "context": "the US Supreme Court does not grant review in such a case by December 31, 2028",
+          "question": "What is the probability that the US Supreme Court issues a ruling clarifying copyright eligibility under US law for AI-generated content without human authorship by December 31, 2030, given that the US Supreme Court does not grant review in such a case by December 31, 2028? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "The US Supreme Court rules on copyright eligibility for AI-generated content without human authorship by December 31, 2030.",
+            "no": "The US Supreme Court does not issue such a ruling by December 31, 2030."
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "root": {
+        "id": "6f0c339b-9aad-4912-aea0-c3f0e8db9ca0",
+        "resolution_date": "2029-12-31 00:00:00",
+        "context": "",
+        "target_event": "Sweden enacts a nationwide universal basic income policy providing regular unconditional payments to its entire citizen or resident population before January 1, 2030",
+        "question": "What is the probability that Sweden enacts a nationwide universal basic income policy providing regular unconditional payments to its entire citizen or resident population before January 1, 2030? Estimate the probability under the specified context.",
+        "options": {
+          "yes": "Sweden enacts nationwide universal basic income before January 1, 2030.",
+          "no": "Sweden does not enact nationwide universal basic income before January 1, 2030."
+        }
+      },
+      "split": {
+        "id": "6f0c339b-9aad-4912-aea0-c3f0e8db9ca0:split",
+        "context": "",
+        "event": "the Swedish government formally submits a bill to parliament by December 31, 2028 proposing regular unconditional payments to the entire citizen or resident population",
+        "definition": "A qualifying government bill must propose recurring cash payments without employment or means-testing conditions for the entire citizen or resident population. Bills restricted to pilots, selected regions, or selected demographic groups do not qualify. Submission is sufficient even if the bill is subsequently rejected.",
+        "question": "What is the probability that the Swedish government formally submits a bill to parliament by December 31, 2028 proposing regular unconditional payments to the entire citizen or resident population? Estimate the unconditional probability of this conditioning event.",
+        "options": {
+          "condition": "The Swedish government submits a nationwide UBI bill by December 31, 2028.",
+          "complement": "The Swedish government submits no such bill by December 31, 2028."
+        },
+        "rationale": "A government bill is a relevant legislative precursor that does not guarantee enactment."
+      },
+      "children": [
+        {
+          "id": "6f0c339b-9aad-4912-aea0-c3f0e8db9ca0:condition",
+          "parent_id": "6f0c339b-9aad-4912-aea0-c3f0e8db9ca0",
+          "split_option": "condition",
+          "context": "the Swedish government formally submits a bill to parliament by December 31, 2028 proposing regular unconditional payments to the entire citizen or resident population",
+          "question": "What is the probability that Sweden enacts a nationwide universal basic income policy providing regular unconditional payments to its entire citizen or resident population before January 1, 2030, given that the Swedish government formally submits a bill to parliament by December 31, 2028 proposing regular unconditional payments to the entire citizen or resident population? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "Sweden enacts nationwide universal basic income before January 1, 2030.",
+            "no": "Sweden does not enact nationwide universal basic income before January 1, 2030."
+          },
+          "children": []
+        },
+        {
+          "id": "6f0c339b-9aad-4912-aea0-c3f0e8db9ca0:complement",
+          "parent_id": "6f0c339b-9aad-4912-aea0-c3f0e8db9ca0",
+          "split_option": "complement",
+          "context": "the Swedish government submits no such bill to parliament by December 31, 2028",
+          "question": "What is the probability that Sweden enacts a nationwide universal basic income policy providing regular unconditional payments to its entire citizen or resident population before January 1, 2030, given that the Swedish government submits no such bill to parliament by December 31, 2028? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "Sweden enacts nationwide universal basic income before January 1, 2030.",
+            "no": "Sweden does not enact nationwide universal basic income before January 1, 2030."
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "root": {
+        "id": "b514cddd-d50a-4c13-8f78-685964264adf",
+        "resolution_date": "2029-12-31 00:00:00",
+        "context": "",
+        "target_event": "Ukraine meets the source-defined criterion for surpassing Poland in annual GDP per capita in current US dollars before January 1, 2030",
+        "question": "What is the probability that Ukraine meets the source-defined criterion for surpassing Poland in annual GDP per capita in current US dollars before January 1, 2030? Estimate the probability under the specified context.",
+        "options": {
+          "yes": "Ukraine surpasses Poland in GDP per capita before January 1, 2030.",
+          "no": "Ukraine does not surpass Poland in GDP per capita before January 1, 2030."
+        }
+      },
+      "split": {
+        "id": "b514cddd-d50a-4c13-8f78-685964264adf:split",
+        "context": "",
+        "event": "Ukraine and Russia jointly announce a ceasefire agreement covering all active fronts of their interstate armed conflict by December 31, 2027",
+        "definition": "Both governments must officially announce acceptance of the same ceasefire agreement covering all active fronts by the cutoff. Local ceasefires, unilateral declarations, and proposals do not qualify. Subsequent violations do not negate the qualifying announcement.",
+        "question": "What is the probability that Ukraine and Russia jointly announce a ceasefire agreement covering all active fronts of their interstate armed conflict by December 31, 2027? Estimate the unconditional probability of this conditioning event.",
+        "options": {
+          "condition": "Ukraine and Russia jointly announce a ceasefire covering all active fronts by December 31, 2027.",
+          "complement": "They do not jointly announce such a ceasefire by December 31, 2027."
+        },
+        "rationale": "A comprehensive ceasefire is a relevant scenario for economic recovery and the relative GDP-per-capita trajectory."
+      },
+      "children": [
+        {
+          "id": "b514cddd-d50a-4c13-8f78-685964264adf:condition",
+          "parent_id": "b514cddd-d50a-4c13-8f78-685964264adf",
+          "split_option": "condition",
+          "context": "Ukraine and Russia jointly announce a ceasefire agreement covering all active fronts of their interstate armed conflict by December 31, 2027",
+          "question": "What is the probability that Ukraine meets the source-defined criterion for surpassing Poland in annual GDP per capita in current US dollars before January 1, 2030, given that Ukraine and Russia jointly announce a ceasefire agreement covering all active fronts of their interstate armed conflict by December 31, 2027? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "Ukraine surpasses Poland in GDP per capita before January 1, 2030.",
+            "no": "Ukraine does not surpass Poland in GDP per capita before January 1, 2030."
+          },
+          "children": []
+        },
+        {
+          "id": "b514cddd-d50a-4c13-8f78-685964264adf:complement",
+          "parent_id": "b514cddd-d50a-4c13-8f78-685964264adf",
+          "split_option": "complement",
+          "context": "Ukraine and Russia do not jointly announce such a ceasefire agreement by December 31, 2027",
+          "question": "What is the probability that Ukraine meets the source-defined criterion for surpassing Poland in annual GDP per capita in current US dollars before January 1, 2030, given that Ukraine and Russia do not jointly announce such a ceasefire agreement by December 31, 2027? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "Ukraine surpasses Poland in GDP per capita before January 1, 2030.",
+            "no": "Ukraine does not surpass Poland in GDP per capita before January 1, 2030."
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "root": {
+        "id": "04f3276e-35f2-4081-9bc5-d52dddb9d18b",
+        "resolution_date": "2039-12-31 00:00:00",
+        "context": "",
+        "target_event": "North Korea holds a presidential election satisfying the source requirements for universal adult suffrage, multiparty competition, freedom from significant intimidation or fraud, and international recognition before January 1, 2040",
+        "question": "What is the probability that North Korea holds a presidential election satisfying the source requirements for universal adult suffrage, multiparty competition, freedom from significant intimidation or fraud, and international recognition before January 1, 2040? Estimate the probability under the specified context.",
+        "options": {
+          "yes": "North Korea holds a free and fair presidential election before January 1, 2040.",
+          "no": "North Korea does not hold a free and fair presidential election before January 1, 2040."
+        }
+      },
+      "split": {
+        "id": "04f3276e-35f2-4081-9bc5-d52dddb9d18b:split",
+        "context": "",
+        "event": "North Korea enacts a law by December 31, 2035 allowing opposition parties independent of the incumbent ruling party to register and contest national elections",
+        "definition": "The law must be officially promulgated and permit parties independent of the incumbent ruling party to register and compete for national office. Permission restricted to parties controlled by or formally subordinate to the ruling party does not qualify. The condition concerns legal permission, not whether a later election is free and fair.",
+        "question": "What is the probability that North Korea enacts a law by December 31, 2035 allowing opposition parties independent of the incumbent ruling party to register and contest national elections? Estimate the unconditional probability of this conditioning event.",
+        "options": {
+          "condition": "North Korea legalizes independent opposition parties for national elections by December 31, 2035.",
+          "complement": "North Korea does not enact such a law by December 31, 2035."
+        },
+        "rationale": "Legal permission for independent opposition is a relevant institutional precursor but does not guarantee a qualifying election."
+      },
+      "children": [
+        {
+          "id": "04f3276e-35f2-4081-9bc5-d52dddb9d18b:condition",
+          "parent_id": "04f3276e-35f2-4081-9bc5-d52dddb9d18b",
+          "split_option": "condition",
+          "context": "North Korea enacts a law by December 31, 2035 allowing opposition parties independent of the incumbent ruling party to register and contest national elections",
+          "question": "What is the probability that North Korea holds a presidential election satisfying the source requirements for universal adult suffrage, multiparty competition, freedom from significant intimidation or fraud, and international recognition before January 1, 2040, given that North Korea enacts a law by December 31, 2035 allowing opposition parties independent of the incumbent ruling party to register and contest national elections? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "North Korea holds a free and fair presidential election before January 1, 2040.",
+            "no": "North Korea does not hold a free and fair presidential election before January 1, 2040."
+          },
+          "children": []
+        },
+        {
+          "id": "04f3276e-35f2-4081-9bc5-d52dddb9d18b:complement",
+          "parent_id": "04f3276e-35f2-4081-9bc5-d52dddb9d18b",
+          "split_option": "complement",
+          "context": "North Korea enacts no such law by December 31, 2035",
+          "question": "What is the probability that North Korea holds a presidential election satisfying the source requirements for universal adult suffrage, multiparty competition, freedom from significant intimidation or fraud, and international recognition before January 1, 2040, given that North Korea enacts no such law by December 31, 2035? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "North Korea holds a free and fair presidential election before January 1, 2040.",
+            "no": "North Korea does not hold a free and fair presidential election before January 1, 2040."
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "root": {
+        "id": "cba37628-e3a9-4c87-a99e-e93c0a44b1bf",
+        "resolution_date": "2030-12-31 00:00:00",
+        "context": "",
+        "target_event": "at least one sovereign state that was not a NATO member on the original question date becomes a full NATO member by December 31, 2030",
+        "question": "What is the probability that at least one sovereign state that was not a NATO member on the original question date becomes a full NATO member by December 31, 2030? Estimate the probability under the specified context.",
+        "options": {
+          "yes": "At least one new country becomes a full NATO member by December 31, 2030.",
+          "no": "No new country becomes a full NATO member by December 31, 2030."
+        }
+      },
+      "split": {
+        "id": "cba37628-e3a9-4c87-a99e-e93c0a44b1bf:split",
+        "context": "",
+        "event": "NATO issues a formal invitation to at least one nonmember sovereign state to begin accession talks between October 14, 2026 and December 31, 2028, inclusive",
+        "definition": "An official NATO communication must record a formal invitation to begin accession talks. The invited state must be a nonmember when invited. Expressions of interest, partnership agreements, and unilateral statements by an individual member do not qualify. The date interval is a generated split definition, not an inferred original question date.",
+        "question": "What is the probability that NATO issues a formal invitation to at least one nonmember sovereign state to begin accession talks between October 14, 2026 and December 31, 2028, inclusive? Estimate the unconditional probability of this conditioning event.",
+        "options": {
+          "condition": "NATO formally invites a nonmember to accession talks during the specified 2026–2028 interval.",
+          "complement": "NATO issues no such invitation during that interval."
+        },
+        "rationale": "A formal accession invitation is informative about subsequent expansion but does not itself complete ratification."
+      },
+      "children": [
+        {
+          "id": "cba37628-e3a9-4c87-a99e-e93c0a44b1bf:condition",
+          "parent_id": "cba37628-e3a9-4c87-a99e-e93c0a44b1bf",
+          "split_option": "condition",
+          "context": "NATO issues a formal invitation to at least one nonmember sovereign state to begin accession talks between October 14, 2026 and December 31, 2028, inclusive",
+          "question": "What is the probability that at least one sovereign state that was not a NATO member on the original question date becomes a full NATO member by December 31, 2030, given that NATO issues a formal invitation to at least one nonmember sovereign state to begin accession talks between October 14, 2026 and December 31, 2028, inclusive? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "At least one new country becomes a full NATO member by December 31, 2030.",
+            "no": "No new country becomes a full NATO member by December 31, 2030."
+          },
+          "children": []
+        },
+        {
+          "id": "cba37628-e3a9-4c87-a99e-e93c0a44b1bf:complement",
+          "parent_id": "cba37628-e3a9-4c87-a99e-e93c0a44b1bf",
+          "split_option": "complement",
+          "context": "NATO issues no such invitation between October 14, 2026 and December 31, 2028, inclusive",
+          "question": "What is the probability that at least one sovereign state that was not a NATO member on the original question date becomes a full NATO member by December 31, 2030, given that NATO issues no such invitation between October 14, 2026 and December 31, 2028, inclusive? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "At least one new country becomes a full NATO member by December 31, 2030.",
+            "no": "No new country becomes a full NATO member by December 31, 2030."
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "root": {
+        "id": "eebad0c4-e5f3-4da8-ae96-ed824051ec0b",
+        "resolution_date": "2029-12-31 00:00:00",
+        "context": "",
+        "target_event": "a pathogen new to humans under the source definition emerges and has a confirmed global infection rate exceeding 1% before January 1, 2030",
+        "question": "What is the probability that a pathogen new to humans under the source definition emerges and has a confirmed global infection rate exceeding 1% before January 1, 2030? Estimate the probability under the specified context.",
+        "options": {
+          "yes": "A new infectious disease infects more than 1% of the global population before January 1, 2030.",
+          "no": "No new infectious disease infects more than 1% of the global population before January 1, 2030."
+        }
+      },
+      "split": {
+        "id": "eebad0c4-e5f3-4da8-ae96-ed824051ec0b:split",
+        "context": "",
+        "event": "the WHO reports sustained human-to-human transmission of at least one pathogen first identified in humans on or after October 14, 2026 in at least three WHO regions by December 31, 2028",
+        "definition": "At least one WHO report must identify the same pathogen as first detected in humans on or after October 14, 2026 and describe sustained human-to-human transmission in at least three distinct WHO regions by the cutoff. Imported cases without sustained transmission do not qualify. The explicit start date applies only to this generated split.",
+        "question": "What is the probability that the WHO reports sustained human-to-human transmission of at least one pathogen first identified in humans on or after October 14, 2026 in at least three WHO regions by December 31, 2028? Estimate the unconditional probability of this conditioning event.",
+        "options": {
+          "condition": "The WHO reports the specified new pathogen spreading sustainably in at least three regions by December 31, 2028.",
+          "complement": "The WHO makes no such report by December 31, 2028."
+        },
+        "rationale": "Sustained transmission across multiple regions is a relevant scenario for reaching a high global infection rate."
+      },
+      "children": [
+        {
+          "id": "eebad0c4-e5f3-4da8-ae96-ed824051ec0b:condition",
+          "parent_id": "eebad0c4-e5f3-4da8-ae96-ed824051ec0b",
+          "split_option": "condition",
+          "context": "the WHO reports sustained human-to-human transmission of at least one pathogen first identified in humans on or after October 14, 2026 in at least three WHO regions by December 31, 2028",
+          "question": "What is the probability that a pathogen new to humans under the source definition emerges and has a confirmed global infection rate exceeding 1% before January 1, 2030, given that the WHO reports sustained human-to-human transmission of at least one pathogen first identified in humans on or after October 14, 2026 in at least three WHO regions by December 31, 2028? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "A new infectious disease infects more than 1% of the global population before January 1, 2030.",
+            "no": "No new infectious disease infects more than 1% of the global population before January 1, 2030."
+          },
+          "children": []
+        },
+        {
+          "id": "eebad0c4-e5f3-4da8-ae96-ed824051ec0b:complement",
+          "parent_id": "eebad0c4-e5f3-4da8-ae96-ed824051ec0b",
+          "split_option": "complement",
+          "context": "the WHO makes no report meeting those pathogen, transmission, geographic, and date criteria by December 31, 2028",
+          "question": "What is the probability that a pathogen new to humans under the source definition emerges and has a confirmed global infection rate exceeding 1% before January 1, 2030, given that the WHO makes no report meeting those pathogen, transmission, geographic, and date criteria by December 31, 2028? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "A new infectious disease infects more than 1% of the global population before January 1, 2030.",
+            "no": "No new infectious disease infects more than 1% of the global population before January 1, 2030."
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "root": {
+        "id": "87d37880-3101-4a81-bb4b-e2ffc535904a",
+        "resolution_date": "2030-12-31 00:00:00",
+        "context": "",
+        "target_event": "the NFL implements qualifying concussion-reduction policies and achieves the source-required reduction of at least 20% in reported regular-season concussions by December 31, 2030",
+        "question": "What is the probability that the NFL implements qualifying concussion-reduction policies and achieves the source-required reduction of at least 20% in reported regular-season concussions by December 31, 2030? Estimate the probability under the specified context.",
+        "options": {
+          "yes": "The NFL implements policies achieving the required reduction of at least 20% in concussions by December 31, 2030.",
+          "no": "The NFL does not meet both the policy and concussion-reduction requirements by December 31, 2030."
+        }
+      },
+      "split": {
+        "id": "87d37880-3101-4a81-bb4b-e2ffc535904a:split",
+        "context": "",
+        "event": "the NFL puts into effect a league-wide restriction on contact during regular-season practices by December 31, 2028 that is stricter than the rule in force on October 14, 2026",
+        "definition": "An official NFL rule must reduce the permitted number or duration of full-contact or padded regular-season practices relative to the October 14, 2026 rule. Team-specific voluntary measures, preseason-only restrictions, and proposals do not qualify. No particular concussion reduction is required for this conditioning event.",
+        "question": "What is the probability that the NFL puts into effect a league-wide restriction on contact during regular-season practices by December 31, 2028 that is stricter than the rule in force on October 14, 2026? Estimate the unconditional probability of this conditioning event.",
+        "options": {
+          "condition": "The NFL implements the specified stricter practice-contact rule by December 31, 2028.",
+          "complement": "The NFL does not implement such a rule by December 31, 2028."
+        },
+        "rationale": "Reduced practice contact is a concrete policy mechanism whose effect on reported concussions remains uncertain."
+      },
+      "children": [
+        {
+          "id": "87d37880-3101-4a81-bb4b-e2ffc535904a:condition",
+          "parent_id": "87d37880-3101-4a81-bb4b-e2ffc535904a",
+          "split_option": "condition",
+          "context": "the NFL puts into effect a league-wide restriction on contact during regular-season practices by December 31, 2028 that is stricter than the rule in force on October 14, 2026",
+          "question": "What is the probability that the NFL implements qualifying concussion-reduction policies and achieves the source-required reduction of at least 20% in reported regular-season concussions by December 31, 2030, given that the NFL puts into effect a league-wide restriction on contact during regular-season practices by December 31, 2028 that is stricter than the rule in force on October 14, 2026? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "The NFL implements policies achieving the required reduction of at least 20% in concussions by December 31, 2030.",
+            "no": "The NFL does not meet both the policy and concussion-reduction requirements by December 31, 2030."
+          },
+          "children": []
+        },
+        {
+          "id": "87d37880-3101-4a81-bb4b-e2ffc535904a:complement",
+          "parent_id": "87d37880-3101-4a81-bb4b-e2ffc535904a",
+          "split_option": "complement",
+          "context": "the NFL puts no such stricter league-wide practice-contact restriction into effect by December 31, 2028",
+          "question": "What is the probability that the NFL implements qualifying concussion-reduction policies and achieves the source-required reduction of at least 20% in reported regular-season concussions by December 31, 2030, given that the NFL puts no such stricter league-wide practice-contact restriction into effect by December 31, 2028? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "The NFL implements policies achieving the required reduction of at least 20% in concussions by December 31, 2030.",
+            "no": "The NFL does not meet both the policy and concussion-reduction requirements by December 31, 2030."
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "root": {
+        "id": "4832b96e-1b64-4194-88cc-476f23ec95c5",
+        "resolution_date": "2030-12-31 00:00:00",
+        "context": "",
+        "target_event": "a nuclear accident classified at INES Level 5 or above meets the source confirmation and news-reporting requirements by December 31, 2030",
+        "question": "What is the probability that a nuclear accident classified at INES Level 5 or above meets the source confirmation and news-reporting requirements by December 31, 2030? Estimate the probability under the specified context.",
+        "options": {
+          "yes": "An INES Level 5 or higher nuclear accident meets the reporting requirements by December 31, 2030.",
+          "no": "No INES Level 5 or higher nuclear accident meets the reporting requirements by December 31, 2030."
+        }
+      },
+      "split": {
+        "id": "4832b96e-1b64-4194-88cc-476f23ec95c5:split",
+        "context": "",
+        "event": "the IAEA reports by December 31, 2028 that an operating civilian nuclear power plant sustained physical damage from armed hostilities between October 14, 2026 and December 31, 2028, inclusive",
+        "definition": "An official IAEA report must describe physical damage caused by armed hostilities to a civilian nuclear power plant that was operating immediately before the incident. Threats, nearby fighting without plant damage, and damage confined to a decommissioned site do not qualify. No radiation release or particular INES classification is required.",
+        "question": "What is the probability that the IAEA reports by December 31, 2028 that an operating civilian nuclear power plant sustained physical damage from armed hostilities between October 14, 2026 and December 31, 2028, inclusive? Estimate the unconditional probability of this conditioning event.",
+        "options": {
+          "condition": "The IAEA reports qualifying conflict damage to an operating nuclear plant by December 31, 2028.",
+          "complement": "The IAEA makes no such report by December 31, 2028."
+        },
+        "rationale": "Conflict-related physical damage is a relevant nuclear safety scenario without itself implying an INES Level 5 accident."
+      },
+      "children": [
+        {
+          "id": "4832b96e-1b64-4194-88cc-476f23ec95c5:condition",
+          "parent_id": "4832b96e-1b64-4194-88cc-476f23ec95c5",
+          "split_option": "condition",
+          "context": "the IAEA reports by December 31, 2028 that an operating civilian nuclear power plant sustained physical damage from armed hostilities between October 14, 2026 and December 31, 2028, inclusive",
+          "question": "What is the probability that a nuclear accident classified at INES Level 5 or above meets the source confirmation and news-reporting requirements by December 31, 2030, given that the IAEA reports by December 31, 2028 that an operating civilian nuclear power plant sustained physical damage from armed hostilities between October 14, 2026 and December 31, 2028, inclusive? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "An INES Level 5 or higher nuclear accident meets the reporting requirements by December 31, 2030.",
+            "no": "No INES Level 5 or higher nuclear accident meets the reporting requirements by December 31, 2030."
+          },
+          "children": []
+        },
+        {
+          "id": "4832b96e-1b64-4194-88cc-476f23ec95c5:complement",
+          "parent_id": "4832b96e-1b64-4194-88cc-476f23ec95c5",
+          "split_option": "complement",
+          "context": "the IAEA makes no report meeting those plant, damage, cause, and date criteria by December 31, 2028",
+          "question": "What is the probability that a nuclear accident classified at INES Level 5 or above meets the source confirmation and news-reporting requirements by December 31, 2030, given that the IAEA makes no report meeting those plant, damage, cause, and date criteria by December 31, 2028? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "An INES Level 5 or higher nuclear accident meets the reporting requirements by December 31, 2030.",
+            "no": "No INES Level 5 or higher nuclear accident meets the reporting requirements by December 31, 2030."
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "root": {
+        "id": "6f5fda15-6026-47ff-9597-be06d0341082",
+        "resolution_date": "2030-12-31 00:00:00",
+        "context": "",
+        "target_event": "Australia officially commissions a fully operational nuclear power plant capable of generating energy for public or industrial use by December 31, 2030",
+        "question": "What is the probability that Australia officially commissions a fully operational nuclear power plant capable of generating energy for public or industrial use by December 31, 2030? Estimate the probability under the specified context.",
+        "options": {
+          "yes": "Australia commissions a fully operational nuclear power plant by December 31, 2030.",
+          "no": "Australia does not commission such a plant by December 31, 2030."
+        }
+      },
+      "split": {
+        "id": "6f5fda15-6026-47ff-9597-be06d0341082:split",
+        "context": "",
+        "event": "Australia officially authorizes construction of at least one civilian nuclear power plant by December 31, 2028",
+        "definition": "An Australian government or competent regulatory authority must issue a final authorization allowing construction of a civilian reactor intended to generate electricity or industrial energy. Research-only reactors, feasibility studies, site assessments, and approvals that do not permit construction do not qualify.",
+        "question": "What is the probability that Australia officially authorizes construction of at least one civilian nuclear power plant by December 31, 2028? Estimate the unconditional probability of this conditioning event.",
+        "options": {
+          "condition": "Australia authorizes construction of a civilian nuclear power plant by December 31, 2028.",
+          "complement": "Australia authorizes no such construction by December 31, 2028."
+        },
+        "rationale": "Construction authorization is a relevant development milestone while timely completion remains uncertain."
+      },
+      "children": [
+        {
+          "id": "6f5fda15-6026-47ff-9597-be06d0341082:condition",
+          "parent_id": "6f5fda15-6026-47ff-9597-be06d0341082",
+          "split_option": "condition",
+          "context": "Australia officially authorizes construction of at least one civilian nuclear power plant by December 31, 2028",
+          "question": "What is the probability that Australia officially commissions a fully operational nuclear power plant capable of generating energy for public or industrial use by December 31, 2030, given that Australia officially authorizes construction of at least one civilian nuclear power plant by December 31, 2028? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "Australia commissions a fully operational nuclear power plant by December 31, 2030.",
+            "no": "Australia does not commission such a plant by December 31, 2030."
+          },
+          "children": []
+        },
+        {
+          "id": "6f5fda15-6026-47ff-9597-be06d0341082:complement",
+          "parent_id": "6f5fda15-6026-47ff-9597-be06d0341082",
+          "split_option": "complement",
+          "context": "Australia does not officially authorize construction of any civilian nuclear power plant by December 31, 2028",
+          "question": "What is the probability that Australia officially commissions a fully operational nuclear power plant capable of generating energy for public or industrial use by December 31, 2030, given that Australia does not officially authorize construction of any civilian nuclear power plant by December 31, 2028? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "Australia commissions a fully operational nuclear power plant by December 31, 2030.",
+            "no": "Australia does not commission such a plant by December 31, 2030."
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "root": {
+        "id": "fcd3d7a9-ff05-4b85-b17b-400133856a88",
+        "resolution_date": "2029-12-31 00:00:00",
+        "context": "",
+        "target_event": "the United States enacts an electoral reform law and implements significant changes in at least two of the source-listed electoral areas before January 1, 2030",
+        "question": "What is the probability that the United States enacts an electoral reform law and implements significant changes in at least two of the source-listed electoral areas before January 1, 2030? Estimate the probability under the specified context.",
+        "options": {
+          "yes": "The United States enacts and implements the required electoral reforms before January 1, 2030.",
+          "no": "The United States does not enact and implement the required electoral reforms before January 1, 2030."
+        }
+      },
+      "split": {
+        "id": "fcd3d7a9-ff05-4b85-b17b-400133856a88:split",
+        "context": "",
+        "event": "the same political party holds the US presidency and an outright majority of voting seats in both chambers of Congress on February 1, 2029",
+        "definition": "Use the president's official party affiliation and the officially seated, voting members of each chamber on February 1, 2029. An outright majority means more than half of occupied voting seats. Independents are not counted as members of a party solely because they caucus with it. A tied Senate plus a vice-presidential casting vote does not qualify. Vacancies and any nonexistence of the specified offices cannot satisfy the affirmative condition.",
+        "question": "What is the probability that the same political party holds the US presidency and an outright majority of voting seats in both chambers of Congress on February 1, 2029? Estimate the unconditional probability of this conditioning event.",
+        "options": {
+          "condition": "One party holds the presidency and outright majorities in both congressional chambers on February 1, 2029.",
+          "complement": "No single party holds all three on February 1, 2029."
+        },
+        "rationale": "Unified elected control is a relevant legislative scenario without guaranteeing passage, signature, or implementation of electoral reform."
+      },
+      "children": [
+        {
+          "id": "fcd3d7a9-ff05-4b85-b17b-400133856a88:condition",
+          "parent_id": "fcd3d7a9-ff05-4b85-b17b-400133856a88",
+          "split_option": "condition",
+          "context": "the same political party holds the US presidency and an outright majority of voting seats in both chambers of Congress on February 1, 2029",
+          "question": "What is the probability that the United States enacts an electoral reform law and implements significant changes in at least two of the source-listed electoral areas before January 1, 2030, given that the same political party holds the US presidency and an outright majority of voting seats in both chambers of Congress on February 1, 2029? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "The United States enacts and implements the required electoral reforms before January 1, 2030.",
+            "no": "The United States does not enact and implement the required electoral reforms before January 1, 2030."
+          },
+          "children": []
+        },
+        {
+          "id": "fcd3d7a9-ff05-4b85-b17b-400133856a88:complement",
+          "parent_id": "fcd3d7a9-ff05-4b85-b17b-400133856a88",
+          "split_option": "complement",
+          "context": "no single political party holds the US presidency and outright majorities of voting seats in both chambers of Congress on February 1, 2029",
+          "question": "What is the probability that the United States enacts an electoral reform law and implements significant changes in at least two of the source-listed electoral areas before January 1, 2030, given that no single political party holds the US presidency and outright majorities of voting seats in both chambers of Congress on February 1, 2029? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "The United States enacts and implements the required electoral reforms before January 1, 2030.",
+            "no": "The United States does not enact and implement the required electoral reforms before January 1, 2030."
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "root": {
+        "id": "09549bf7-8b25-4e4d-8167-5d76430be6ae",
+        "resolution_date": "2030-12-31 00:00:00",
+        "context": "",
+        "target_event": "an NBA player scores more than 100 points in an officially valid regular-season or playoff game by December 31, 2030",
+        "question": "What is the probability that an NBA player scores more than 100 points in an officially valid regular-season or playoff game by December 31, 2030? Estimate the probability under the specified context.",
+        "options": {
+          "yes": "An NBA player scores more than 100 points in a valid regular-season or playoff game by December 31, 2030.",
+          "no": "No NBA player does so by December 31, 2030."
+        }
+      },
+      "split": {
+        "id": "09549bf7-8b25-4e4d-8167-5d76430be6ae:split",
+        "context": "",
+        "event": "the NBA publishes season statistics by December 31, 2028 showing at least 118 points per team per game across the 2027–2028 regular season",
+        "definition": "Compute league-wide points per team per game as total points scored by all teams divided by twice the number of completed official regular-season games in the 2027–2028 season, including overtime points. At least one official NBA season-statistics publication by the cutoff must support an average of 118 or greater. Equality qualifies. Playoffs and exhibitions are excluded. A canceled season, an average below the threshold in every publication, or no qualifying publication belongs to the complement.",
+        "question": "What is the probability that the NBA publishes season statistics by December 31, 2028 showing at least 118 points per team per game across the 2027–2028 regular season? Estimate the unconditional probability of this conditioning event.",
+        "options": {
+          "condition": "The NBA reports at least 118 points per team per game for 2027–2028 by December 31, 2028.",
+          "complement": "The NBA makes no such report by December 31, 2028."
+        },
+        "rationale": "A high league-wide scoring environment is relevant to extreme individual scoring without itself implying a record-breaking game."
+      },
+      "children": [
+        {
+          "id": "09549bf7-8b25-4e4d-8167-5d76430be6ae:condition",
+          "parent_id": "09549bf7-8b25-4e4d-8167-5d76430be6ae",
+          "split_option": "condition",
+          "context": "the NBA publishes season statistics by December 31, 2028 showing at least 118 points per team per game across the 2027–2028 regular season",
+          "question": "What is the probability that an NBA player scores more than 100 points in an officially valid regular-season or playoff game by December 31, 2030, given that the NBA publishes season statistics by December 31, 2028 showing at least 118 points per team per game across the 2027–2028 regular season? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "An NBA player scores more than 100 points in a valid regular-season or playoff game by December 31, 2030.",
+            "no": "No NBA player does so by December 31, 2030."
+          },
+          "children": []
+        },
+        {
+          "id": "09549bf7-8b25-4e4d-8167-5d76430be6ae:complement",
+          "parent_id": "09549bf7-8b25-4e4d-8167-5d76430be6ae",
+          "split_option": "complement",
+          "context": "the NBA publishes no season statistics meeting that 2027–2028 scoring threshold by December 31, 2028",
+          "question": "What is the probability that an NBA player scores more than 100 points in an officially valid regular-season or playoff game by December 31, 2030, given that the NBA publishes no season statistics meeting that 2027–2028 scoring threshold by December 31, 2028? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "An NBA player scores more than 100 points in a valid regular-season or playoff game by December 31, 2030.",
+            "no": "No NBA player does so by December 31, 2030."
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "root": {
+        "id": "5954e646-bea3-4e41-875b-3904f418f72f",
+        "resolution_date": "2030-12-31 00:00:00",
+        "context": "",
+        "target_event": "France wins at least one FIFA World Cup tournament qualifying under the source resolution criteria by December 31, 2030",
+        "question": "What is the probability that France wins at least one FIFA World Cup tournament qualifying under the source resolution criteria by December 31, 2030? Estimate the probability under the specified context.",
+        "options": {
+          "yes": "France wins a FIFA World Cup by December 31, 2030.",
+          "no": "France does not win a FIFA World Cup by December 31, 2030."
+        }
+      },
+      "split": {
+        "id": "5954e646-bea3-4e41-875b-3904f418f72f:split",
+        "context": "",
+        "event": "France is officially credited by FIFA with reaching the semifinal stage of the 2030 FIFA World Cup",
+        "definition": "Evaluate FIFA's final official tournament record available by December 31, 2030. The affirmative branch requires France to have reached the semifinal stage. Failure to qualify, earlier elimination, disqualification before reaching that stage, cancellation, postponement beyond the cutoff, or absence of a semifinal stage all belong to the complementary branch.",
+        "question": "What is the probability that France is officially credited by FIFA with reaching the semifinal stage of the 2030 FIFA World Cup? Estimate the unconditional probability of this conditioning event.",
+        "options": {
+          "condition": "FIFA credits France with reaching the 2030 World Cup semifinals by December 31, 2030.",
+          "complement": "FIFA does not credit France with reaching those semifinals by December 31, 2030."
+        },
+        "rationale": "Progress to a late tournament stage is relevant to winning; the target can also include other qualifying World Cups before the deadline."
+      },
+      "children": [
+        {
+          "id": "5954e646-bea3-4e41-875b-3904f418f72f:condition",
+          "parent_id": "5954e646-bea3-4e41-875b-3904f418f72f",
+          "split_option": "condition",
+          "context": "France is officially credited by FIFA with reaching the semifinal stage of the 2030 FIFA World Cup",
+          "question": "What is the probability that France wins at least one FIFA World Cup tournament qualifying under the source resolution criteria by December 31, 2030, given that France is officially credited by FIFA with reaching the semifinal stage of the 2030 FIFA World Cup? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "France wins a FIFA World Cup by December 31, 2030.",
+            "no": "France does not win a FIFA World Cup by December 31, 2030."
+          },
+          "children": []
+        },
+        {
+          "id": "5954e646-bea3-4e41-875b-3904f418f72f:complement",
+          "parent_id": "5954e646-bea3-4e41-875b-3904f418f72f",
+          "split_option": "complement",
+          "context": "France is not officially credited by FIFA with reaching the semifinal stage of the 2030 FIFA World Cup",
+          "question": "What is the probability that France wins at least one FIFA World Cup tournament qualifying under the source resolution criteria by December 31, 2030, given that France is not officially credited by FIFA with reaching the semifinal stage of the 2030 FIFA World Cup? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "France wins a FIFA World Cup by December 31, 2030.",
+            "no": "France does not win a FIFA World Cup by December 31, 2030."
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "root": {
+        "id": "6c44d6df-cec9-43bc-8741-a15a1539d02f",
+        "resolution_date": "2030-12-31 00:00:00",
+        "context": "",
+        "target_event": "Spain meets the source-defined 100% renewable net electricity-production criterion for calendar year 2030, accounting for imports and exports",
+        "question": "What is the probability that Spain meets the source-defined 100% renewable net electricity-production criterion for calendar year 2030, accounting for imports and exports? Estimate the probability under the specified context.",
+        "options": {
+          "yes": "Spain meets the 100% renewable net electricity-production target for 2030.",
+          "no": "Spain does not meet the 100% renewable net electricity-production target for 2030."
+        }
+      },
+      "split": {
+        "id": "6c44d6df-cec9-43bc-8741-a15a1539d02f:split",
+        "context": "",
+        "event": "Spain's official national electricity-system operator publishes a report by December 31, 2029 placing renewables at 80% or more of domestic electricity generation in calendar year 2028",
+        "definition": "The report must measure renewable electricity generated domestically divided by all electricity generated domestically over the full calendar year 2028. Solar, wind, hydroelectric, geothermal, and biomass generation count as renewable. This split excludes electricity imports from both numerator and denominator. At least one official report giving a share of 80% or greater qualifies; equality qualifies and no qualifying report belongs to the complement.",
+        "question": "What is the probability that Spain's official national electricity-system operator publishes a report by December 31, 2029 placing renewables at 80% or more of domestic electricity generation in calendar year 2028? Estimate the unconditional probability of this conditioning event.",
+        "options": {
+          "condition": "The official operator reports at least 80% renewable domestic generation in Spain for 2028 by December 31, 2029.",
+          "complement": "The official operator makes no such report by December 31, 2029."
+        },
+        "rationale": "An earlier annual renewable-generation share is informative about attaining the target, while keeping the split's measurement explicit."
+      },
+      "children": [
+        {
+          "id": "6c44d6df-cec9-43bc-8741-a15a1539d02f:condition",
+          "parent_id": "6c44d6df-cec9-43bc-8741-a15a1539d02f",
+          "split_option": "condition",
+          "context": "Spain's official national electricity-system operator publishes a report by December 31, 2029 placing renewables at 80% or more of domestic electricity generation in calendar year 2028",
+          "question": "What is the probability that Spain meets the source-defined 100% renewable net electricity-production criterion for calendar year 2030, accounting for imports and exports, given that Spain's official national electricity-system operator publishes a report by December 31, 2029 placing renewables at 80% or more of domestic electricity generation in calendar year 2028? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "Spain meets the 100% renewable net electricity-production target for 2030.",
+            "no": "Spain does not meet the 100% renewable net electricity-production target for 2030."
+          },
+          "children": []
+        },
+        {
+          "id": "6c44d6df-cec9-43bc-8741-a15a1539d02f:complement",
+          "parent_id": "6c44d6df-cec9-43bc-8741-a15a1539d02f",
+          "split_option": "complement",
+          "context": "Spain's official national electricity-system operator publishes no report meeting that 2028 renewable-generation threshold by December 31, 2029",
+          "question": "What is the probability that Spain meets the source-defined 100% renewable net electricity-production criterion for calendar year 2030, accounting for imports and exports, given that Spain's official national electricity-system operator publishes no report meeting that 2028 renewable-generation threshold by December 31, 2029? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "Spain meets the 100% renewable net electricity-production target for 2030.",
+            "no": "Spain does not meet the 100% renewable net electricity-production target for 2030."
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "root": {
+        "id": "be431040-ded1-4c52-8647-b8c595aeeb70",
+        "resolution_date": "2030-12-31 00:00:00",
+        "context": "",
+        "target_event": "France ranks highest among European countries in nominal GDP in current US dollars under the source data-selection and deadline rules",
+        "question": "What is the probability that France ranks highest among European countries in nominal GDP in current US dollars under the source data-selection and deadline rules? Estimate the probability under the specified context.",
+        "options": {
+          "yes": "France has the highest nominal GDP in Europe under the stated deadline rules.",
+          "no": "France does not have the highest nominal GDP in Europe under the stated deadline rules."
+        }
+      },
+      "split": {
+        "id": "be431040-ded1-4c52-8647-b8c595aeeb70:split",
+        "context": "",
+        "event": "the IMF publishes an estimate by December 31, 2029 putting Germany's calendar-year 2028 real GDP below its calendar-year 2026 real GDP in the same data release",
+        "definition": "At least one IMF data release published by the cutoff must contain comparable annual constant-price GDP estimates for Germany for 2026 and 2028, with the 2028 level strictly lower. Equality, only higher estimates, and no release containing a qualifying comparison belong to the complementary branch. Comparing within one release avoids differences caused solely by rebasing across releases.",
+        "question": "What is the probability that the IMF publishes an estimate by December 31, 2029 putting Germany's calendar-year 2028 real GDP below its calendar-year 2026 real GDP in the same data release? Estimate the unconditional probability of this conditioning event.",
+        "options": {
+          "condition": "The IMF reports German real GDP in 2028 below its 2026 level by December 31, 2029.",
+          "complement": "The IMF makes no such report by December 31, 2029."
+        },
+        "rationale": "A contraction in another large European economy is a meaningful relative-growth scenario without determining France's rank."
+      },
+      "children": [
+        {
+          "id": "be431040-ded1-4c52-8647-b8c595aeeb70:condition",
+          "parent_id": "be431040-ded1-4c52-8647-b8c595aeeb70",
+          "split_option": "condition",
+          "context": "the IMF publishes an estimate by December 31, 2029 putting Germany's calendar-year 2028 real GDP below its calendar-year 2026 real GDP in the same data release",
+          "question": "What is the probability that France ranks highest among European countries in nominal GDP in current US dollars under the source data-selection and deadline rules, given that the IMF publishes an estimate by December 31, 2029 putting Germany's calendar-year 2028 real GDP below its calendar-year 2026 real GDP in the same data release? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "France has the highest nominal GDP in Europe under the stated deadline rules.",
+            "no": "France does not have the highest nominal GDP in Europe under the stated deadline rules."
+          },
+          "children": []
+        },
+        {
+          "id": "be431040-ded1-4c52-8647-b8c595aeeb70:complement",
+          "parent_id": "be431040-ded1-4c52-8647-b8c595aeeb70",
+          "split_option": "complement",
+          "context": "the IMF publishes no estimate meeting that Germany real-GDP comparison by December 31, 2029",
+          "question": "What is the probability that France ranks highest among European countries in nominal GDP in current US dollars under the source data-selection and deadline rules, given that the IMF publishes no estimate meeting that Germany real-GDP comparison by December 31, 2029? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "France has the highest nominal GDP in Europe under the stated deadline rules.",
+            "no": "France does not have the highest nominal GDP in Europe under the stated deadline rules."
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "root": {
+        "id": "d7ceff1f-3503-4f47-988e-5aa2a2f2659d",
+        "resolution_date": "2030-12-31 00:00:00",
+        "context": "",
+        "target_event": "a significant US–China legal dispute leads to a new international treaty that is signed and ratified by both countries by December 31, 2030",
+        "question": "What is the probability that a significant US–China legal dispute leads to a new international treaty that is signed and ratified by both countries by December 31, 2030? Estimate the probability under the specified context.",
+        "options": {
+          "yes": "A US–China legal dispute leads to a new treaty signed and ratified by both countries by December 31, 2030.",
+          "no": "No US–China legal dispute leads to such a treaty by December 31, 2030."
+        }
+      },
+      "split": {
+        "id": "d7ceff1f-3503-4f47-988e-5aa2a2f2659d:split",
+        "context": "",
+        "event": "the United States and China jointly announce formal treaty negotiations to resolve a legal dispute between them by December 31, 2028",
+        "definition": "Both governments must officially confirm negotiations intended to produce a new binding treaty addressing a dispute that has entered formal legal proceedings or an official dispute-resolution process. General diplomatic meetings, unilateral proposals, and talks limited to nonbinding statements do not qualify.",
+        "question": "What is the probability that the United States and China jointly announce formal treaty negotiations to resolve a legal dispute between them by December 31, 2028? Estimate the unconditional probability of this conditioning event.",
+        "options": {
+          "condition": "The United States and China jointly announce qualifying treaty negotiations by December 31, 2028.",
+          "complement": "They do not jointly announce such negotiations by December 31, 2028."
+        },
+        "rationale": "Formal treaty negotiations are a relevant precursor to signing and ratification but do not guarantee agreement."
+      },
+      "children": [
+        {
+          "id": "d7ceff1f-3503-4f47-988e-5aa2a2f2659d:condition",
+          "parent_id": "d7ceff1f-3503-4f47-988e-5aa2a2f2659d",
+          "split_option": "condition",
+          "context": "the United States and China jointly announce formal treaty negotiations to resolve a legal dispute between them by December 31, 2028",
+          "question": "What is the probability that a significant US–China legal dispute leads to a new international treaty that is signed and ratified by both countries by December 31, 2030, given that the United States and China jointly announce formal treaty negotiations to resolve a legal dispute between them by December 31, 2028? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "A US–China legal dispute leads to a new treaty signed and ratified by both countries by December 31, 2030.",
+            "no": "No US–China legal dispute leads to such a treaty by December 31, 2030."
+          },
+          "children": []
+        },
+        {
+          "id": "d7ceff1f-3503-4f47-988e-5aa2a2f2659d:complement",
+          "parent_id": "d7ceff1f-3503-4f47-988e-5aa2a2f2659d",
+          "split_option": "complement",
+          "context": "the United States and China do not jointly announce such treaty negotiations by December 31, 2028",
+          "question": "What is the probability that a significant US–China legal dispute leads to a new international treaty that is signed and ratified by both countries by December 31, 2030, given that the United States and China do not jointly announce such treaty negotiations by December 31, 2028? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "A US–China legal dispute leads to a new treaty signed and ratified by both countries by December 31, 2030.",
+            "no": "No US–China legal dispute leads to such a treaty by December 31, 2030."
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "root": {
+        "id": "b781b246-6502-4888-ac42-6ceda6cbb45c",
+        "resolution_date": "2030-12-31 00:00:00",
+        "context": "",
+        "target_event": "an Iran-conducted or Iran-collaborative mission carries at least one Iranian astronaut above the 100-kilometer Kármán line by December 31, 2030",
+        "question": "What is the probability that an Iran-conducted or Iran-collaborative mission carries at least one Iranian astronaut above the 100-kilometer Kármán line by December 31, 2030? Estimate the probability under the specified context.",
+        "options": {
+          "yes": "An Iranian astronaut crosses the 100-kilometer Kármán line on an Iranian or joint mission by December 31, 2030.",
+          "no": "No Iranian astronaut does so by December 31, 2030."
+        }
+      },
+      "split": {
+        "id": "b781b246-6502-4888-ac42-6ceda6cbb45c:split",
+        "context": "",
+        "event": "the Iranian Space Agency announces a signed agreement with a foreign space agency or private launch provider by December 31, 2028 reserving a crewed spaceflight seat for an Iranian astronaut",
+        "definition": "The agreement must reserve at least one seat for an Iranian astronaut on a flight intended to cross 100 kilometers above Earth's surface. Training-only agreements, expressions of interest, and agreements without a reserved flight seat do not qualify. The flight need not have occurred for this condition to hold.",
+        "question": "What is the probability that the Iranian Space Agency announces a signed agreement with a foreign space agency or private launch provider by December 31, 2028 reserving a crewed spaceflight seat for an Iranian astronaut? Estimate the unconditional probability of this conditioning event.",
+        "options": {
+          "condition": "Iran announces the specified signed astronaut seat agreement by December 31, 2028.",
+          "complement": "Iran announces no such agreement by December 31, 2028."
+        },
+        "rationale": "A reserved seat supplies a concrete international route to the target in addition to an independent Iranian launch."
+      },
+      "children": [
+        {
+          "id": "b781b246-6502-4888-ac42-6ceda6cbb45c:condition",
+          "parent_id": "b781b246-6502-4888-ac42-6ceda6cbb45c",
+          "split_option": "condition",
+          "context": "the Iranian Space Agency announces a signed agreement with a foreign space agency or private launch provider by December 31, 2028 reserving a crewed spaceflight seat for an Iranian astronaut",
+          "question": "What is the probability that an Iran-conducted or Iran-collaborative mission carries at least one Iranian astronaut above the 100-kilometer Kármán line by December 31, 2030, given that the Iranian Space Agency announces a signed agreement with a foreign space agency or private launch provider by December 31, 2028 reserving a crewed spaceflight seat for an Iranian astronaut? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "An Iranian astronaut crosses the 100-kilometer Kármán line on an Iranian or joint mission by December 31, 2030.",
+            "no": "No Iranian astronaut does so by December 31, 2030."
+          },
+          "children": []
+        },
+        {
+          "id": "b781b246-6502-4888-ac42-6ceda6cbb45c:complement",
+          "parent_id": "b781b246-6502-4888-ac42-6ceda6cbb45c",
+          "split_option": "complement",
+          "context": "the Iranian Space Agency announces no such signed seat-reservation agreement by December 31, 2028",
+          "question": "What is the probability that an Iran-conducted or Iran-collaborative mission carries at least one Iranian astronaut above the 100-kilometer Kármán line by December 31, 2030, given that the Iranian Space Agency announces no such signed seat-reservation agreement by December 31, 2028? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "An Iranian astronaut crosses the 100-kilometer Kármán line on an Iranian or joint mission by December 31, 2030.",
+            "no": "No Iranian astronaut does so by December 31, 2030."
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "root": {
+        "id": "8626b1b4-60d0-47e4-bade-bfa3de7bbfea",
+        "resolution_date": "2040-12-31 00:00:00",
+        "context": "",
+        "target_event": "the IOC makes a final announcement by December 31, 2040 selecting Germany as a host or co-host of Summer or Winter Olympic Games to be held in 2041 or later",
+        "question": "What is the probability that the IOC makes a final announcement by December 31, 2040 selecting Germany as a host or co-host of Summer or Winter Olympic Games to be held in 2041 or later? Estimate the probability under the specified context.",
+        "options": {
+          "yes": "The IOC selects Germany as a host or co-host by December 31, 2040 for Olympic Games in 2041 or later.",
+          "no": "The IOC does not make such a selection by December 31, 2040."
+        }
+      },
+      "split": {
+        "id": "8626b1b4-60d0-47e4-bade-bfa3de7bbfea:split",
+        "context": "",
+        "event": "the IOC formally opens targeted dialogue with a German bid for Summer or Winter Olympic Games in 2041 or later by December 31, 2037",
+        "definition": "An official IOC communication must identify a German bid, including a multinational bid involving Germany, as entering its targeted-dialogue stage for a specific Summer or Winter Olympic Games edition in 2041 or later. General interest, exploratory talks, or bids for earlier Games do not qualify. If the process is renamed, only an officially designated equivalent preferred-host negotiation stage qualifies.",
+        "question": "What is the probability that the IOC formally opens targeted dialogue with a German bid for Summer or Winter Olympic Games in 2041 or later by December 31, 2037? Estimate the unconditional probability of this conditioning event.",
+        "options": {
+          "condition": "The IOC opens qualifying targeted dialogue with a German bid by December 31, 2037.",
+          "complement": "The IOC does not open such dialogue by December 31, 2037."
+        },
+        "rationale": "Advancement to preferred-host negotiations is a relevant precursor to a final host award."
+      },
+      "children": [
+        {
+          "id": "8626b1b4-60d0-47e4-bade-bfa3de7bbfea:condition",
+          "parent_id": "8626b1b4-60d0-47e4-bade-bfa3de7bbfea",
+          "split_option": "condition",
+          "context": "the IOC formally opens targeted dialogue with a German bid for Summer or Winter Olympic Games in 2041 or later by December 31, 2037",
+          "question": "What is the probability that the IOC makes a final announcement by December 31, 2040 selecting Germany as a host or co-host of Summer or Winter Olympic Games to be held in 2041 or later, given that the IOC formally opens targeted dialogue with a German bid for Summer or Winter Olympic Games in 2041 or later by December 31, 2037? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "The IOC selects Germany as a host or co-host by December 31, 2040 for Olympic Games in 2041 or later.",
+            "no": "The IOC does not make such a selection by December 31, 2040."
+          },
+          "children": []
+        },
+        {
+          "id": "8626b1b4-60d0-47e4-bade-bfa3de7bbfea:complement",
+          "parent_id": "8626b1b4-60d0-47e4-bade-bfa3de7bbfea",
+          "split_option": "complement",
+          "context": "the IOC does not formally open such targeted dialogue with a German bid by December 31, 2037",
+          "question": "What is the probability that the IOC makes a final announcement by December 31, 2040 selecting Germany as a host or co-host of Summer or Winter Olympic Games to be held in 2041 or later, given that the IOC does not formally open such targeted dialogue with a German bid by December 31, 2037? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "The IOC selects Germany as a host or co-host by December 31, 2040 for Olympic Games in 2041 or later.",
+            "no": "The IOC does not make such a selection by December 31, 2040."
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "root": {
+        "id": "bec4d0c8-16ff-4676-8005-5c47f177c001",
+        "resolution_date": "2029-12-31 00:00:00",
+        "context": "",
+        "target_event": "Brazil introduces a fully operational central-bank-regulated national cryptocurrency as legal tender for general public use before January 1, 2030, meeting the source availability requirements",
+        "question": "What is the probability that Brazil introduces a fully operational central-bank-regulated national cryptocurrency as legal tender for general public use before January 1, 2030, meeting the source availability requirements? Estimate the probability under the specified context.",
+        "options": {
+          "yes": "Brazil launches a central-bank-regulated national cryptocurrency as legal tender for public use before January 1, 2030.",
+          "no": "Brazil does not make such a launch before January 1, 2030."
+        }
+      },
+      "split": {
+        "id": "bec4d0c8-16ff-4676-8005-5c47f177c001:split",
+        "context": "",
+        "event": "Brazil's central bank publicly confirms completion of a retail digital-currency pilot involving real transactions by members of the general public by December 31, 2028",
+        "definition": "An official central-bank publication must state that a pilot of a central-bank-regulated national digital currency has completed and included real-value transactions by retail participants. Simulated transactions, wholesale-only tests, private cryptocurrencies without central-bank regulation, and an ongoing pilot without a completion statement do not qualify. Legal-tender status and public launch are not required for this conditioning event.",
+        "question": "What is the probability that Brazil's central bank publicly confirms completion of a retail digital-currency pilot involving real transactions by members of the general public by December 31, 2028? Estimate the unconditional probability of this conditioning event.",
+        "options": {
+          "condition": "Brazil’s central bank confirms completion of the specified retail digital-currency pilot by December 31, 2028.",
+          "complement": "Brazil’s central bank makes no such confirmation by December 31, 2028."
+        },
+        "rationale": "Completion of a retail pilot is a relevant implementation milestone without itself meeting the target's launch and legal-tender requirements."
+      },
+      "children": [
+        {
+          "id": "bec4d0c8-16ff-4676-8005-5c47f177c001:condition",
+          "parent_id": "bec4d0c8-16ff-4676-8005-5c47f177c001",
+          "split_option": "condition",
+          "context": "Brazil's central bank publicly confirms completion of a retail digital-currency pilot involving real transactions by members of the general public by December 31, 2028",
+          "question": "What is the probability that Brazil introduces a fully operational central-bank-regulated national cryptocurrency as legal tender for general public use before January 1, 2030, meeting the source availability requirements, given that Brazil's central bank publicly confirms completion of a retail digital-currency pilot involving real transactions by members of the general public by December 31, 2028? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "Brazil launches a central-bank-regulated national cryptocurrency as legal tender for public use before January 1, 2030.",
+            "no": "Brazil does not make such a launch before January 1, 2030."
+          },
+          "children": []
+        },
+        {
+          "id": "bec4d0c8-16ff-4676-8005-5c47f177c001:complement",
+          "parent_id": "bec4d0c8-16ff-4676-8005-5c47f177c001",
+          "split_option": "complement",
+          "context": "Brazil's central bank makes no such pilot-completion confirmation by December 31, 2028",
+          "question": "What is the probability that Brazil introduces a fully operational central-bank-regulated national cryptocurrency as legal tender for general public use before January 1, 2030, meeting the source availability requirements, given that Brazil's central bank makes no such pilot-completion confirmation by December 31, 2028? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "Brazil launches a central-bank-regulated national cryptocurrency as legal tender for public use before January 1, 2030.",
+            "no": "Brazil does not make such a launch before January 1, 2030."
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "root": {
+        "id": "a5c748f9-7551-47cd-923d-d159f72580cb",
+        "resolution_date": "2030-12-31 00:00:00",
+        "context": "",
+        "target_event": "South Korea officially elects a female president in an election meeting the source recognition requirements by December 31, 2030",
+        "question": "What is the probability that South Korea officially elects a female president in an election meeting the source recognition requirements by December 31, 2030? Estimate the probability under the specified context.",
+        "options": {
+          "yes": "South Korea elects a female president by December 31, 2030.",
+          "no": "South Korea does not elect a female president by December 31, 2030."
+        }
+      },
+      "split": {
+        "id": "a5c748f9-7551-47cd-923d-d159f72580cb:split",
+        "context": "",
+        "event": "a female presidential candidate is officially registered in South Korea by December 31, 2029 with the nomination of a party holding at least 20% of occupied National Assembly seats on her registration date",
+        "definition": "The National Election Commission must officially register the candidate for a presidential election. Her nominating party must hold at least 20% of occupied National Assembly seats on that date, using official party membership rather than informal alliances. Equality qualifies. No presidential election or no qualifying candidate registration by the cutoff belongs to the complement.",
+        "question": "What is the probability that a female presidential candidate is officially registered in South Korea by December 31, 2029 with the nomination of a party holding at least 20% of occupied National Assembly seats on her registration date? Estimate the unconditional probability of this conditioning event.",
+        "options": {
+          "condition": "South Korea registers a female presidential candidate meeting the 20% party-seat threshold by December 31, 2029.",
+          "complement": "South Korea registers no such candidate by December 31, 2029."
+        },
+        "rationale": "A female nominee backed by a substantial parliamentary party is a relevant electoral scenario without guaranteeing victory."
+      },
+      "children": [
+        {
+          "id": "a5c748f9-7551-47cd-923d-d159f72580cb:condition",
+          "parent_id": "a5c748f9-7551-47cd-923d-d159f72580cb",
+          "split_option": "condition",
+          "context": "a female presidential candidate is officially registered in South Korea by December 31, 2029 with the nomination of a party holding at least 20% of occupied National Assembly seats on her registration date",
+          "question": "What is the probability that South Korea officially elects a female president in an election meeting the source recognition requirements by December 31, 2030, given that a female presidential candidate is officially registered in South Korea by December 31, 2029 with the nomination of a party holding at least 20% of occupied National Assembly seats on her registration date? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "South Korea elects a female president by December 31, 2030.",
+            "no": "South Korea does not elect a female president by December 31, 2030."
+          },
+          "children": []
+        },
+        {
+          "id": "a5c748f9-7551-47cd-923d-d159f72580cb:complement",
+          "parent_id": "a5c748f9-7551-47cd-923d-d159f72580cb",
+          "split_option": "complement",
+          "context": "no female presidential candidate meeting those registration, party-nomination, seat-share, and date criteria is registered by December 31, 2029",
+          "question": "What is the probability that South Korea officially elects a female president in an election meeting the source recognition requirements by December 31, 2030, given that no female presidential candidate meeting those registration, party-nomination, seat-share, and date criteria is registered by December 31, 2029? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "South Korea elects a female president by December 31, 2030.",
+            "no": "South Korea does not elect a female president by December 31, 2030."
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "root": {
+        "id": "8a3e346a-8ad1-4e7a-bc32-bab5348f17d8",
+        "resolution_date": "2029-12-31 00:00:00",
+        "context": "",
+        "target_event": "FIFA implements an actionable and enforceable new policy against political interference in football governance before January 1, 2030, satisfying the source adoption requirements",
+        "question": "What is the probability that FIFA implements an actionable and enforceable new policy against political interference in football governance before January 1, 2030, satisfying the source adoption requirements? Estimate the probability under the specified context.",
+        "options": {
+          "yes": "FIFA implements an enforceable policy against political interference before January 1, 2030.",
+          "no": "FIFA does not implement such a policy before January 1, 2030."
+        }
+      },
+      "split": {
+        "id": "8a3e346a-8ad1-4e7a-bc32-bab5348f17d8:split",
+        "context": "",
+        "event": "FIFA officially suspends at least two distinct member associations for political or governmental interference between October 14, 2026 and December 31, 2028, inclusive",
+        "definition": "Official FIFA decisions must explicitly cite political or governmental interference as a reason for each suspension. Count distinct associations, so repeated suspensions of one association count once. Threats of suspension and sanctions solely for other reasons do not qualify. Zero or one qualifying association belongs to the complementary branch.",
+        "question": "What is the probability that FIFA officially suspends at least two distinct member associations for political or governmental interference between October 14, 2026 and December 31, 2028, inclusive? Estimate the unconditional probability of this conditioning event.",
+        "options": {
+          "condition": "FIFA suspends at least two distinct associations for political interference during the specified 2026–2028 interval.",
+          "complement": "FIFA suspends fewer than two such associations during that interval."
+        },
+        "rationale": "Multiple interference-related suspensions are a relevant governance-pressure scenario for a broader policy response."
+      },
+      "children": [
+        {
+          "id": "8a3e346a-8ad1-4e7a-bc32-bab5348f17d8:condition",
+          "parent_id": "8a3e346a-8ad1-4e7a-bc32-bab5348f17d8",
+          "split_option": "condition",
+          "context": "FIFA officially suspends at least two distinct member associations for political or governmental interference between October 14, 2026 and December 31, 2028, inclusive",
+          "question": "What is the probability that FIFA implements an actionable and enforceable new policy against political interference in football governance before January 1, 2030, satisfying the source adoption requirements, given that FIFA officially suspends at least two distinct member associations for political or governmental interference between October 14, 2026 and December 31, 2028, inclusive? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "FIFA implements an enforceable policy against political interference before January 1, 2030.",
+            "no": "FIFA does not implement such a policy before January 1, 2030."
+          },
+          "children": []
+        },
+        {
+          "id": "8a3e346a-8ad1-4e7a-bc32-bab5348f17d8:complement",
+          "parent_id": "8a3e346a-8ad1-4e7a-bc32-bab5348f17d8",
+          "split_option": "complement",
+          "context": "FIFA does not officially suspend at least two distinct member associations for political or governmental interference during that interval",
+          "question": "What is the probability that FIFA implements an actionable and enforceable new policy against political interference in football governance before January 1, 2030, satisfying the source adoption requirements, given that FIFA does not officially suspend at least two distinct member associations for political or governmental interference during that interval? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "FIFA implements an enforceable policy against political interference before January 1, 2030.",
+            "no": "FIFA does not implement such a policy before January 1, 2030."
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "root": {
+        "id": "e59db042-4de7-4ff5-a6e2-abcb83d94faa",
+        "resolution_date": "2030-12-31 00:00:00",
+        "context": "",
+        "target_event": "the United States qualifies as the world's leading renewable-energy producer by December 31, 2030 under the source capacity-or-generation metric and greater-than-1% leadership rule",
+        "question": "What is the probability that the United States qualifies as the world's leading renewable-energy producer by December 31, 2030 under the source capacity-or-generation metric and greater-than-1% leadership rule? Estimate the probability under the specified context.",
+        "options": {
+          "yes": "The United States becomes the leading renewable-energy producer with the required margin by December 31, 2030.",
+          "no": "The United States does not achieve that lead by December 31, 2030."
+        }
+      },
+      "split": {
+        "id": "e59db042-4de7-4ff5-a6e2-abcb83d94faa:split",
+        "context": "",
+        "event": "the IEA publishes a report by December 31, 2029 placing US net additions of operational renewable electricity capacity in calendar year 2028 above China's net additions for the same year",
+        "definition": "At least one official IEA report must compare operational renewable electricity capacity added minus capacity retired during calendar year 2028 in the United States and China, using the same method and including solar, wind, hydroelectric, geothermal, and biomass. US net additions must be strictly larger. Equality, only smaller US values, or no qualifying report belongs to the complement. Planned and under-construction capacity is excluded.",
+        "question": "What is the probability that the IEA publishes a report by December 31, 2029 placing US net additions of operational renewable electricity capacity in calendar year 2028 above China's net additions for the same year? Estimate the unconditional probability of this conditioning event.",
+        "options": {
+          "condition": "The IEA reports US renewable-capacity additions above China’s for 2028 by December 31, 2029.",
+          "complement": "The IEA makes no such report by December 31, 2029."
+        },
+        "rationale": "Relative annual capacity additions are informative about future leadership while not determining total installed capacity or generation."
+      },
+      "children": [
+        {
+          "id": "e59db042-4de7-4ff5-a6e2-abcb83d94faa:condition",
+          "parent_id": "e59db042-4de7-4ff5-a6e2-abcb83d94faa",
+          "split_option": "condition",
+          "context": "the IEA publishes a report by December 31, 2029 placing US net additions of operational renewable electricity capacity in calendar year 2028 above China's net additions for the same year",
+          "question": "What is the probability that the United States qualifies as the world's leading renewable-energy producer by December 31, 2030 under the source capacity-or-generation metric and greater-than-1% leadership rule, given that the IEA publishes a report by December 31, 2029 placing US net additions of operational renewable electricity capacity in calendar year 2028 above China's net additions for the same year? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "The United States becomes the leading renewable-energy producer with the required margin by December 31, 2030.",
+            "no": "The United States does not achieve that lead by December 31, 2030."
+          },
+          "children": []
+        },
+        {
+          "id": "e59db042-4de7-4ff5-a6e2-abcb83d94faa:complement",
+          "parent_id": "e59db042-4de7-4ff5-a6e2-abcb83d94faa",
+          "split_option": "complement",
+          "context": "the IEA publishes no report meeting that US–China renewable-capacity-additions comparison by December 31, 2029",
+          "question": "What is the probability that the United States qualifies as the world's leading renewable-energy producer by December 31, 2030 under the source capacity-or-generation metric and greater-than-1% leadership rule, given that the IEA publishes no report meeting that US–China renewable-capacity-additions comparison by December 31, 2029? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "The United States becomes the leading renewable-energy producer with the required margin by December 31, 2030.",
+            "no": "The United States does not achieve that lead by December 31, 2030."
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "root": {
+        "id": "b2a145c6-7972-4c81-9906-6ac88e6545c6",
+        "resolution_date": "2049-12-31 00:00:00",
+        "context": "",
+        "target_event": "annual average global surface temperature is confirmed to exceed the 1850–1900 average by more than 2 degrees Celsius before January 1, 2050",
+        "question": "What is the probability that annual average global surface temperature is confirmed to exceed the 1850–1900 average by more than 2 degrees Celsius before January 1, 2050? Estimate the probability under the specified context.",
+        "options": {
+          "yes": "Annual global warming is confirmed to exceed 2°C above the 1850–1900 average before January 1, 2050.",
+          "no": "Annual global warming is not confirmed to exceed that threshold before January 1, 2050."
+        }
+      },
+      "split": {
+        "id": "b2a145c6-7972-4c81-9906-6ac88e6545c6:split",
+        "context": "",
+        "event": "the Global Carbon Project publishes an assessment by December 31, 2037 putting worldwide fossil-fuel-and-industry CO2 emissions in calendar year 2035 at least 25% below their calendar-year 2025 level",
+        "definition": "Use comparable global annual CO2 estimates for fossil fuels and industrial processes, including cement, from the same official Global Carbon Project assessment. Exclude land-use-change emissions. At least one assessment published by the cutoff must put 2035 emissions at or below 75% of 2025 emissions. Equality qualifies; no qualifying assessment belongs to the complement.",
+        "question": "What is the probability that the Global Carbon Project publishes an assessment by December 31, 2037 putting worldwide fossil-fuel-and-industry CO2 emissions in calendar year 2035 at least 25% below their calendar-year 2025 level? Estimate the unconditional probability of this conditioning event.",
+        "options": {
+          "condition": "The Global Carbon Project reports the specified emissions reduction of at least 25% by December 31, 2037.",
+          "complement": "The Global Carbon Project makes no such report by December 31, 2037."
+        },
+        "rationale": "A substantial reduction in global emissions is a relevant long-term warming scenario without determining the timing of an annual temperature threshold."
+      },
+      "children": [
+        {
+          "id": "b2a145c6-7972-4c81-9906-6ac88e6545c6:condition",
+          "parent_id": "b2a145c6-7972-4c81-9906-6ac88e6545c6",
+          "split_option": "condition",
+          "context": "the Global Carbon Project publishes an assessment by December 31, 2037 putting worldwide fossil-fuel-and-industry CO2 emissions in calendar year 2035 at least 25% below their calendar-year 2025 level",
+          "question": "What is the probability that annual average global surface temperature is confirmed to exceed the 1850–1900 average by more than 2 degrees Celsius before January 1, 2050, given that the Global Carbon Project publishes an assessment by December 31, 2037 putting worldwide fossil-fuel-and-industry CO2 emissions in calendar year 2035 at least 25% below their calendar-year 2025 level? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "Annual global warming is confirmed to exceed 2°C above the 1850–1900 average before January 1, 2050.",
+            "no": "Annual global warming is not confirmed to exceed that threshold before January 1, 2050."
+          },
+          "children": []
+        },
+        {
+          "id": "b2a145c6-7972-4c81-9906-6ac88e6545c6:complement",
+          "parent_id": "b2a145c6-7972-4c81-9906-6ac88e6545c6",
+          "split_option": "complement",
+          "context": "the Global Carbon Project publishes no assessment meeting that emissions-reduction threshold by December 31, 2037",
+          "question": "What is the probability that annual average global surface temperature is confirmed to exceed the 1850–1900 average by more than 2 degrees Celsius before January 1, 2050, given that the Global Carbon Project publishes no assessment meeting that emissions-reduction threshold by December 31, 2037? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "Annual global warming is confirmed to exceed 2°C above the 1850–1900 average before January 1, 2050.",
+            "no": "Annual global warming is not confirmed to exceed that threshold before January 1, 2050."
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "root": {
+        "id": "85a89ee0-a6d7-4cb6-9738-68bf6b76040f",
+        "resolution_date": "2030-12-31 00:00:00",
+        "context": "",
+        "target_event": "a new infectious disease emerges by December 31, 2030 and causes a qualifying global pandemic with a confirmed-deaths-to-confirmed-cases ratio exceeding the WHO-reported COVID-19 comparison rate",
+        "question": "What is the probability that a new infectious disease emerges by December 31, 2030 and causes a qualifying global pandemic with a confirmed-deaths-to-confirmed-cases ratio exceeding the WHO-reported COVID-19 comparison rate? Estimate the probability under the specified context.",
+        "options": {
+          "yes": "A disease emerging by December 31, 2030 causes a global pandemic with a higher case-fatality ratio than COVID-19.",
+          "no": "No disease emerging by December 31, 2030 causes such a pandemic."
+        }
+      },
+      "split": {
+        "id": "85a89ee0-a6d7-4cb6-9738-68bf6b76040f:split",
+        "context": "",
+        "event": "the WHO publishes a report by December 31, 2028 documenting sustained human-to-human transmission of an influenza A subtype with no documented sustained human-to-human transmission before October 14, 2026",
+        "definition": "A WHO report must describe sustained transmission among humans of an influenza A subtype and state that sustained human-to-human transmission of that subtype was not documented before October 14, 2026. Isolated zoonotic cases and limited clusters explicitly described as nonsustained do not qualify. Neither a pandemic declaration nor any mortality threshold is required for this condition.",
+        "question": "What is the probability that the WHO publishes a report by December 31, 2028 documenting sustained human-to-human transmission of an influenza A subtype with no documented sustained human-to-human transmission before October 14, 2026? Estimate the unconditional probability of this conditioning event.",
+        "options": {
+          "condition": "The WHO reports sustained human transmission of the specified influenza subtype by December 31, 2028.",
+          "complement": "The WHO makes no such report by December 31, 2028."
+        },
+        "rationale": "Sustained transmission of a previously nonsustained influenza subtype is a relevant emergence scenario without predetermining pandemic scale or case fatality."
+      },
+      "children": [
+        {
+          "id": "85a89ee0-a6d7-4cb6-9738-68bf6b76040f:condition",
+          "parent_id": "85a89ee0-a6d7-4cb6-9738-68bf6b76040f",
+          "split_option": "condition",
+          "context": "the WHO publishes a report by December 31, 2028 documenting sustained human-to-human transmission of an influenza A subtype with no documented sustained human-to-human transmission before October 14, 2026",
+          "question": "What is the probability that a new infectious disease emerges by December 31, 2030 and causes a qualifying global pandemic with a confirmed-deaths-to-confirmed-cases ratio exceeding the WHO-reported COVID-19 comparison rate, given that the WHO publishes a report by December 31, 2028 documenting sustained human-to-human transmission of an influenza A subtype with no documented sustained human-to-human transmission before October 14, 2026? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "A disease emerging by December 31, 2030 causes a global pandemic with a higher case-fatality ratio than COVID-19.",
+            "no": "No disease emerging by December 31, 2030 causes such a pandemic."
+          },
+          "children": []
+        },
+        {
+          "id": "85a89ee0-a6d7-4cb6-9738-68bf6b76040f:complement",
+          "parent_id": "85a89ee0-a6d7-4cb6-9738-68bf6b76040f",
+          "split_option": "complement",
+          "context": "the WHO publishes no report meeting those influenza-subtype and transmission-history criteria by December 31, 2028",
+          "question": "What is the probability that a new infectious disease emerges by December 31, 2030 and causes a qualifying global pandemic with a confirmed-deaths-to-confirmed-cases ratio exceeding the WHO-reported COVID-19 comparison rate, given that the WHO publishes no report meeting those influenza-subtype and transmission-history criteria by December 31, 2028? Estimate the probability under the specified context.",
+          "options": {
+            "yes": "A disease emerging by December 31, 2030 causes a global pandemic with a higher case-fatality ratio than COVID-19.",
+            "no": "No disease emerging by December 31, 2030 causes such a pandemic."
+          },
+          "children": []
+        }
+      ]
+    }
+  ],
+  "augmentation": {
+    "schema_version": "1.3",
+    "description": "Each question record contains root, split, and children objects: one unconditional target node, one binary conditioning split, and two conditional target children.",
+    "provenance": {
+      "target_events_and_options": "Derived from the supplied title and body, prioritizing the detailed body when they conflict.",
+      "conditioning_splits": "Generated hypothetical scenarios motivated by each question; not extracted facts, observed outcomes, or externally verified predictions.",
+      "original_fields": "Requested descriptive fields were removed. IDs, dates, contexts, questions, and split definitions are retained."
+    },
+    "node_fields": {
+      "root": "The parent node containing id, resolution_date, context, target_event, question, and options. Child parent_id values refer to root.id.",
+      "context": "An empty string at the root. A child contains one complete conditioning clause without a terminal period and without the words given that.",
+      "question": "A concise probability question with an optional given that clause and a short estimation instruction.",
+      "options": "Two concise answer descriptions; children share the root options.",
+      "split": "The separate conditioning event B. Its context, question, and options estimate P(B) and P(not B); these options are distinct from the target event options.",
+      "children": "Exactly two target nodes, indexed by condition and complement, estimating P(A | B) and P(A | not B)."
+    },
+    "prompt_template": "Use each stored question directly. Questions omit probability-format instructions and appended resolution or condition definitions.",
+    "partition_semantics": {
+      "target": "yes = A; no = not A, where A is the target event.",
+      "conditioning": "condition = B; complement = not B. The complementary branch includes every failure of the affirmative definition, not merely the opposite extreme.",
+      "report_based_conditions": "When B explicitly requires a qualifying publication by a cutoff, the absence of such a publication satisfies not B. This does not assert that the underlying physical event did not occur.",
+      "identity": "P(A) = P(B) * P(A | B) + P(not B) * P(A | not B).",
+      "zero_probability_condition": "A conditional probability need not be elicited when its branch has probability zero; its contribution to the aggregate is zero."
+    },
+    "temporal_policy": {
+      "forecast_as_of": null,
+      "reason": "The source provides a retrieval date but no original question creation date or required forecast information cutoff.",
+      "generated_split_dates": "Explicit dates in split definitions are design choices. October 14, 2026 is drawn from date_fetched as a reproducible split-window boundary only, not treated as the original question date.",
+      "deadline_precedence": "Preserve the deadlines in the target questions, including before versus by; resolution_date timestamps are retained unchanged.",
+      "evaluation": "Use one explicit information cutoff consistently for the root, split, and both children. Later information can make a branch certain or impossible."
+    },
+    "source_quality_policy": "Question prompts are simplified. Original source resolution text is omitted; separate split definitions are retained."
+  }
+}
