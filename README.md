@@ -149,9 +149,9 @@ If you use this repository in your research, please cite the accompanying work:
 @inproceedings{wolf2026partitionpromptaggregatestatistical,
 	title        = {Partition, Prompt, Aggregate: Statistical Self-Consistency in Language Models},
 	author       = {Patrik Wolf and Thomas Kleine Buening and Andreas Krause and Celestine Mendler-D{\"u}nner},
-	year         = {2026},
-	month        = {December},
-	booktitle    = {Advances in Neural Information Processing Systems (NeurIPS)},
-	pdf          = {https://arxiv.org/abs/2607.15277}
+	year         = 2026,
+	booktitle    = {The Fortieth Annual Conference on Neural Information Processing Systems},
+	url          = {https://arxiv.org/abs/2607.15277}
 }
+
 ```
