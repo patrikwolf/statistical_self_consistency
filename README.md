@@ -146,13 +146,12 @@ tox -e type
 If you use this repository in your research, please cite the accompanying work:
 
 ```bibtex
-@misc{wolf2026partitionpromptaggregatestatistical,
-      title={Partition, Prompt, Aggregate: Statistical Self-Consistency in Language Models}, 
-      author={Patrik Wolf and Thomas Kleine Buening and Andreas Krause and Celestine Mendler-Dünner},
-      year={2026},
-      eprint={2607.15277},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2607.15277}, 
+@inproceedings{wolf2026partitionpromptaggregatestatistical,
+	title        = {Partition, Prompt, Aggregate: Statistical Self-Consistency in Language Models},
+	author       = {Patrik Wolf and Thomas Kleine Buening and Andreas Krause and Celestine Mendler-D{\"u}nner},
+	year         = {2026},
+	month        = {December},
+	booktitle    = {Advances in Neural Information Processing Systems (NeurIPS)},
+	pdf          = {https://arxiv.org/abs/2607.15277}
 }
 ```
